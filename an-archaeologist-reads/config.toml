@@ -1,5 +1,33 @@
-baseURL = "http://www.tsdye.online/an-archaeologist-reads"
+baseURL = "http://www.tsdye.online/an-archaeologist-reads/"
 languageCode = "en-us"
-title = "An Archaeologist Reads"
+title = "An archaeologist reads"
 # First try theme
 theme = "sam"
+# Main menu and index page, as per sam theme
+
+[params]
+    dateform            = "Mon Jan 02, 2006"
+    dateformfull        = "Mon Jan 2 2006 15:04:05 EST"
+    favicon             = ""
+    pygmentsStyle       = "monokai"                     # https://help.farbox.com/pygments.html
+    pygmentsCodefences  = true
+    homepage            = "main"                        # What to call the home page link
+    galleryFolder       = "images/"                     # Where you've put your images, after "/content/gallery/"
+    clickablePhotos     = true                          # Allow links to the full size images
+    footerText          = "An archaeologist reads"
+
+# Metadata
+    description         = "Tom Dye's archaeology reading list."            # Max 160 characters show in search results
+
+
+[[params.mainMenu]]
+    link = "/an-archaeologist-reads/archaeology"
+    text = "archaeology"
+
+[[params.mainMenu]]
+    link = "/an-archaeologist-reads/commons"
+    text = "commons"
+
+[[params.mainMenu]]
+    link = "/an-archaeologist-reads/philosophy"
+    text = "philosophy"
