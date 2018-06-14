@@ -1,0 +1,1957 @@
+#+OPTIONS: broken-links:t todo:nil
+#+hugo_base_dir: .
+#+hugo_auto_set_lastmod: t
+* Homepage
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: homepage
+  :END:
+
+** HM software
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 1
+   :END:
+
+[[/bldg-1-5-sequence-distance-1332+-small.png]]
+
+* Package
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: hm-package
+  :END:
+** The =hm= Package
+   :PROPERTIES:
+   :CUSTOM_ID: hm
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 20
+   :END:
+
+ The =hm= package is an open-source Common Lisp package for investigating the
+ chronological structure of archaeological stratigraphy.
+
+ With =hm= you can:
+  - represent the [[http://harrismatrix.com/][Harris matrix]] as a stratigraphic acyclic directed graph (DAG)
+    as described by [[https://www.sciencedirect.com/science/article/pii/S0305440315002459][Dye and Buck (2015)]]
+  - investigate and analyze the structure of the [[http://harrismatrix.com/][Harris matrix]] using graph
+    theoretic functions and characteristics of the archaeological data
+  - generate a chronological DAG that can guide data input for Bayesian
+    calibration software such as [[http://bcal.shef.ac.uk/][BCal]], [[https://c14.arch.ox.ac.uk/oxcal.html][OxCal]], or [[https://chronomodel.com/][Chronomodel]]
+  - create a graphic visualization of a stratigraphic DAG or a chronological DAG
+    in any one of the graphics formats supported by the open-source [[https://graphviz.gitlab.io/][Graphviz dot]]
+    software
+
+ A central organizing principle of the =hm= software is the self-contained
+ /project./ An =hm= project has its own file directory that includes:
+  - two or more input files with information on
+    - units of archaeological stratification, or contexts
+    - observations of stratigraphic superposition
+    - inferences of once-whole contexts
+    - periods
+    - phases
+    - dated events
+    - event order
+  - one or more initialization files that specify
+    - input files
+    - classifiers that are mathematical functions on the stratigraphic DAG or
+      archaeological constructs specified by the excavator
+    - output files
+    - parameters to configure the  [[https://graphviz.gitlab.io/][Graphviz dot]] software
+  - zero or more output files generated during investigation and analysis
+
+ The =hm= software is designed to be collaborative:
+  - input files are comma-separated value text files that can be produced by
+    - most spreadsheet applications
+    - most database software
+    - any text editor
+  - initialization files are the widely-used =.ini= file format
+  - the text file output from =hm= is processed by the  [[https://graphviz.gitlab.io/][Graphviz dot]] software
+  - compressed =hm= project archives can be sent via email to colleagues, who
+    will then have the information needed to replicate a stratigraphic
+    investigation and analysis
+  - planning is underway to design an interface from =hm= to Bayesian calibration
+    software
+
+* Requirements
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: requirements
+  :END:
+** Software Requirements and Installation
+   :PROPERTIES:
+   :CUSTOM_ID: requirements
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 40
+   :END:
+
+ The =hm= package is open-source Common Lisp software that should run on the
+ free, open-source implementations offered by [[http://www.sbcl.org/][SBCL]] or [[http://ccl.clozure.com/][Clozure CL]]. A working
+ installation of one of these implementations is required by =hm=.
+
+ The =hm= package uses [[https://graphviz.gitlab.io/][Graphviz =dot=]] for graph visualization and graphics output.
+ A working installation of [[https://graphviz.gitlab.io/download/][Graphviz =dot=]] software is required by =hm=.
+
+ The =hm= package is distributed from a =git= version control software
+ repository.  A working installation of [[https://git-scm.com/][=git= software]] is required.
+
+ The [[https://www.quicklisp.org/beta/][Quicklisp library manager]] for Common Lisp is strongly recommended. The
+ instructions in this manual assume a working installation of [[https://www.quicklisp.org/beta/][Quicklisp]].
+
+ An =hm= project is configured with an =.ini= format text file. A plain text
+ editor, rather than a word processor, is recommended for working with =.ini=
+ format files.
+
+ The =hm= software was developed using the [[https://common-lisp.net/project/slime/][Superior Lisp Interaction Mode]] for the
+ [[https://www.gnu.org/software/emacs/][Emacs]] text editor.
+
+*** Install =hm=
+    :PROPERTIES:
+    :CUSTOM_ID: install
+    :END:
+
+ Installation with [[http://www.quicklisp.org][Quicklisp]] is recommended. It automatically installs the other
+ Common Lisp packages upon which =hm= depends, and their dependencies, etc.
+
+ The following example assumes that [[http://www.quicklisp.org][Quicklisp]] is installed on your computer.
+ These instructions will clone the =hm= package in the =local-projects/harris-matrix/=
+ subdirectory of your quicklisp installation.
+ #+name: shell
+ #+header: :prefix $ :eval never
+ #+BEGIN_src sh
+ cd <path-to>/quicklisp/local-projects/
+
+ git clone https://github.com/tsdye/harris-matrix.git
+ #+END_src
+
+ The =hm= software is released under the [[https://www.gnu.org/licenses/gpl-3.0.en.html][GNU General Public License]], Version 3, a
+ free, copyleft license for software and other kinds of works.
+
+*** Load =hm=
+    :PROPERTIES:
+    :CUSTOM_ID: load
+    :END:
+
+ A typical session with =hm= starts by using Quicklisp to load the software.
+
+ #+name: quickload
+ #+header: :exports both :results output :wrap example
+ #+BEGIN_SRC lisp
+ (ql:quickload "hm")
+ #+END_SRC
+
+ Note that the output from your Common Lisp implementation might differ, and that
+ you might see additional output depending on the state of your Common Lisp
+ environment.
+
+ #+RESULTS: quickload
+ #+BEGIN_example
+ To load "hm":
+   Load 1 ASDF system:
+     hm
+ ; Loading "hm"
+ ...Measuring effective cache size (this may take some time)...
+ 10 0.118
+ 11 0.107
+ 12 0.111
+ 13 0.106
+ 14 0.114
+ 15 0.116
+ 16 0.126
+ 17 0.137
+ 18 0.161
+ 19 0.199
+ ..
+ ;;; *************************************************************************
+ ;;;   Infix notation for Common Lisp.
+ ;;;   Version 1.3  28-JUN-96.
+ ;;;   Written by Mark Kantrowitz, CMU School of Computer Science.
+ ;;;   Copyright (c) 1993-95. All rights reserved.
+ ;;;   May be freely redistributed, provided this notice is left intact.
+ ;;;   This software is made available AS IS, without any warranty.
+ ;;; *************************************************************************
+ .................................
+
+ ,*** Femlisp-2.0.1 ***
+
+ Copyright (C) 2003-2017
+ Nicolas Neuss
+ University Heidelberg, KIT Karlsruhe, University Erlangen-Nuernberg.
+
+ Femlisp comes with ABSOLUTELY NO WARRANTY, for details see the
+ file LICENSE in the Femlisp main directory.  This is free
+ software, and you are welcome to redistribute it under certain
+ conditions.
+
+ You can enter "(fl.demo:femlisp-demo)" to get a guided tour
+ through Femlisp, and enter "(quit)" to leave the program.
+
+ .
+ #+END_example
+
+ A successful Quicklisp =quickload= of =hm= will also install several other
+ packages and their dependencies in =<path-to>/quicklisp/dists/quicklisp/software/=.
+
+ #+name: tab:hm-dependencies
+ #+caption: Common Lisp packages upon which =hm= directly depends
+ | Package          | Description                                           | License                              |
+ |------------------+-------------------------------------------------------+--------------------------------------|
+ | [[http://quickdocs.org/graph/][graph]]            | simple graph data structure and algorithms            | GPL V3                               |
+ | [[http://quickdocs.org/graph/][graph/matrix]]     | matrix representation of graphs                       | GPL V3                               |
+ | [[http://quickdocs.org/graph/][graph/dot]]        | serialize graphs to and from =dot= format             | GPL V3                               |
+ | [[http://quickdocs.org/cl-csv/][cl-csv]]           | read and write comma-separated value text files       | BSD                                  |
+ | [[http://quickdocs.org/fset/][fset]]             | a functional set-theoretic collections library        | LLGPL                                |
+ | [[http://quickdocs.org/py-configparser/][py-configparser]]  | Python configparser module implemented in Common Lisp | MIT                                  |
+ | [[http://quickdocs.org/cl-colors/][cl-colors]]        | simple color library for Common Lisp                  | Boost Software License - Version 1.0 |
+ | [[http://quickdocs.org/fare-memoization/][fare-memoization]] | memoization library                                   | MIT                                  |
+ | [[http://quickdocs.org/inferior-shell/][inferior-shell]]   | spawning shell commands and pipes from Common Lisp    | Copyright (c) 2011-2014 Google, Inc. |
+
+*** Use the =hm= name space
+
+ Move into the =hm= name space for easy access to =hm= functions.
+
+ #+name: in-package
+ #+header: :exports code :results value :wrap example
+ #+BEGIN_SRC lisp
+ (use-package :hm)
+ #+END_SRC
+
+* Examples
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: example-projects
+  :END:
+
+** Example Projects
+   :PROPERTIES:
+   :CUSTOM_ID: example-projects
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 60
+   :END:
+ The =hm= software comes with example projects to illustrate some of its
+ capabilities. You can find these in
+ =<path-to>/quicklisp/local-projects/harris-matrix/examples/=. Each of the
+ projects includes the necessary input and configuration files, which can be used
+ as examples for your own work.
+
+*** DONE Harris' Figure 12
+    CLOSED: [2018-03-17 Sat 17:56] SCHEDULED: <2018-03-17 Sat>
+
+ "The compilation of a stratigraphic sequence" is the iconic representation of
+ how one goes about constructing a Harris matrix by identifying contexts and
+ observing their relationships to one another.  Published as Figure 12 in Edward
+ Harris' book /Principles of Archaeological Stratigraphy/, the figure illustrates
+ the Harris matrix practice of identifying all deposits and selecting a subset of
+ interfaces for identification.  Figure [[fig-12-section]] shows the stratigraphic section at the
+ top left of Harris' Figure 12 redrawn to include eight interfacial contexts not
+ identified in the original.
+
+#+name: fig-12-section
+#+caption: The stratigraphic section from Figure 12 in /Principles of Archaeological Stratigraphy./
+#+caption: Note that interfaces 10--18 were not identified in the original.
+[[/fig-12-section-w-interfaces.png]]
+
+ A stratigraphic DAG for the information displayed on Figure [[fig-12-section]] might
+ be drawn on a Linux system with the =hm= software as follows:
+
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+ (run-project/example :fig-12)
+ #+END_SRC
+
+ This example produces the graphics file shown as Figure [[fig-12-sequence]].
+
+ In this example, all of the contexts are displayed and inferences of once-whole
+ contexts are not taken into account.  This directive is set by the value of
+ =assume-correlations=.
+
+ #+BEGIN_EXAMPLE
+ [General configuration]
+ chronology-graph-draw = off
+ project-directory = ~/quicklisp/local-projects/harris-matrix/examples/fig-12-chronology/
+ legend = off
+ assume-correlations = no
+ #+END_EXAMPLE
+
+ #+name: fig-12-sequence
+ #+caption: Stratigraphic DAG for the information on Figure [[fig-12-section]].
+ [[file:/fig-12-sequence.png][file:/fig-12-sequence-small.png]]
+
+ As described by Dye and Buck, the stratigraphic DAG is not able to represent all
+ of the information potentially represented on a Harris matrix. Instead, two
+ stratigraphic DAG's are required. Figure [[fig-12-correlations]] shows the
+ stratigraphic DAG that results when inferences of once-whole contexts are
+ assumed true.
+
+ A stratigraphic DAG for the information displayed on Figure [[fig-12-correlations]]
+ might be drawn on a Linux system with the =hm= software as follows:
+
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+ (run-project/example :fig-12-correlations)
+ #+END_SRC
+
+ #+name: fig-12-correlations
+ #+caption: Stratigraphic DAG for the information on Figure [[fig-12-section]] assuming inferences of once-whole contexts.
+ [[file:/fig-12-correlations.png][file:/fig-12-correlations-small.png]]
+
+ The interesting part of the configuration file is the setting for
+ =assume-correlations=.
+
+ #+BEGIN_EXAMPLE
+ [General configuration]
+ chronology-graph-draw = off
+ project-directory = ../examples/fig-12-chronology/
+ legend = off
+ assume-correlations = yes
+ #+END_EXAMPLE
+
+*** Roskams' H-structure
+   "Avoiding a common error in Harris matrix construction," is an example of an
+   H-structure from Figure 14 of Steve Roskams' Cambridge Manual in Archaeology,
+   /Excavation/. The H-structure is a common source of error in a Harris matrix
+   that is said to "creep in when the lines drawn to the base of an overlying
+   unit are not split but enter as single lines" (p. 159).
+
+   The problem is illustrated in Figure [[roskams-14]], which shows a
+   stratigraphic section with five contexts, labeled 1--5. Contexts 1--4 are each
+   pits excavated, at least partially, into the general matrix, Context 5. The
+   first pits excavated were Contexts 3 and 4. It is not possible to order them
+   based on the information in the stratigraphic section. Later, the Context 1
+   and 2 pits were excavated. The Context 1 pit cut into Contexts 3, 4, and 5.
+   The Context 2 pit cut into Contexts 3 and 5.
+
+#+name: roskams-14
+#+caption: Hypothetical stratigraphic section, drawn after Figure 14 in Steve Roskams' book, /Excavation/.
+[[/fig-14.png]]
+
+   The problem arises if the Harris matrix is drawn carelessly to indicate a
+   stratigraphic relationship between Contexts 2 and 4.  The mistake manifests
+   itself as a set of edges that form the letter /H/, as shown in Figure
+   [[roskams-h-bad]].  The incorrect Harris matrix indicates that Context 2 is
+   younger than Context 4, when in fact that relationship cannot be determined.
+
+ #+name: roskams-h-bad
+ #+caption: Incorrect Harris matrix for the stratigraphic section shown in Figure [[roskams-14]].
+ #+caption: The H-structure is drawn in red.
+ [[/fig-14-h-structure.png]]
+
+
+ A correct Harris matrix for the stratigraphic situation displayed on Figure
+ [[roskams-14]] might be drawn on a Linux system with the =hm= software as follows:
+
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+   (run-project/example :roskams-h)
+ #+END_SRC
+
+ The correct Harris matrix drawn by this command is shown on Figure [[hm-roskams-h]].
+
+ #+name: hm-roskams-h
+ #+caption: A correct Harris matrix for Figure [[roskams-14]] drawn by the =hm= software.
+ [[/roskams-h-sequence.png]]
+
+
+*** Roskams' Jumps
+ Steve Roskams discusses a practical difficulty encountered during construction
+ of the Harris matrix on pages 158--159 of /Excavation/, where one line "jumps"
+ over another.  Roskams describes a situation where the Harris matrix cannot
+ avoid a jump.
+ #+BEGIN_QUOTE
+ The stratigraphic situation \dots [(fig. [[roskams-jumps-illustration]])] comprises
+ a rubble foundation 7, overlain by timber sills 5 and 6, with each sill capped
+ at one end with a leveling tile, 3 and 4 respectively, before these tiles were
+ themselves overlain by another timber 2 \dots However if a second timber 1 also
+ overlay sills 5 and 6, its position in the matrix cannot be represented
+ accurately without implying a false relationship with either 3 or 4. Here it is
+ necessary to use a drawing convention to show one line `jumping' another \dots
+ #+END_QUOTE
+
+ #+name: roskams-jumps-illustration
+ #+caption: Hypothetical plan view drawn after Figure 13 in Steve Roskams' book, /Excavation/.
+ [[/roskams-jumps-illustration.png]]
+
+ The layout of the stratigraphic DAG is more flexible than a Harris matrix, so
+ this stratigraphic situation can be drawn without any `jumps'.  The
+ stratigraphic DAG can be illustrated with this command:
+
+ #+BEGIN_SRC lisp
+   (run-project/example :roskams-jumps)
+ #+END_SRC
+
+ The nodes of the DAG are placed in such a way that there is no question about
+ the chronological relationship of Context 1 with Contexts 3 or 4 (fig. [[roskams-jumps-sequence]]).
+
+ #+name: roskams-jumps-sequence
+ #+caption: Stratigraphic DAG illustrating the situation illusrated in Figure [[roskams-jumps-illustration]].
+ [[/roskams-jumps-sequence.png]]
+
+*** Herzog and Scollar's Complex H-structure
+
+ An "H-structure" is a potentially ambiguous layout in a Harris matrix (see Sec.
+ [[*Roskams' H-structure]]). The example described in this section comes from Figure
+ 9.5a of a 1991 paper by Irmela Herzog and Irwin Scollar, "A new graph theoretic
+ oriented program for Harris Matrix analysis" that was presented to the Computer
+ Applications and Quantitative Methods in Archaeology 1990 Conference. Herzog and
+ Scollar were describing a component of Version 4 of the [[http://www.uni-koeln.de/~al001/basp.html][Bonn Seriation and
+ Archaeological Statistics Package]].
+
+ The Bonn program was able to resolve single H-structures, but complex
+ combinations of H-structures could not always be resolved satisfactorily.
+ This example describes a complex combination of H-structures, of a kind that
+ could not be plotted by the program without potentially ambiguous `crossings'.
+ The situation is described on page 57 of their article, as follows.
+
+ #+BEGIN_QUOTE
+ It is quite difficult to include crossings in the diagram.  There are cases when
+ quite a few lines corresponding to crossing relations extend over the full
+ breadth of the diagram.  This certainly does not enhance the readability of the
+ diagram.  Therefore crossings are currently not plotted.  Any layer that has a
+ crossing relation is marked with a double frame.  A list of relations which
+ could not be displayed is generated at the bottom of the diagram.
+ #+END_QUOTE
+
+ The example in Figure 9.5a of their paper consists of nine contexts with
+ relations described as follows.
+
+ #+BEGIN_QUOTE
+ 1 overlies: 5, 6.  2 overlies: 5, 6, 7, 8.  3 overlies: 7, 8.  4 overlies: 7, 8, 9.
+ #+END_QUOTE
+
+ The =hm= software leverages the capabilities of [[https://www.graphviz.org/][Graphviz dot]], which incorporates
+ modern graph layout algorithms. The layout produced by [[https://www.graphviz.org/][Graphviz dot]] for this
+ example is unambiguous, but the arcs do cross in several places. The following
+ command creates a simple chronological DAG that represents this stratigraphic
+ situation.
+
+ #+BEGIN_SRC lisp
+   (run-project/example :complex-h-structure)
+ #+END_SRC
+
+ The resulting graphic (fig. [[complex-h-structure]]) has six crossings, all but
+ one of which involves an arc from node 2. The arc from 2 to 6 crosses the arc
+ from 1 to 5; the arc from 2 to 8 crosses the arc from 2 to 7; in addition, the
+ arc from 2 to 7 crosses the arc from 3 to 8, the arc from 4 to 8, and the arc
+ from 3 to 7. The crossings make the stratigraphic DAG somewhat difficult to
+ decipher.
+
+ #+name: complex-h-structure
+ #+caption: A stratigraphic DAG of Herzog and Scollar's Figure 9.5a.
+ [[/complex-h-structure.png]]
+
+ In this particular situation node colors, node fill colors, and edges from nodes
+ can be classified by reachability from the problematic node 2.  An example can
+ be produced on a Linux setup with the following command.
+
+ #+BEGIN_SRC lisp
+   (run-project/example :complex-h-structure-reachable)
+ #+END_SRC
+
+ The example uses the Brewer Color =accent= family to color node 2 green, the
+ four nodes reachable from it purple, and the nodes not reachable from node 2
+ orange (fig. [[complex-h-structure-reachable]]). In this example the green arcs
+ from node 2 are easily distinguished from the orange arcs that they cross, which
+ disambiguates all but one crossing.
+
+ #+name: complex-h-structure-reachable
+ #+caption: Another stratigraphic DAG of Herzog and Scollar's Figure 9.5a.
+ #+caption: The colors of nodes, node fills, and edges from nodes are classified by reachability from node 2.
+ [[/complex-h-structure-reachable-2.png]]
+
+*** Çatalhöyük
+
+ This is a real-world example drawn from the dating program reported by [[https://www.stir.ac.uk/natural-sciences/staff-directory/academic/alexbayliss/][Alex
+ Bayliss]], [[http://trowelblazers.com/shahina-farid/][Shahina Farid]], and [[http://www.arch.ox.ac.uk/TH1.html][Thomas Higham]] in Chapter 3 of the book /Çatalhöyük
+ Excavations: the 2000–2008 Seasons/ entitled "Time will tell: Practicing
+ Bayesian chronological modeling on the East Mound." The example was developed to
+ explore the DAG approach to drawing and analyzing sequence diagrams set out by
+ [[https://www.sciencedirect.com/science/article/pii/S0305440315002459][Dye and Buck]] in 2015. At that time, the example was chosen because it seemed to
+ be the most interesting of a small handful of excavations that reported both a
+ Harris matrix, in this case one created at an early stage of the project by
+ [[http://www.michaelbalter.com/photos4.php][Craig Cessford]], and a Bayesian chronological model. The example here reproduces
+ the DAG's investigated and reported by [[https://www.sciencedirect.com/science/article/pii/S0305440315002459][Dye and Buck]].
+
+ The Çatalhöyük site has been investigated since 1993 by [[http://www.ian-hodder.com/][Ian Hodder]], who introduced it
+ this way in Chapter 1 of the book /Toward Reflexive Method in Archaeology: The
+ Example at Çatalhöyük/ entitled "Developing a reflexive method in archaeology":
+
+ #+begin_quote
+ Çatalhöyük is in Central Turkey, near Çumra in the Konya region.  The East mound
+ is largely Neolithic in date and had a range of radiocarbon dates for its 20 m
+ sequence from 6400 [[sc:bc][BC]] to 5600 [[sc:bc][BC]] \dots Çatalhöyük was first excavated between
+ 1961 and 1965 by James Mellaart \dots and became of international importance because
+ of its size and complexity at an early date outside the Fertile Crescent—i.e.
+ outside the heartlands of animal and plant domestication in the Near East.   But
+ the importance of the site transcended these factors because of the sculpture
+ and painting found at the site.  Indeed, the site has retained a central
+ significance despite the discovery in the last thirty years of large complex
+ sites at earlier dates in Turkey and the Near East.  It is the art which has won
+ for  Çatalhöyük this continued renown.
+ #+end_quote
+
+
+ Excavations at Buildings 1 and 5 on the East Mound, which provide the materials
+ analyzed by Bayliss and colleagues, yielded a deep, complex sequence.
+ Importantly, the sequence was put into Harris Matrix form by Craig Cessford.
+ The stratigraphic DAG based on Cessford's matrix can be created with the
+ following function call:
+
+ #+BEGIN_SRC lisp
+ (run-project/example :catal-hoyuk)
+ #+END_SRC
+
+ The example project creates a stratigraphic DAG and a chronological DAG, which
+ are shown in Figures [[bldg-1-5-seq]] and [[bldg-1-5-chron]].
+
+ #+name: bldg-1-5-seq
+ #+caption: Stratigraphic DAG of the North Area sequence based on a Harris matrix created by Craig Cessford.
+ [[file:/bldg-1-5-sequence.png][file:/bldg-1-5-sequence-small.png]]
+
+ #+name: bldg-1-5-chron
+ #+caption: Chronology DAG based on residuality determinations of Alex Bayliss and colleagues.
+ #+caption: Note the situation for Context 1332+ at the top left, with the dangling θs.
+ [[file:/bldg-1-5-chronology.png][file:/bldg-1-5-chronology-small.png]]
+* Classifiers
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: classifiers
+  :END:
+** Classifiers
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 80
+   :END:
+
+ This section provides definitions for the various classifiers used by the =hm=
+ software and shows how to save a classification to a comma-separated-value text
+ file. There are two kinds of classifiers: archaeological classifiers that
+ reflect observations and inferences made by an archaeologist familiar with the
+ stratigraphic situation represented by the sequence diagram; and graph
+ theoretical classifiers that take advantage of the DAG representation to deduce
+ structural relations that might prove useful to the archaeologist tasked with
+ interpreting the sequence diagram.
+
+ The =hm= software currently implements the following classifiers:
+
+ #+name: classifiers
+ #+header: :results output :exports both :wrap example
+ #+BEGIN_SRC lisp
+ (show-classifiers)
+ #+END_SRC
+
+ #+RESULTS: classifiers
+ #+BEGIN_example
+ units
+ levels
+ phases
+ periods
+ adjacent
+ distance
+ reachable
+ #+END_example
+
+*** Archaeological Classifiers
+
+ The =hm= software currently provides three ways to integrate archaeological
+ observations about contexts into the sequence diagram, which it calls =units=,
+ =phases=, and =periods=.  Some preliminary discussion is in order because
+ archaeologists define these terms more or less precisely and have achieved more
+ or less consensus on their definitions.  Also, there are very many other terms
+ in use that attempt to capture the practice of classifying and grouping
+ archaeological contexts.
+
+ Steve Roskams discusses this situation on pages 257–258 of /Excavation/ in the
+ context of assigning "basic units to higher-order categories."
+
+ #+BEGIN_QUOTE
+ This raises the question of how such groups are to be defined—what is the point
+ where one stops and another begins?  Should there be a single type of group or a
+ whole hierarchy of entities?  How should each be named?  Or are the potential
+ configurations so diverse that it is impossible to make useful comparisons
+ between sites?
+
+ This issue has been approached by a variety of specialists who have produced
+ different schemes and terminology.  To some extent the differences are a
+ function of the great variety of sites with which they are dealing, and are thus
+ entirely legitimate.  Equally, they come, in part, from merely giving a
+ different name to the same concept \dots This profusion of terminology is to be
+ expected, given that thoughts on such matters are at a very formative stage, and
+ it is probably right to retain some diversity in any case, given the variety of
+ sites and associated stratigraphic sequences, and types of analytical procedures
+ applied to them.
+ #+END_QUOTE
+
+ The =units= classification offered by the =hm= software is more precisely
+ defined and widely appreciated by archaeologists than either =periods= or
+ =phases=. The =hm= software recognizes the basic distinction of depositional
+ from interfacial units of stratification and hard-wires this distinction into
+ the software, while leaving to the =hm= user the choice of how it might be
+ represented in the sequence diagram.
+
+ The =hm= software takes no such confident stand with =periods= and =phases=,
+ leaving their definitions (if not their names within the software) completely up
+ to the user. From the software's point of the view, there is no difference
+ between a =period= and a =phase= and there is no relationship between them. The
+ =hm= user is best served by viewing them as ways to incorporate any kind of
+ classification of contexts whatsoever. The classifications might be based on
+ statistical analysis of the finds collected from each context, presence or
+ absence of one or more index fossils, physical characteristics of the contexts
+ themselves, etc.
+
+ In a sense, the crucial question from the software's point of view is how many
+ different kinds of classification might be useful on a single sequence diagram?
+ Are two kinds sufficient? The answer to this question does not involve judgments
+ about how many or few analyses are best carried out on excavation materials.
+ Rather, it involves how many classifications it might be useful to plot on the
+ same graphic. If there are a dozen classifications that need to be investigated,
+ then the way forward is to use the =hm= software to make 6–12 sequence diagrams,
+ each one showing one or two classifications, as appropriate.
+
+**** Units
+
+ The =units= classifier is designed for use with excavation data, where both
+ depositional and interfacial units are identified and recorded.  Archaeologists
+ universally identify and record depositional units (often as `layers') but are
+ somewhat ambivalent about interfaces, typically choosing to record interfaces
+ that appear to be important and ignoring others.
+
+ This practice is potentially problematic for the =hm= software because it
+ assumes that interfaces that are not identified and recorded do not themselves
+ represent chunks of time that might be important in a chronological model. In an
+ ideal sense, the stratigraphic sequence represents a continuous record of time
+ from some point in the past represented by the base of excavation up through to
+ the modern surface. Neglecting to identify and record interfaces potentially
+ yields a discontinuous model of that continuous record, with gaps introduced by
+ the time spans represented by the excluded interfaces.
+
+ The default configuration file uses node shape to distinguish deposits from
+ interfaces.  Deposits are shaped like a rectangular box and interfaces are
+ shaped like a trapezium, as in this snippet from a configuration file:
+
+ #+BEGIN_EXAMPLE
+ [Graphviz sequence unit node shape]
+ deposit = box
+ interface = trapezium
+ #+END_EXAMPLE
+
+ Individual deposits and interfaces are identified in the input file for contexts
+ (see Section [[#units-of-stratification]]).
+
+**** DONE Periods and Phases
+     CLOSED: [2018-03-17 Sat 18:01]
+
+ The stratigraphic DAG for this example shows the Figure 12 section divided into
+ four periods (fig. [[fig-12-periods]]).  The oldest period includes the Natural ground and its surface.
+ The next oldest period includes Context 9 and its surfaces.  Next is the
+ once-whole deposit represented by Contexts 7 and 8, the surfaces of those
+ contexts, and all of the various contexts related to construction of the wall
+ stub, Context 5.  The youngest period is represented by the Context 1 deposit
+ and its surface.
+
+ #+name: fig-12-periods
+ #+caption: Stratigraphic DAG for the information on Figure [[fig-12-section]] assuming inferences of once-whole contexts, and periodized according to the text.
+ #+caption: Note that rectangular nodes represent deposits and trapeziums represent interfaces.
+ [[file:/fig-12-periods.png][file:/fig-12-periods-small.png]]
+
+ On a Linux system, Figure [[fig-12-periods]] can be reproduced with the following
+ function call:
+
+ #+BEGIN_SRC lisp
+ (run-project/example :fig-12-periods)
+ #+END_SRC
+
+*** Graph Theoretical Classifiers
+
+ The graph theoretical classifiers are defined in the context of a general
+ definition of a directed graph. The definition used here is paraphrased from the
+ book, /Structural Models in Anthropology/ written by Per Hage and Frank Harary.
+ This book is the first in a remarkable trilogy that also includes /Exchange in
+ Oceania: A Graph Theoretic Analysis/ and /Island Networks: Communication,
+ Kinship, and Classification Structures in Oceania/.
+
+ One of the challenges presented by the literature on graph theory is the number
+ of synonyms for the basic elements of a graph (table [[tab:synonyms]]), what this
+ document and the =hm= software try to label consistently as nodes and arcs. Hage
+ and Harary typically use point and arc for directed graphs, and point and line
+ for graphs. The definitions given below and in the following sections are quoted
+ verbatim, so it is up to the reader to translate synonyms appropriately.
+
+ #+name: tab:synonyms
+ #+caption: Some synonyms for node and arc.
+ | node      | arc       |
+ |-----------+-----------|
+ | point     | line      |
+ | vertex    | edge      |
+ | junction  | branch    |
+ | 0-simplex | 1-simplex |
+ | element   | element   |
+
+ Hage and Harary define a directed graph on page 68 of /Structural Models in
+ Anthropology/ as follows.
+
+ #+BEGIN_QUOTE
+ A /directed graph/ or /digraph D/ consists of a finite set /V/ of points and a
+ collection of ordered pairs of distinct points.  Any such pair /(u, v)/ is
+ called an /arc/ or /directed line/ and will usually be denoted /uv/.  The arc
+ /uv/ goes from /u/ to /v/ and is incident with /u/ and /v/.
+ #+END_QUOTE
+
+**** Adjacent
+
+ The adjacency classification is the simplest among the graph theoretical
+ classifications.  Following on the definition of directed graph, quoted above,
+ Hage and Harary define adjacency as follows.
+
+ #+BEGIN_QUOTE
+ The arc /uv/ goes from /u/ to /v/ and is incident with /u/ and /v/. We also say
+ that /u/ is /adjacent to v/ and /v/ is adjacent from /u/.
+ #+END_QUOTE
+
+ It is important to note that the sequence diagram represents chronological
+ adjacency, rather than physical adjacency.  Two contexts that are in contact
+ with one another can be said to be physically adjacent, but they might be
+ chronologically separated by one or more other contexts.
+
+ This can be seen in the following example, which is based on the stratigraphic
+ section shown on Figure [[roskams-14]].
+
+ The sequence diagram can be drawn to highlight the relationship of Context 2 to
+ the others. When the sequence diagram is classified so nodes, node labels, and
+ edges are colored according to adjacency from Context 2, such that the origin
+ node is violet, adjacent nodes are cyan, and nodes not adjacent to Context 2 are
+ orange, the graph in Figure [[roskams-h-dark]] results.
+
+ #+name: roskams-h-dark
+ #+caption: A correct Harris matrix for Figure [[roskams-14]] classified by adjacency to Context 2.
+ #+caption: Colors are from the [[http://ethanschoonover.com/solarized][Solarized]] dark palette.
+ [[/roskams-h-sequence-solarized-dark.png]]
+
+ The graph was produced on a Linux system with the following function call:
+
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+   (run-project/example :roskams-h-solarized-dark)
+ #+END_SRC
+
+
+ The important sections in the initialization file include the following.
+
+ #+BEGIN_EXAMPLE
+ [Graph analysis configuration]
+ distance-from =
+ adjacent-from = 2
+ ...
+
+ [Graphviz sequence classification]
+ node-fillcolor-by =
+ node-fontcolor-by = adjacent
+ node-shape-by =
+ node-color-by = adjacent
+ node-penwidth-by =
+ node-style-by =
+ node-polygon-distortion-by =
+ node-polygon-image-by =
+ node-polygon-orientation-by =
+ node-polygon-sides-by =
+ node-polygon-skew-by =
+ edge-color-by = adjacent
+ ...
+
+ [Graphviz sequence graph attributes]
+ colorscheme = solarized
+ bgcolor = base02
+ fontname = Helvetica
+ fontsize = 14.0
+ fontcolor = base1
+ label = Roskams\' H-structure (corrected)
+ labelloc = t
+ style = filled
+ size =
+ ratio = 0.618034
+ ...
+
+ [Graphviz sequence node attributes]
+ shape = box
+ colorscheme = solarized
+ style = filled
+ color = base01
+ fontsize = 14.0
+ fontsize-min = 6.0
+ fontsize-max = 22.0
+ fontcolor = base01
+ fillcolor = base03
+ ...
+
+ [Graphviz sequence adjacent node colors]
+ origin = violet
+ adjacent = cyan
+ not-adjacent = orange
+ colorscheme = solarized
+
+ [Graphviz sequence adjacent node fontcolors]
+ origin = violet
+ adjacent = cyan
+ not-adjacent = orange
+ colorscheme = solarized
+
+ [Graphviz sequence adjacent edge colors]
+ origin = violet
+ adjacent = cyan
+ not-adjacent = orange
+ colorscheme = solarized
+ #+END_EXAMPLE
+
+ Note that Context 2 is in physical contact with Contexts 3 and 5.  The sequence
+ diagram (fig. [[roskams-h-dark]]) shows Context 2 adjacent to Context 3, but
+ because the Context 2 pit cut into Context 3, which itself was cut into Context
+ 5, Context 2 is not chronologically adjacent to Context 5.
+
+**** Reachable
+
+ The graph theoretic definition of reachability requires definitions for directed
+ walk and path. Hage and Harary define reachability this way on pages 68--69 of
+ /Structural Models in Anthropology/, where they use digraph as a synonym for
+ directed graph.
+
+ #+BEGIN_QUOTE
+ A (directed) walk in a digraph is an alternating sequence of points and arcs,
+ v₀, x₁, v₁, \dots, xₙ, vₙ in which each arc xᵢ is vᵢ₋₁vᵢ.  For brevity, we may write
+ the sequence of points v₀, v₁, \dots, vₙ to indicate the same walk.  The length of
+ such a walk is n, the number of occurrences of arcs in it.  A closed walk has
+ the same first and last points, and open walk does not, and a spanning walk
+ contains all the points.  A path is a walk in which all points are distinct; a
+ cycle is a nontrivial closed walk with all points distinct except the first and
+ last.  If there is a path from u to v, then v is said to be reachable from u \dots
+ #+END_QUOTE
+
+ Compare this definition with Roskams' description of reachability as it is
+ conceptualized by users of the Harris matrix on page 158 of the book,
+ /Excavation/:
+
+ #+BEGIN_QUOTE
+ if one travels from a particular unit via the strands running up from it, all
+ units through which one passes are provably later than that unit;
+ if one travels down, every unit /en route/ is provably earlier;
+ any unit which cannot be reached in one of these two ways has no proven
+ relationship with the unit in question.
+ #+END_QUOTE
+
+ This describes all the nodes from which the "particular unit" is reachable—"the
+ strands running up from it"—and all the nodes reachable from "the particular
+ unit" that are encountered when one "travels down".
+
+ One key to dating Çatalhöyük has been identifying residual materials in the
+ deposits.  A good example of this is Context 1332+, where several seeds were
+ recovered and dated.  Initially, the seeds were thought to be associated with
+ the Context 1332+ deposit, but four of them were subsequently determined to be
+ residual.  The effect of these different residuality determinations on the
+ dating project at Çatalhöuyük is discussed by [[https://www.sciencedirect.com/science/article/pii/S0305440315002459][Dye and Buck]].
+
+ The importance of Context 1332+ in the stratigraphy of Çatalhöyük is indicated
+ by a graph classified by reachability (fig. [[1332-reachable]]).
+ This graph assigns dark blue fills to nodes from which Context 1332+ is
+ reachable and nodes reachable from Context 1332+. The node for Context 1332+ is
+ filled light blue. Nodes from which Context 1332+ is not reachable and nodes not
+ reachable from Context 1332+ are filled green.  The colors are taken from the
+ Brewer color =paired= palette.
+
+ A stratigraphic DAG for the information displayed on Figure [[1332-reachable]]
+ might be drawn on a Linux system with the =hm= software as follows:
+
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+ (run-project/example :catal-hoyuk-reachable)
+ #+END_SRC
+
+
+ #+name: 1332-reachable
+ #+caption: Stratigraphic DAG of the North Area sequence with nodes classified according to reachability to and from Context 1332+.
+ #+caption: Context 1332+ is light blue.  Nodes reachable from Context 1332+ are dark blue.
+ #+caption: Nodes not reachable from Context 1332+ are green.
+ [[file:/bldg-1-5-sequence-reachable-1332+.png][file:/bldg-1-5-sequence-reachable-1332+-small.png]]
+
+ The important sections of the configuration file include the following.
+
+ #+BEGIN_EXAMPLE
+ [Graph analysis configuration]
+ distance-from =
+ adjacent-from =
+ reachable-from = 1332+
+ reachable-limit =
+
+ [Graphviz sequence classification]
+ node-fillcolor-by = reachable
+ ...
+
+ [Graphviz sequence reachability node fillcolors]
+ origin = 0
+ reachable = 1
+ not-reachable = 2
+ colorscheme = paired
+ #+END_EXAMPLE
+
+ Classification by reachability is potentially important for decisions on what
+ materials to date.  Contexts that are reachable from many contexts or from which
+ many contexts are reachable might be thought of as having relatively great
+ potential influence in a chronological model.
+
+**** Distance
+
+ The graph theoretic definition of distance follows directly on the definition of
+ reachability.  Hage and Harary define distance this way on page 69 of
+ /Structural Models in Anthropology/.
+
+ #+BEGIN_QUOTE
+ If there is a path from u to v, then v is said to be reachable from u, and the
+ distance d (u,v) from u to v is the length of any shortest such path.
+ #+END_QUOTE
+
+ An example of a graph classified by distance is Figure [[1332-distance]]. This graph
+ assigns node fills based on distance from Context 1332+. The node for Context
+ 1332+ is the lightest blue. Nodes not reachable from Context 1332+ are the
+ darkest blue. All other nodes have intermediate shades of blue based on their
+ distance from Context 1332+, the farther the node the darker the color.
+
+ #+name: 1332-distance
+ #+caption: Stratigraphic DAG of the North Area sequence with nodes shaded by distance from Context 1332+.
+ [[file:/bldg-1-5-sequence-distance-1332+.png][file:/bldg-1-5-sequence-distance-1332+-small.png]]
+
+ This graph was produced on a Linux system with the following function call:
+
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+ (run-project/example :catal-hoyuk-distance :draw-chronology nil)
+ #+END_SRC
+
+ The interesting parts of the configuration file follow.
+
+ #+BEGIN_EXAMPLE
+ [Graph analysis configuration]
+ distance-from = 1332+
+
+ [Graphviz sequence classification]
+ node-fillcolor-by = distance
+
+ [Graphviz sequence node fill color schemes]
+ levels =
+ distance = cet-blues
+ #+END_EXAMPLE
+
+**** Levels
+
+ The graph theoretic concept of level is closely tied to the stratigraphic
+ concept of level.  Hage and Harary define level on page 82 of /Structural Models in Anthropology./
+ #+BEGIN_QUOTE
+ An acyclic digraph D has no cycles \dots [and] is said to have a level assignment,
+ which assigns a positive integer n for each point v, called its level, if for
+ each arc vᵢ vⱼ of D, the corresponding integers satisfy nᵢ < nⱼ.  Thus each arc
+ of D is directed from a lower to a higher level.  If a digraph D has a cycle,
+ then it cannot have a level assignment.
+ #+END_QUOTE
+
+ An example of a levels classification can be seen in the stratigraphic DAG of Çatalhöyük (fig. [[catal-hoyuk-levels]]).
+
+ #+name: catal-hoyuk-levels
+ #+caption: Stratigraphic DAG of the North Area sequence at Çatalhöyük with nodes colored by level.
+ [[file:/bldg-1-5-sequence-levels.png][file:/bldg-1-5-sequence-levels-small.png]]
+
+ The graph was produced on a Linux system with the following function call:
+
+ #+BEGIN_SRC lisp
+ (run-project/example :catal-hoyuk-levels :draw-chronology nil)
+ #+END_SRC
+
+
+ The interesting parts of the configuration file follow.
+
+ #+BEGIN_EXAMPLE
+ [Graphviz sequence classification]
+ node-fillcolor-by = levels
+
+ [Graphviz sequence node fill color schemes]
+ levels = cet-bgyw
+ #+END_EXAMPLE
+
+*** Write a Classification to a File
+
+ In addition to creating graphical output, the =hm= software can write a
+ classification to a comma-separated-value file to communicate with other
+ software.  The name of the output file is specified in the configuration file;
+ this protocol insures that the user of an =hm= project created by someone else
+ can be certain of a CSV file's contents.
+
+ In the example below, the file names for =distance=, =reachable=, and =adjacent=
+ classifications are helpfully descriptive, while the name given the =phases=
+ classification is not too helpful.
+
+ #+BEGIN_EXAMPLE
+ [Output files]
+ sequence-dot = fig-12-polygon-1.dot
+ chronology-dot =
+ distance = fig-12-distance.csv
+ reachable = fig-12-reachable.csv
+ adjacent = fig-12-adjacent.csv
+ phases = foobar.csv
+ periods = fig-12-periods.csv
+ ...
+ #+END_EXAMPLE
+
+ The following transcript writes the =periods= classifier for the
+ =:fig-12-polygon= example to the =fig-12-periods.csv= file.
+
+ #+name: write-classifier
+ #+header: :exports code :eval never
+ #+BEGIN_SRC lisp
+ (defvar *seq*)
+ (setq *seq* (run-project/example :fig-12-polygon))
+ (write-classifier :periods *seq*)
+ #+END_SRC
+
+ The file =fig-12-periods.csv= file looks like this:
+
+ #+name: show-csv-output
+ #+header: :exports both :wrap example
+ #+BEGIN_SRC sh
+ head ../examples/fig-12-chronology/fig-12-periods.csv
+ #+END_SRC
+
+ #+RESULTS: show-csv-output
+ #+BEGIN_example
+ | node | periods |
+ |    1 |       1 |
+ |    2 |       2 |
+ |    3 |       2 |
+ |    4 |       2 |
+ |    5 |       2 |
+ |    6 |       2 |
+ |    9 |       3 |
+ |   10 |       1 |
+ |   12 |       2 |
+ #+END_example
+
+* Attributes
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: graph-attributes
+  :END:
+** Classifiable Graph Attributes
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 100
+   :END:
+
+ The =hm= software is able to apply each of the classifiers to each of the
+ 17 classifiable graph attributes listed below. The attributes
+ vary by their visual saliency and by the number of states they are able to
+ express. Fill color, color, and shape (including the polygon attributes) are
+ most salient for nodes, followed by font color, pen width, and style. Color,
+ style, and arrowhead are most salient for edges, followed by font size,
+ font color, and pen width.
+
+ #+name: classifiable-attributes
+ #+header: :results output :exports both :wrap example
+ #+BEGIN_SRC lisp
+ (show-classifiable-attributes)
+ #+END_SRC
+
+ #+RESULTS: classifiable-attributes
+ #+BEGIN_example
+ edge-color-by
+ edge-style-by
+ node-color-by
+ node-shape-by
+ node-style-by
+ edge-fontsize-by
+ edge-penwidth-by
+ node-penwidth-by
+ edge-arrowhead-by
+ edge-fontcolor-by
+ node-fillcolor-by
+ node-fontcolor-by
+ node-polygon-skew-by
+ node-polygon-image-by
+ node-polygon-sides-by
+ node-polygon-distortion-by
+ node-polygon-orientation-by
+ #+END_example
+
+
+*** Colors
+ The =hm= software offers several color palettes that might be useful in
+ different situations.  However, color should be handled with care because it is
+ easy to misuse it.
+
+ Edward Tufte's chapter on "Color and Information" in the book /Envisioning
+ Information/ starts off like this:
+
+ #+BEGIN_QUOTE
+ In representing and communicating information, how are we to benefit from
+ color's great dominion?  Human eyes are exquisitely sensitive to color
+ variations: a trained colorist can distinguish among 1,000,000 colors, at least
+ when tested under contrived conditions of pairwise comparison.  Some 20,000
+ colors are accessible to many viewers, with the constraints for practical
+ applications set by the early limits of human visual memory rather than the
+ capacity to discriminate locally between adjacent tints.  For encoding abstract
+ information, however, more than 20 or 30 colors frequently produce not
+ diminishing but negative returns.
+
+ Tying color to information is as elementary and straightforward as color
+ technique in art, "To paint well is simply this: to put the right color in the
+ right place," in Paul Klee's ironic prescription.  The often scant benefits derived from
+ coloring data indicate that even putting a good color in place is a complex
+ matter.  Indeed, so difficult and subtle that avoiding catastrophe becomes the
+ first principle in bringing color to information: /Above all, do no harm./
+ #+END_QUOTE
+
+ With this in mind, the =hm= software uses a selection of named and indexed color
+ palettes.
+
+**** Named Color Palettes
+
+ Colors from named color palettes are indicated by a color name, such as
+ =burlywood3=, =coral1=, or =darkgoldenrod=. Named color palettes are useful in
+ situations where you know ahead of time how many colors will be needed, or when
+ you have need or desire to use particular hues.  However, choosing colors that
+ work well with one another is difficult for many people and, as Tufte reminds us,
+ catastrophe is a real possibility.
+
+ The three named color palettes used by =hm= software include the two general
+ purpose palettes, X11 and SVG, and the designer palette, Solarized.
+
+
+***** X11
+ The =hm= software recognizes 782 X11 color names, which generally correspond to
+ the [[http://www.graphviz.org/doc/info/colors.html#x11][Graphviz dot X11 color names]].  By far the most useful of these are =white=
+ and =black=, with =dimgray= (or =dimgrey=), =gray= (or =grey=), and =lightgray=
+ (or =lightgrey=) often coming in handy.
+
+***** SVG
+ The SVG palette has 147 names for somewhat fewer colors, given that some colors
+ have multiple names. In general, this is a subset of the X11 colors that is most
+ useful when graphics output will be scalar vector graphics. The [[http://www.graphviz.org/doc/info/colors.html#svg][Graphviz dot SVG
+ color names]] are supported by the =hm= software.
+
+***** Solarized
+ The Solarized color palette was developed by a designer interested in computer
+ graphics. It includes two sets of background tones, a set of four tones for
+ content, and eight accent colors. The accent colors are suited for categorical
+ variables and might be useful for classifications with relatively few
+ distinctions such as =units=, =adjacent=, and =reachable=. In some cases, they
+ might be useful for =periods= or =phases=.
+
+ A notable feature of the Solarized palette is the relative ease of switching
+ from a color scheme with a dark background to one with
+ a light background (Fig. [[roskams-h-light]]).
+ A characteristic of the [[http://ethanschoonover.com/solarized][Solarized]] palette is accent colors---in this case
+ violet, cyan, and orange---look good on either a dark or light background.  An
+ example project is included to show off this property of the [[http://ethanschoonover.com/solarized][Solarized]] palette.
+
+ When the following command is run on a Linux system, the graph in Figure [[roskams-h-light]]
+ results.
+
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+   (run-project/example :roskams-h-solarized-light)
+ #+END_SRC
+
+ #+name: roskams-h-light
+ #+caption: A correct Harris matrix for Figure [[roskams-14]] classified by adjacency to Context 2.
+ #+caption: Colors are from the [[http://ethanschoonover.com/solarized][Solarized]] light palette.
+ [[/roskams-h-sequence-solarized-light.png]]
+
+ There is an informative website that describes [[http://ethanschoonover.com/solarized][Ethan Schoonover's Solarized
+ colors]].
+
+**** Indexed Color Palettes
+
+ Colors in indexed color palettes are identified by numbers, rather than names.
+ This makes them easy to use in situations where the number of colors needed is not
+ known ahead of time.  In addition, the color palettes have been designed to
+ include colors that work well together, so graphs that use them can have a
+ polished look that might be difficult to achieve otherwise.
+
+ There are three kinds of indexed color palette that are useful for different
+ kinds of data:
+  - sequential :: colors move from dark to light along a single "path" through
+                  color space, which makes it easy to visualize the magnitude of
+                  a value
+  - diverging :: colors move from dark to light and back to dark again as they
+                 move from one edge of the rainbow to the other, a pattern that
+                 highlights the middle color and is useful for data that have
+                 both location and scale
+  - qualitative :: colors are chosen to be distinct from one another, without
+                   giving emphasis to one or another, which is useful for
+                   categorical data
+
+ The =hm= software uses a color index that is 0 based for all of the indexed
+ color palettes.  Note that this is different than the usual scheme for the
+ Brewer color palettes in which the base color is 1.
+
+ The =hm= software offers two sets of indexed color palettes, one developed by
+ the [[http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3][ColorBrewer project]], and another developed at the [[https://bokeh.github.io/colorcet/][Center for Exploration
+ Targeting]].
+
+
+***** Brewer Color Palettes
+
+ The [[https://graphviz.gitlab.io/_pages/doc/info/colors.html#brewer][Brewer color palettes]] are built into the GraphViz =dot= software. There are
+ several families of 3 to 12 color palettes, which are most useful for the simple
+ classifications.  The =hm= software accepts the family name of the color scheme
+ and then chooses which palette to use based on the number of colors needed.  So,
+ for example, the =hm= software user might choose =accent=, =blues=, or =brbg=
+ and the software might apply =accent3=, =blues7=, or =brbg= 5, as appropriate.
+
+ Note that the =paired= palette is useful for classifications such as =adjacent=
+ and =reachable= that yield three values.  In these cases, the origin and
+ adjacent or reachable nodes can be colored with the same hue, and non-adjacent
+ or unreachable nodes can be colored with a different hue.  Figure
+ [[bldg-1-5-seq]] illustrates use of the =paired= color palette with a
+ =reachable= classification.
+
+***** Center for Exploration Targeting Color Palettes
+ These are 256 color palettes that were designed to be "perceptually uniform",
+ which means that none of the colors sticks out from the others. The idea behind
+ perceptual uniformity of colors in the palette is that perceptual variation in a
+ graphic that uses these color palettes will primarily track variation in the
+ underlying data.
+
+ These color palettes will be most useful for the =levels= and =distance=
+ classifications, which might require dozens of distinct colors to represent the
+ range of values. Because both of these classifications yields a number important
+ for its magnitude, the palettes included with the =hm= software are mostly
+ sequential (or linear), but also include a rainbow palette.
+
+ The name of the palette used by the =hm= software is shown in the first column
+ of Table [[colorcet-table]]. The second column gives the name of the color file
+ distributed by Colorcet; the names of these files are based on the palette
+ labels displayed at the [[https://bokeh.github.io/colorcet/][Colorcet website]].
+
+ #+name: colorcet-table
+ #+caption: Names used for the Colorcet palettes
+ | name        | file                                   |
+ |-------------+----------------------------------------|
+ | cet-bgyw    | linear_bgyw_15-100_c67_n256.csv        |
+ | cet-kbc     | linear_blue_5-95_c73_n256.csv          |
+ | cet-blues   | linear_blue_95-50_c20_n256.csv         |
+ | cet-bmw     | linear_bmw_5-95_c86_n256.csv           |
+ | cet-inferno | linear_bmy_10-95_c71_n256.csv          |
+ | cet-kgy     | linear_green_5-95_c69_n256.csv         |
+ | cet-gray    | linear_grey_0-100_c0_n256.csv          |
+ | cet-dimgray | linear_grey_10-95_c0_n256.csv          |
+ | cet-fire    | linear_kryw_0-100_c71_n256.csv         |
+ | cet-kb      | linear_ternary-blue_0-44_c57_n256.csv  |
+ | cet-kg      | linear_ternary-green_0-46_c42_n256.csv |
+ | cet-kr      | linear_ternary-red_0-50_c52_n256.csv   |
+ | cet-rainbow | rainbow_bgyr_35-85_c72_n256.csv        |
+
+*** DONE Nodes
+    CLOSED: [2018-03-18 Sun 15:47] SCHEDULED: <2018-03-17 Sat>
+
+ The =dot= software provides many ways to control how nodes are displayed.
+
+**** Shapes
+ Node shapes can be set individually, or they can be assigned by =hm= based on
+ the value of a classifier.  The names of the shapes are taken from the [[https://graphviz.gitlab.io/_pages/doc/info/shapes.html][=dot= software]].
+
+ Here is an example of node shapes set individually in the configuration file.
+ #+BEGIN_EXAMPLE
+ [Graphviz sequence reachability node shapes]
+ origin = box
+ reachable = triangle
+ not-reachable = oval
+ #+END_EXAMPLE
+
+ In situations where it is not possible to specify node shapes individually, the
+ =hm= software uses a lookup table to map a classifier to a node shape.  The
+ lookup table can be displayed with the following function call.
+
+ #+name: show-node-shape
+ #+header: :exports both :results output :wrap example
+ #+BEGIN_SRC lisp
+ (show-map :node-shape)
+ #+END_SRC
+
+ #+RESULTS: show-node-shape
+ #+BEGIN_example
+ 0 --> box
+ 1 --> trapezium
+ 2 --> ellipse
+ 3 --> egg
+ 4 --> triangle
+ 5 --> diamond
+ 6 --> oval
+ 7 --> circle
+ 8 --> house
+ 9 --> pentagon
+ 10 --> parallelogram
+ 11 --> square
+ 12 --> star
+ 13 --> hexagon
+ 14 --> septagon
+ 15 --> octagon
+ 16 --> doublecircle
+ 17 --> doubleoctagon
+ 18 --> tripleoctagon
+ 19 --> invtriangle
+ 20 --> invtrapezium
+ 21 --> invhouse
+ 22 --> Mdiamond
+ 23 --> Msquare
+ 24 --> Mcircle
+ 25 --> lpromoter
+ 26 --> larrow
+ 27 --> underline
+ 28 --> note
+ 29 --> tab
+ 30 --> folder
+ 31 --> box3d
+ 32 --> component
+ 33 --> cds
+ 34 --> signature
+ 35 --> rpromoter
+ 36 --> rarrow
+ #+END_example
+
+
+**** Polygons
+ Polygons offer another way to classify node shapes.  Instead of working with a
+ fixed number of shapes, polygons can take on almost any shape, varying
+ continuously along dimensions defined by =skew=, =sides=, =distortion=, and
+ =orientation=.  It is even possible to associate images with polygons.
+
+ In theory, the various dimensions of a polygon might be associated with
+ different classifiers, with each combination of classifier values yielding its
+ own distinct polygon.  The key here is, of course, the term "distinct".  At some
+ point, complexity in the underlying data defeats the graphical purpose, yielding
+ a complex graphic that defies interpretation.
+
+ Figure [[fig-12-polygon]] shows an example of polygons in use, which builds on the classification
+ of Harris' Figure 12 by periods (see fig. [[fig-12-periods]]).
+
+ #+name: fig-12-polygon
+ #+caption: Stratigraphic DAG for the information on Figure [[fig-12-section]] and periodized according to Figure [[fig-12-periods]].
+ #+caption: Note that the number of node sides and node fill color both reflect the periods classification.
+ [[file:/fig-12-polygon-1.png][file:/fig-12-polygon-1-small.png]]
+
+ Figure [[fig-12-polygon]] can be produced on a Linux system with the following
+ function call:
+
+ #+BEGIN_SRC lisp
+ (run-project/example :fig-12-polygon)
+ #+END_SRC
+
+ Polygons require a bit of set up in the configuration file.  The =node-shape-by=
+ option must be empty, =node-shape= must be set to =polygon=, and one of the
+ =node-polygon-*-by= attributes must be set to an appropriate classifier.
+
+ The configuration file for Figure [[fig-12-polygon]] illustrates these points.  The
+ options =polygon-sides-min= and =polygon-sides-max= set boundaries for the
+ allowable number of sides, while =polygon-sides= sets the shape of the base
+ polygon.  So, in Figure [[fig-12-polygon]] the latest period is shown as a rectangle
+ and each preceding period adds another side to the polygon.
+
+ #+BEGIN_EXAMPLE
+ [Graphviz sequence classification]
+ node-fillcolor-by = periods
+ node-fontcolor-by =
+ node-shape-by =
+ node-color-by =
+ node-penwidth-by =
+ node-style-by =
+ node-polygon-distortion-by =
+ node-polygon-image-by =
+ node-polygon-orientation-by =
+ node-polygon-sides-by = periods
+ ...
+
+ [Graphviz sequence node attributes]
+ shape = polygon
+ ...
+ polygon-sides = 4
+ polygon-sides-min = 3
+ polygon-sides-max = 16
+ #+END_EXAMPLE
+
+**** Styles
+ Node styles can be set individually, or they can be assigned by =hm= based on
+ the value of a classifier.  The names of the styles are taken from the [[https://graphviz.gitlab.io/_pages/doc/info/attrs.html#k:style][=dot=
+ software]].  Note that some styles have to do with the node outline and others
+ have to do with the node fill.  It is possible to set an option to two values,
+ one to control the node outline and the other to control the node fill.
+
+ Here is an example of node styles set individually in the configuration file.
+ In each case, the first value controls the node outline and the second value
+ controls the node fill.
+
+ #+BEGIN_EXAMPLE
+ [Graphviz sequence reachability node styles]
+ origin = solid,filled
+ reachable = dashed,filled
+ not-reachable = dotted,filled
+ #+END_EXAMPLE
+
+ In situations where it is not possible to specify the node styles individually,
+ the =hm= software uses a lookup table to map a classifier to a node style.  The
+ lookup table can be displayed with the following function call.
+
+ #+name: show-node-style
+ #+header: :exports both :results output :wrap example
+ #+BEGIN_SRC lisp
+ (show-map :node-style)
+ #+END_SRC
+
+ #+RESULTS: show-node-style
+ #+BEGIN_example
+ 0 --> solid
+ 1 --> dashed
+ 2 --> dotted
+ 3 --> bold
+ 4 --> rounded
+ 5 --> diagonals
+ 6 --> filled
+ 7 --> striped
+ 8 --> wedged
+ #+END_example
+
+*** DONE Arcs
+    CLOSED: [2018-03-18 Sun 16:12] SCHEDULED: <2018-03-17 Sat>
+ The =dot= software provides several arc (or edge) styles and a wide range of
+ arrowheads.
+**** Styles
+
+ The edge styles recognized by the =hm= software can be shown with the following
+ function call.  In each case, the name used by =hm= matches the [[https://graphviz.gitlab.io/_pages/doc/info/attrs.html#k:style][name used by =dot=]].
+
+ #+name: show-arc-styles
+ #+header: :results output :exports both :wrap example
+ #+BEGIN_SRC lisp
+ (show-map :edge-style)
+ #+END_SRC
+
+ #+RESULTS: show-arc-styles
+ #+BEGIN_example
+ 0 --> solid
+ 1 --> dashed
+ 2 --> dotted
+ 3 --> bold
+ #+END_example
+
+**** Arrowheads
+
+ The arrowhead styles recognized by the =hm= software can be shown with the
+ following function call.  In each case, the name used by =hm= matches the [[https://graphviz.gitlab.io/_pages/doc/info/arrows.html][name
+ used by =dot=]].
+
+ #+name: show-arrowheads
+ #+header: :results output :exports both :wrap example
+ #+BEGIN_SRC lisp
+ (show-map :arrow-shape)
+ #+END_SRC
+
+ #+RESULTS: show-arrowheads
+ #+BEGIN_example
+ 0 --> none
+ 1 --> box
+ 2 --> lbox
+ 3 --> rbox
+ 4 --> obox
+ 5 --> olbox
+ 6 --> orbox
+ 7 --> crow
+ 8 --> lcrow
+ 9 --> rcrow
+ 10 --> diamond
+ 11 --> ldiamond
+ 12 --> rdiamond
+ 13 --> odiamond
+ 14 --> oldiamond
+ 15 --> ordiamond
+ 16 --> dot
+ 17 --> odot
+ 18 --> inv
+ 19 --> linv
+ 20 --> rinv
+ 21 --> oinv
+ 22 --> olinv
+ 23 --> orinv
+ 24 --> normal
+ 25 --> lnormal
+ 26 --> rnormal
+ 27 --> onormal
+ 28 --> olnormal
+ 29 --> ornormal
+ 30 --> tee
+ 31 --> ltee
+ 32 --> rtee
+ 33 --> vee
+ 34 --> lvee
+ 35 --> rvee
+ 36 --> curve
+ 37 --> lcurve
+ 38 --> rcurve
+ 39 --> icurve
+ 40 --> licurve
+ 41 --> ricurve
+ #+END_example
+
+* Configuration
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: configuration-file
+  :END:
+** DONE Configuration File
+   CLOSED: [2018-03-18 Sun 16:12]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 120
+   :END:
+
+  The =hm= configuration file conforms to the [[https://en.wikipedia.org/wiki/INI_file][informal =.ini= file standard for
+  configuration software]], which specifies a structure composed of sections,
+  options, and values.
+
+  Here are the sections in an =hm= configuration file listed in alphabetical order.
+
+  #+name: configuration-sections
+  #+header: :results output :exports both :wrap example :eval never
+  #+BEGIN_SRC lisp
+    (use-package :hm)
+    (defparameter *seq* (run-project/example :roskams-h :draw-sequence nil))
+    (format t "~%Sections:~%")
+    (show-configuration-sections *seq*)
+  #+END_SRC
+
+  #+RESULTS: configuration-sections
+  #+BEGIN_example
+  Read one initialization file: <path-to>/quicklisp/local-projects/harris-matrix/examples/roskams-h/roskams-h.ini.
+  Reading table from roskams-h-contexts.csv.
+  Nodes added to the sequence graph.
+  Reading table from roskams-h-observations.csv.
+  Arcs added to the sequence graph.
+  Chronology graph off.
+  Creating units classification.
+  Archaeological sequence configured.
+
+  Sections:
+  General configuration
+  Graph analysis configuration
+  Graphviz chronology edge attributes
+  Graphviz chronology graph attributes
+  Graphviz chronology node attributes
+  Graphviz legend node attributes
+  Graphviz sequence adjacent edge arrowhead
+  Graphviz sequence adjacent edge colors
+  Graphviz sequence adjacent edge fontcolor
+  Graphviz sequence adjacent edge fontsize
+  Graphviz sequence adjacent edge penwidths
+  Graphviz sequence adjacent edge styles
+  Graphviz sequence adjacent node colors
+  Graphviz sequence adjacent node fillcolors
+  Graphviz sequence adjacent node fontcolors
+  Graphviz sequence adjacent node penwidths
+  Graphviz sequence adjacent node polygon distortion
+  Graphviz sequence adjacent node polygon image
+  Graphviz sequence adjacent node polygon orientation
+  Graphviz sequence adjacent node polygon sides
+  Graphviz sequence adjacent node polygon skew
+  Graphviz sequence adjacent node shapes
+  Graphviz sequence adjacent node styles
+  Graphviz sequence classification
+  Graphviz sequence edge attributes
+  Graphviz sequence edge color schemes
+  Graphviz sequence edge font color schemes
+  Graphviz sequence graph attributes
+  Graphviz sequence node attributes
+  Graphviz sequence node color schemes
+  Graphviz sequence node fill color schemes
+  Graphviz sequence node font color schemes
+  Graphviz sequence reachability edge arrowhead
+  Graphviz sequence reachability edge colors
+  Graphviz sequence reachability edge fontcolors
+  Graphviz sequence reachability edge fontsize
+  Graphviz sequence reachability edge penwidths
+  Graphviz sequence reachability edge styles
+  Graphviz sequence reachability node colors
+  Graphviz sequence reachability node fillcolors
+  Graphviz sequence reachability node fontcolors
+  Graphviz sequence reachability node penwidths
+  Graphviz sequence reachability node polygon distortion
+  Graphviz sequence reachability node polygon image
+  Graphviz sequence reachability node polygon orientation
+  Graphviz sequence reachability node polygon sides
+  Graphviz sequence reachability node polygon skew
+  Graphviz sequence reachability node shapes
+  Graphviz sequence reachability node styles
+  Graphviz sequence unit edge arrowhead
+  Graphviz sequence unit edge color
+  Graphviz sequence unit edge fontcolor
+  Graphviz sequence unit edge fontsize
+  Graphviz sequence unit edge penwidth
+  Graphviz sequence unit edge style
+  Graphviz sequence unit node color
+  Graphviz sequence unit node fillcolor
+  Graphviz sequence unit node fontcolor
+  Graphviz sequence unit node penwidth
+  Graphviz sequence unit node polygon distortion
+  Graphviz sequence unit node polygon image
+  Graphviz sequence unit node polygon orientation
+  Graphviz sequence unit node polygon sides
+  Graphviz sequence unit node polygon skew
+  Graphviz sequence unit node shape
+  Graphviz sequence unit node style
+  Input file headers
+  Input files
+  Output file headers
+  Output files
+  #+END_example
+
+ Each section typically includes several options, as shown in the =General
+ configuration= section, below.  Here, you can see that string values, such as
+ =project-directory= are not quoted.  Boolean options recognize several pairs of
+ terms: =on/off=, =yes/no=, =true/false=, or =1/0=.
+
+ #+BEGIN_EXAMPLE
+ [General configuration]
+ chronology-graph-draw = off
+ project-directory = ~/quicklisp/local-projects/harris-matrix/examples/fig-12-chronology/
+ legend = off
+ assume-correlations = yes
+ fast-matrix = on
+ #+END_EXAMPLE
+
+ Another example, the =Graphviz sequence graph attributes=, below, illustrates
+ strings, integers, and real numbers. In this example, the =fontsize= and
+ =margin= options take a real number(s), and the =fontsize-subscript= is set to
+ an integer. Options left blank specify that the =dot= software should use a
+ default value.
+
+ #+BEGIN_EXAMPLE
+ [Graphviz sequence graph attributes]
+ colorscheme = x11
+ bgcolor = white
+ fontname = Helvetica
+ fontsize = 14.0
+ fontcolor = black
+ label = Harris Figure 12 (with periods)
+ labelloc = t
+ style = filled
+ size =
+ ratio =
+ page =
+ dpi =
+ margin = 0.5,0.5
+ fontsize-subscript = 10
+ splines = ortho
+ url = http://tsdye.github.io/harris-matrix/
+ #+END_EXAMPLE
+
+* Files
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: data-tables
+  :END:
+** Data Tables
+   :PROPERTIES:
+   :CUSTOM_ID: data-tables
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 140
+   :END:
+
+ There are seven data tables potentially used as input to =hm=.  A project
+ requires a table for units of stratification and for observed stratigraphic
+ relations, but the other five tables are optional.
+
+*** Units of Stratification, or Contexts
+    :PROPERTIES:
+    :CUSTOM_ID: units-of-stratification
+    :END:
+
+ This input file describes units of stratification, or contexts, identified by the
+ archaeologist.
+
+  - label :: context identifier (primary key)
+  - unit-type :: one of =interface= or =deposit=
+  - position ::  one of =surface=, =basal=, or =other=
+  - period :: period identifier (foreign key)
+  - phase :: phase identifier (foreign key)
+  - url :: node link (svg output only)
+
+ The file =roskams-h-contexts.csv= is an example.  As this example shows, columns
+ may be empty, as the =period=, =phase=, and =url= columns are in this example.
+ Note however that each line of the file has five commas so the =hm= software can
+ determine that there are indeed six columns in the table.
+
+ #+BEGIN_EXAMPLE
+ label,unit-type,position,period,phase,url
+ 1,deposit,surface,,,
+ 2,deposit,surface,,,
+ 3,deposit,other,,,
+ 4,deposit,other,,,
+ 5,deposit,basal,,,
+ #+END_EXAMPLE
+
+*** Observed Stratigraphic Relations
+    :PROPERTIES:
+    :CUSTOM_ID: observed-stratigraphic-relations
+    :END:
+
+ This table includes observations of stratigraphic superposition. Its
+ first two columns refer to values from the =label= column of the
+ contexts table.
+
+  - younger :: stratigraphically superior context label (foreign key)
+  - older :: stratigraphically inferior context label (foreign key)
+  - url :: arc link (svg output only)
+
+ The file =roskams-h-observations.csv= is an example.  Note that the third column
+ is empty save for the column head, =url=.
+
+ #+BEGIN_EXAMPLE
+ younger,older,url
+ 1,3,
+ 1,4,
+ 1,5,
+ 2,3,
+ 2,5,
+ 3,5,
+ 4,5,
+ #+END_EXAMPLE
+
+*** Inferences of once-whole contexts
+    :PROPERTIES:
+    :CUSTOM_ID: inferred-parity-relations
+    :END:
+
+ This table contains inferences of parity between pairs of discontiguous
+ contexts.
+
+  - first :: context label (foreign key)
+  - second :: context label (foreign key)
+
+ The file =inference-eg.csv= in the =fig-12-chronology= example is shown below.
+
+ #+BEGIN_EXAMPLE
+ first,second
+ 7,8
+ 15,16
+ 11,14
+ #+END_EXAMPLE
+
+*** Periods
+    :PROPERTIES:
+    :CUSTOM_ID: periods
+    :END:
+
+  This table describes periods, which are groups of interfacial contexts
+  believed to have been in use at the same time.
+
+  - id :: a unique integer to identify the period (primary key)
+  - label :: name of the period used in the legend
+  - attribute :: zero-based integer scale for a
+    [[http://www.graphviz.org/doc/info/colors.html#brewer][Brewer color]]
+  - description :: optional field not used by =hm=
+
+ An example is the file =bldg-1-5-periods.csv=.
+
+ #+header: :exports results :results raw :wrap example
+ #+BEGIN_SRC sh
+ head ~/quicklisp/local-projects/harris-matrix/examples/bldg-1-5/bldg-1-5-periods.csv
+ #+END_SRC
+
+ #+RESULTS:
+ #+BEGIN_example
+ id,label,attribute,description
+ 1,Building 1,5,
+ 2,Outside,6,
+ 3,Building 5,7,
+ #+END_example
+
+*** Phases
+    :PROPERTIES:
+    :CUSTOM_ID: phases
+    :END:
+
+  This table describes phases, which are groups of depositional contexts
+  believed to have been deposited pene-contemporaneously, typically
+  because they share diagnostic artifactual content.
+
+  - id :: a unique integer to identify the phase (primary key)
+  - label :: name of the phase used in the legend
+  - color :: zero-based integer scale for a
+    [[http://www.graphviz.org/doc/info/colors.html#brewer][Brewer color]]
+  - description :: optional field not used by =hm=
+
+ The file =phases-eg.csv= is shown below.  As this file indicates, the =hm=
+ software does not pay attention to the column headers, which you are free to
+ label in any pleasing way.
+
+ #+BEGIN_EXAMPLE
+ id,label,attribute,url
+ 1,Phase I,5,http://www.tsdye.com
+ 2,Phase II,6,http://www.tsdye.com
+ #+END_EXAMPLE
+
+*** Events
+    :PROPERTIES:
+    :CUSTOM_ID: events
+    :END:
+
+  This table associates events and contexts and specifies the nature of
+  the association using terms introduced to archaeology by Jeffrey S. Dean in an
+  essay entitled "Independent dating in archaeological analysis" published in
+  /Advances in Archaeological Method and Theory/ in 1978.
+
+  - theta :: unique label (primary key)
+  - context :: context identifier (foreign key)
+  - lab :: dating laboratory identifier
+  - association :: one of =disjunct=, =direct=, =disparate=
+
+ An example is the file =bldg-1-5-dates.csv=.  As this example shows, the =hm=
+ software does not care if you add extra columns to the table.  The software
+ works with columns by position, so do not be tempted to switch columns around.
+
+ #+header: :exports results :results raw :wrap example
+ #+BEGIN_SRC sh
+ head ~/quicklisp/local-projects/harris-matrix/examples/bldg-1-5/bldg-1-5-dates.csv
+ #+END_SRC
+
+ #+RESULTS:
+ #+BEGIN_example
+ theta,context,lab,association,original context
+ 1,3810+,OxA-11046,disjunct,3810
+ 8,1297+,OxA-11045,disjunct,3036
+ 10,3030+,OxA-11044,disjunct,3030
+ 5,2165+,PL-972424A,disjunct,2198
+ 4,2165+,PL-980558A,disjunct,2181
+ 2,2165+,OxA-11043,disjunct,2166
+ 3,2165+,OxA-11042,disjunct,2165
+ 28,1951+,OxA-16800,associated,1960
+ 27,1940+,OxA-16799,associated,1959
+ #+END_example
+
+*** Event Order
+    :PROPERTIES:
+    :CUSTOM_ID: event-order
+    :END:
+
+  This optional table contains information on the temporal order of events
+  from the same context.
+
+  - older :: theta label of older event (foreign key)
+  - younger :: theta label of younger event (foreign key)
+
+ The example file =date-order.csv= is shown below.
+
+ #+BEGIN_EXAMPLE
+ older,younger
+ 3,4
+ #+END_EXAMPLE
+
+* Description
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: technical-description
+  :END:
+** Technical Description
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: index
+   :EXPORT_HUGO_WEIGHT: 160
+   :END:
+
+#+INCLUDE: "./hm-clod.org" :lines "20-" :minlevel 3
+
+
+*** Testing                                                        :noexport:
+
+ The =hm= package comes with a test suite that was useful during development. The
+ test suite is based on the [[https://common-lisp.net/project/stefil/index-old.shtml][stefil]] package and was developed using SBCL on Mac OS
+ X.
+
+ If you'd like to see if your installation passes some tests, then follow these
+ instructions.
+
+ #+name: tests
+ #+header: :exports code
+ #+BEGIN_SRC lisp
+ (ql-quickload :hm-test)
+ (use-package :hm-test)
+ (test)
+ #+END_SRC
+
+ If the tests run, then you should see a progress indicator in your Lisp
+ environment. Several graphs will be produced as =pdf= files and opened, and one
+ graph should open in a web browser.
+
+*** Generate technical description                                 :noexport:
+
+ #+name: generate-technical-description
+ #+header: :eval never
+ #+BEGIN_SRC lisp
+   (ql:quickload "hm")
+   (ql:quickload "clod")
+   (in-package :hm)
+   (clod:document-package
+    :hm "~/quicklisp/local-projects/harris-matrix/doc/hm-clod.org"
+    :internal-symbols? nil)
+ #+END_SRC
+
+*** Configuration                                                  :noexport:
+
+**** Source Code
+***** Eric Schulte's filter for HTML small caps
+
+ #+name: es-small-caps
+ #+header: :results silent
+ #+begin_src emacs-lisp
+ ;;; "sc" links for the \sc{} latex command
+ (defun org-export-html-small-caps (string backend channel)
+   (when (org-export-derived-backend-p backend 'html)
+     (let ((rx "{\\\\sc ")
+           (fmt "<span style=\"font-variant:small-caps;\">%s</span>"))
+       (with-temp-buffer
+         (insert string)
+         (goto-char (point-min))
+         (while (re-search-forward rx nil t)
+           (let* ((start (match-beginning 0))
+                  (end (progn (goto-char start)
+                              (forward-sexp)
+                              (point)))
+                  (content (buffer-substring (+ start 5) (- end 1))))
+             (delete-region start end)
+             (goto-char start)
+             (insert (format fmt content))))
+         (buffer-string)))))
+
+ (add-to-list 'org-export-filter-final-output-functions
+              'org-export-html-small-caps)
+
+ (defun org-export-latex-sc (tree backend info)
+   "Handle sc: links for latex export."
+   (org-element-map tree 'link
+     (lambda (object)
+       (when (equal (org-element-property :type object) "sc")
+         (org-element-insert-before
+          (cond
+           ((org-export-derived-backend-p backend 'latex)
+            (list 'latex-fragment
+                  (list :value (format "\\textsc{%s}"
+                                       (org-element-property :path object))
+                        :post-blank (org-element-property
+                                     :post-blank object))))
+           ((org-export-derived-backend-p backend 'html)
+            (list 'export-snippet
+                  (list :back-end "html"
+                        :value
+                        (format "<span class=\"sc\">%s</span>"
+                                (org-element-property :path object))
+                        :post-blank
+                        (org-element-property :post-blank object))))
+           (:otherwise
+            (error "unsupported backend for `org-export-latex-sc'")))
+          object)
+         (org-element-extract-element object))))
+   tree)
+
+ (org-add-link-type "sc")
+
+ (add-hook 'org-export-filter-parse-tree-functions
+           'org-export-latex-sc)
+
+ #+end_src
+
+
+
+**** Local Variables
+ # Local Variables:
+ # eval: (org-sbe "es-small-caps")
+ # End:

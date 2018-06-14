@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HM</title>
+    <link>http://www.tsdye.online/harris-matrix/</link>
+    <description>Recent content on HM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jun 2018 08:43:21 -1000</lastBuildDate>
+    
+	<atom:link href="http://www.tsdye.online/harris-matrix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HM software</title>
+      <link>http://www.tsdye.online/harris-matrix/homepage/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:21 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/homepage/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>The hm Package</title>
+      <link>http://www.tsdye.online/harris-matrix/hm-package/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:21 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/hm-package/</guid>
+      <description>The hm package is an open-source Common Lisp package for investigating the chronological structure of archaeological stratigraphy.
+With hm you can:
+ represent the Harris matrix as a stratigraphic acyclic directed graph (DAG) as described by Dye and Buck (2015) investigate and analyze the structure of the Harris matrix using graph theoretic functions and characteristics of the archaeological data generate a chronological DAG that can guide data input for Bayesian calibration software such as BCal, OxCal, or Chronomodel create a graphic visualization of a stratigraphic DAG or a chronological DAG in any one of the graphics formats supported by the open-source Graphviz dot software  A central organizing principle of the hm software is the self-contained project.</description>
+    </item>
+    
+    <item>
+      <title>Software Requirements and Installation</title>
+      <link>http://www.tsdye.online/harris-matrix/requirements/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:22 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/requirements/</guid>
+      <description>The hm package is open-source Common Lisp software that should run on the free, open-source implementations offered by SBCL or Clozure CL. A working installation of one of these implementations is required by hm.
+The hm package uses Graphviz dot for graph visualization and graphics output. A working installation of Graphviz dot software is required by hm.
+The hm package is distributed from a git version control software repository. A working installation of git software is required.</description>
+    </item>
+    
+    <item>
+      <title>Example Projects</title>
+      <link>http://www.tsdye.online/harris-matrix/example-projects/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:22 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/example-projects/</guid>
+      <description>The hm software comes with example projects to illustrate some of its capabilities. You can find these in &amp;lt;path-to&amp;gt;/quicklisp/local-projects/harris-matrix/examples/. Each of the projects includes the necessary input and configuration files, which can be used as examples for your own work.
+Harris&amp;rsquo; Figure 12 &amp;ldquo;The compilation of a stratigraphic sequence&amp;rdquo; is the iconic representation of how one goes about constructing a Harris matrix by identifying contexts and observing their relationships to one another.</description>
+    </item>
+    
+    <item>
+      <title>Classifiers</title>
+      <link>http://www.tsdye.online/harris-matrix/classifiers/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:24 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/classifiers/</guid>
+      <description>This section provides definitions for the various classifiers used by the hm software and shows how to save a classification to a comma-separated-value text file. There are two kinds of classifiers: archaeological classifiers that reflect observations and inferences made by an archaeologist familiar with the stratigraphic situation represented by the sequence diagram; and graph theoretical classifiers that take advantage of the DAG representation to deduce structural relations that might prove useful to the archaeologist tasked with interpreting the sequence diagram.</description>
+    </item>
+    
+    <item>
+      <title>Classifiable Graph Attributes</title>
+      <link>http://www.tsdye.online/harris-matrix/graph-attributes/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:24 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/graph-attributes/</guid>
+      <description>The hm software is able to apply each of the classifiers to each of the 17 classifiable graph attributes listed below. The attributes vary by their visual saliency and by the number of states they are able to express. Fill color, color, and shape (including the polygon attributes) are most salient for nodes, followed by font color, pen width, and style. Color, style, and arrowhead are most salient for edges, followed by font size, font color, and pen width.</description>
+    </item>
+    
+    <item>
+      <title>Configuration File</title>
+      <link>http://www.tsdye.online/harris-matrix/configuration-file/</link>
+      <pubDate>Sun, 18 Mar 2018 16:12:00 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/configuration-file/</guid>
+      <description>The hm configuration file conforms to the informal .ini file standard for configuration software, which specifies a structure composed of sections, options, and values.
+Here are the sections in an hm configuration file listed in alphabetical order.
+
+(use-package :hm) (defparameter *seq* (run-project/example :roskams-h :draw-sequence nil)) (format t &amp;quot;~%Sections:~%&amp;quot;) (show-configuration-sections *seq*)  Read one initialization file: &amp;lt;path-to&amp;gt;/quicklisp/local-projects/harris-matrix/examples/roskams-h/roskams-h.ini. Reading table from roskams-h-contexts.csv. Nodes added to the sequence graph. Reading table from roskams-h-observations.</description>
+    </item>
+    
+    <item>
+      <title>Data Tables</title>
+      <link>http://www.tsdye.online/harris-matrix/data-tables/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:25 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/data-tables/</guid>
+      <description>There are seven data tables potentially used as input to hm. A project requires a table for units of stratification and for observed stratigraphic relations, but the other five tables are optional.
+Units of Stratification, or Contexts This input file describes units of stratification, or contexts, identified by the archaeologist.
+ label context identifier (primary key) unit-type one of interface or deposit position one of surface, basal, or other period period identifier (foreign key) phase phase identifier (foreign key) url node link (svg output only)  The file roskams-h-contexts.</description>
+    </item>
+    
+    <item>
+      <title>Technical Description</title>
+      <link>http://www.tsdye.online/harris-matrix/technical-description/</link>
+      <pubDate>Sun, 10 Jun 2018 08:43:26 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/harris-matrix/technical-description/</guid>
+      <description>External Symbols External Functions  
+ External Function: array-fas :function:
+ Syntax
+(array-fas graph &amp;amp;optional (verbose t))  Description
+Estimate the feedback arc set of GRAPH using the method of Eades et al. 1993.
+ 
+  External Function: read-configuration-from-files :function:
+ Syntax
+(read-configuration-from-files verbose &amp;amp;rest file-names)  Arguments
+verbose
+ Boolean. file-names One or more strings or pathnames.  Returns
+A configuration.
+ Description
+Reads the initialization files FILE-NAMES and returns a configuration.</description>
+    </item>
+    
+  </channel>
+</rss>

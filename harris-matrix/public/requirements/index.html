@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Software Requirements and Installation - HM</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+
+    
+    <meta name="description" content="Sequence diagrams for archaeology">
+    
+    <link rel="canonical" href="http://www.tsdye.online/harris-matrix/requirements/">
+    
+    <meta name="author" content="Thomas S. Dye">
+    
+
+    <meta property="og:url" content="http://www.tsdye.online/harris-matrix/requirements/">
+    <meta property="og:title" content="HM">
+    <meta property="og:image" content="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+    <meta name="apple-mobile-web-app-title" content="HM">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot');
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.woff')
+               format('woff'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.ttf')
+               format('truetype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/application.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-blue-grey palette-accent-amber">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Software Requirements and Installation
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/tsdye" title="@tsdye on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/tsdye/harris-matrix" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>HM <span class="version">0.3.0</span></strong>
+        
+          <br>
+          tsdye/harris-matrix
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/tsdye/harris-matrix/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/tsdye/harris-matrix/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Home" href="http://www.tsdye.online/harris-matrix/homepage/">
+	
+	Home
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="The hm package" href="http://www.tsdye.online/harris-matrix/hm-package/">
+	
+	The hm package
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Requirements" href="http://www.tsdye.online/harris-matrix/requirements/">
+	
+	Requirements
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Example projects" href="http://www.tsdye.online/harris-matrix/example-projects/">
+	
+	Example projects
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Classifiers" href="http://www.tsdye.online/harris-matrix/classifiers/">
+	
+	Classifiers
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Graph attributes" href="http://www.tsdye.online/harris-matrix/graph-attributes/">
+	
+	Graph attributes
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Configuration file" href="http://www.tsdye.online/harris-matrix/configuration-file/">
+	
+	Configuration file
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Data tables" href="http://www.tsdye.online/harris-matrix/data-tables/">
+	
+	Data tables
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Technical description" href="http://www.tsdye.online/harris-matrix/technical-description/">
+	
+	Technical description
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/tsdye" target="_blank" title="@tsdye on GitHub">
+              @tsdye on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:tsd@tsdye.com" title="Email of tsd@tsdye.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Software Requirements and Installation </h1>
+
+			
+
+<p>The <code>hm</code> package is open-source Common Lisp software that should run on the
+free, open-source implementations offered by <a href="http://www.sbcl.org/">SBCL</a> or <a href="http://ccl.clozure.com/">Clozure CL</a>. A working
+installation of one of these implementations is required by <code>hm</code>.</p>
+
+<p>The <code>hm</code> package uses <a href="https://graphviz.gitlab.io/">Graphviz <code>dot</code></a> for graph visualization and graphics output.
+A working installation of <a href="https://graphviz.gitlab.io/download/">Graphviz <code>dot</code></a> software is required by <code>hm</code>.</p>
+
+<p>The <code>hm</code> package is distributed from a <code>git</code> version control software
+repository.  A working installation of <a href="https://git-scm.com/"><code>git</code> software</a> is required.</p>
+
+<p>The <a href="https://www.quicklisp.org/beta/">Quicklisp library manager</a> for Common Lisp is strongly recommended. The
+instructions in this manual assume a working installation of <a href="https://www.quicklisp.org/beta/">Quicklisp</a>.</p>
+
+<p>An <code>hm</code> project is configured with an <code>.ini</code> format text file. A plain text
+editor, rather than a word processor, is recommended for working with <code>.ini</code>
+format files.</p>
+
+<p>The <code>hm</code> software was developed using the <a href="https://common-lisp.net/project/slime/">Superior Lisp Interaction Mode</a> for the
+<a href="https://www.gnu.org/software/emacs/">Emacs</a> text editor.</p>
+
+<h2 id="install">Install <code>hm</code></h2>
+
+<p>Installation with <a href="http://www.quicklisp.org">Quicklisp</a> is recommended. It automatically installs the other
+Common Lisp packages upon which <code>hm</code> depends, and their dependencies, etc.</p>
+
+<p>The following example assumes that <a href="http://www.quicklisp.org">Quicklisp</a> is installed on your computer.
+These instructions will clone the <code>hm</code> package in the <code>local-projects/harris-matrix/</code>
+subdirectory of your quicklisp installation.</p>
+
+<p><a id="org48f1cc3"></a></p>
+
+<pre><code class="language-sh">cd &lt;path-to&gt;/quicklisp/local-projects/
+
+git clone https://github.com/tsdye/harris-matrix.git
+</code></pre>
+
+<p>The <code>hm</code> software is released under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License</a>, Version 3, a
+free, copyleft license for software and other kinds of works.</p>
+
+<h2 id="load">Load <code>hm</code></h2>
+
+<p>A typical session with <code>hm</code> starts by using Quicklisp to load the software.</p>
+
+<p><a id="orgac74898"></a></p>
+
+<pre><code class="language-lisp">(ql:quickload &quot;hm&quot;)
+</code></pre>
+
+<p>Note that the output from your Common Lisp implementation might differ, and that
+you might see additional output depending on the state of your Common Lisp
+environment.</p>
+
+<pre><code class="language-text">To load &quot;hm&quot;:
+  Load 1 ASDF system:
+    hm
+; Loading &quot;hm&quot;
+
+</code></pre>
+
+<p>A successful Quicklisp <code>quickload</code> of <code>hm</code> will also install several other
+packages and their dependencies in <code>&lt;path-to&gt;/quicklisp/dists/quicklisp/software/</code>.</p>
+
+<p><a id="org65a4377"></a></p>
+
+<div class="table-caption">
+  <span class="table-number">Table 1:</span>
+  Common Lisp packages upon which <code>hm</code> directly depends
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+<th>License</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://quickdocs.org/graph/">graph</a></td>
+<td>simple graph data structure and algorithms</td>
+<td>GPL V3</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/graph/">graph/matrix</a></td>
+<td>matrix representation of graphs</td>
+<td>GPL V3</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/graph/">graph/dot</a></td>
+<td>serialize graphs to and from <code>dot</code> format</td>
+<td>GPL V3</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/cl-csv/">cl-csv</a></td>
+<td>read and write comma-separated value text files</td>
+<td>BSD</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/fset/">fset</a></td>
+<td>a functional set-theoretic collections library</td>
+<td>LLGPL</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/py-configparser/">py-configparser</a></td>
+<td>Python configparser module implemented in Common Lisp</td>
+<td>MIT</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/cl-colors/">cl-colors</a></td>
+<td>simple color library for Common Lisp</td>
+<td>Boost Software License - Version 1.0</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/fare-memoization/">fare-memoization</a></td>
+<td>memoization library</td>
+<td>MIT</td>
+</tr>
+
+<tr>
+<td><a href="http://quickdocs.org/inferior-shell/">inferior-shell</a></td>
+<td>spawning shell commands and pipes from Common Lisp</td>
+<td>Copyright &copy; 2011-2014 Google, Inc.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="use-the-hm-name-space">Use the <code>hm</code> name space</h2>
+
+<p>Move into the <code>hm</code> name space for easy access to <code>hm</code> functions.</p>
+
+<p><a id="orgd082800"></a></p>
+
+<pre><code class="language-lisp">(use-package :hm)
+</code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the GNU General Public License v3.0 &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://www.tsdye.online/harris-matrix/hm-package/" title="The hm Package">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              The hm Package
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://www.tsdye.online/harris-matrix/example-projects/" title="Example Projects">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Example Projects
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/www.tsdye.online\/harris-matrix\/';
+      var repo_id  = 'tsdye\/harris-matrix';
+    
+    </script>
+
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

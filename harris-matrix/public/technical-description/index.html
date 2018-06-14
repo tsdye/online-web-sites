@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Technical Description - HM</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+
+    
+    <meta name="description" content="Sequence diagrams for archaeology">
+    
+    <link rel="canonical" href="http://www.tsdye.online/harris-matrix/technical-description/">
+    
+    <meta name="author" content="Thomas S. Dye">
+    
+
+    <meta property="og:url" content="http://www.tsdye.online/harris-matrix/technical-description/">
+    <meta property="og:title" content="HM">
+    <meta property="og:image" content="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+    <meta name="apple-mobile-web-app-title" content="HM">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot');
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.woff')
+               format('woff'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.ttf')
+               format('truetype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/application.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-blue-grey palette-accent-amber">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Technical Description
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/tsdye" title="@tsdye on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/tsdye/harris-matrix" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>HM <span class="version">0.3.0</span></strong>
+        
+          <br>
+          tsdye/harris-matrix
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/tsdye/harris-matrix/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/tsdye/harris-matrix/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Home" href="http://www.tsdye.online/harris-matrix/homepage/">
+	
+	Home
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="The hm package" href="http://www.tsdye.online/harris-matrix/hm-package/">
+	
+	The hm package
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Requirements" href="http://www.tsdye.online/harris-matrix/requirements/">
+	
+	Requirements
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Example projects" href="http://www.tsdye.online/harris-matrix/example-projects/">
+	
+	Example projects
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Classifiers" href="http://www.tsdye.online/harris-matrix/classifiers/">
+	
+	Classifiers
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Graph attributes" href="http://www.tsdye.online/harris-matrix/graph-attributes/">
+	
+	Graph attributes
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Configuration file" href="http://www.tsdye.online/harris-matrix/configuration-file/">
+	
+	Configuration file
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Data tables" href="http://www.tsdye.online/harris-matrix/data-tables/">
+	
+	Data tables
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Technical description" href="http://www.tsdye.online/harris-matrix/technical-description/">
+	
+	Technical description
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/tsdye" target="_blank" title="@tsdye on GitHub">
+              @tsdye on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:tsd@tsdye.com" title="Email of tsd@tsdye.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Technical Description </h1>
+
+			
+
+<h3 id="external-symbols">External Symbols</h3>
+
+<h4 id="external-functions">External Functions</h4>
+
+<hr />
+
+<p><a id="orga3a2fe8"></a>
+<a id="org33bad3a"></a></p>
+
+<ul>
+<li><p>External Function: <code>array-fas</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(array-fas graph &amp;optional (verbose t))
+</code></pre></li>
+
+<li><p>Description</p>
+
+<p>Estimate the feedback arc set of GRAPH using the method of Eades et al. 1993.</p>
+
+<hr />
+
+<p><a id="org2c44d72"></a>
+<a id="org1a56f80"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>read-configuration-from-files</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(read-configuration-from-files verbose &amp;rest file-names)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>verbose</p>
+
+<dl>
+<dd>Boolean.</dd>
+<dt>file-names</dt>
+<dd>One or more strings or pathnames.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>A configuration.</p></li>
+
+<li><p>Description</p>
+
+<p>Reads the initialization files FILE-NAMES and returns a configuration. Errors
+out if one or more initialization files were not read. If VERBOSE is non-nil,
+prints a status message.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(read-configuration-from-files t &quot;my-config.ini&quot;)
+</code></pre>
+
+<hr />
+
+<p><a id="org48451db"></a>
+<a id="org9da1d1d"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>reset-option</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(reset-option seq section-name option-name value)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>seq</p>
+
+<dl>
+<dd>An archaeological sequence.</dd>
+<dt>section-name</dt>
+<dd>A string.</dd>
+<dt>option-name</dt>
+<dd>A string.</dd>
+<dt>value</dt>
+<dd>A string.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects.</p></li>
+
+<li><p>Description</p>
+
+<p>Assign a value, VALUE, to the option, OPTION-NAME, in configurations section,
+SECTION-NAME, in the configuration associated with the archaeological sequence,
+SEQ. Ensures section and option names are not inadvertently created when resetting
+an option.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(reset-option *my-sequence* &quot;General configuration&quot; &quot;chronology-graph-draw&quot; &quot;no&quot;)
+</code></pre>
+
+<hr />
+
+<p><a id="org3b5529b"></a>
+<a id="org0231a8e"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>run-project</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(run-project cfg-file &amp;key (verbose t) (sequence-display png)
+             (chronology-display png) (sequence-cmd xdg-open)
+             (chronology-cmd xdg-open) (draw-sequence t) (draw-chronology t)
+             (delete-sequence nil) (delete-chronology nil))
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>cfg-file</p>
+
+<dl>
+<dd>A string or pathname.</dd>
+<dt>verbose</dt>
+<dd>Boolean.</dd>
+<dt>sequence-display</dt>
+<dd>A string indicating a Graphviz <code>dot</code> output file format.</dd>
+<dt>chronology-display</dt>
+<dd>A string indicating a Graphviz <code>dot</code> output file format.</dd>
+<dt>sequence-cmd</dt>
+<dd>A string naming the application used to open the sequence graph.</dd>
+<dt>chronology-cmd</dt>
+<dd>A string naming the application used to open the chronology graph.</dd>
+<dt>draw-sequence</dt>
+<dd>Boolean.</dd>
+<dt>draw-chronology</dt>
+<dd>Boolean.</dd>
+<dt>delete-sequence</dt>
+<dd>Boolean.  Delete the sequence graph file after it is displayed.</dd>
+<dt>delete-chronology</dt>
+<dd>Boolean. Delete the chronology graph file after it is displayed.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>An archaeological sequence.</p></li>
+
+<li><p>Description</p>
+
+<p>Run the project specified in the user&rsquo;s configuration file, CFG-FILE. If
+DRAW-SEQUENCE is non-nil, then create a sequence graph in the format indicated
+by SEQUENCE-DISPLAY and open the graphics file with the shell command,
+SEQUENCE-CMD. If DELETE-SEQUENCE is non-nil, then delete the graphics file after
+it is displayed. If DRAW-CHRONOLOGY is non-nil, then create a sequence graph in
+the format indicated by CHRONOLOGY-DISPLAY and open the graphics file with the
+shell command, CHRONOLOGY-CMD. If DELETE-CHRONOLOGY is non-nil, then delete the
+graphics file after it is displayed. If VERBOSE is non-nil, then advertise
+progress.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(run-project &quot;my-config.ini&quot; :verbose nil :sequence-cmd &quot;evince&quot;)
+</code></pre>
+
+<hr />
+
+<p><a id="org07c9d3b"></a>
+<a id="org14dfe42"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>run-project/example</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(run-project/example example &amp;key (verbose t) (sequence-display png)
+                     (chronology-display png) (sequence-cmd xdg-open)
+                     (chronology-cmd xdg-open) (draw-sequence t)
+                     (draw-chronology t) (delete-sequence t)
+                     (delete-chronology t))
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>example</p>
+
+<dl>
+<dd>A keyword, one of :catal-hoyuk, :catal-hoyuk-levels, :catal-hoyuk-distance, :roskams-h, :roskams-h-solarized-light, :roskams-h-solarized-dark, :roskams-jumps, :complex-h-structure, :complex-h-structure-reachable, :fig-12, :fig-12-correlations, :fig-12-periods.</dd>
+<dt>verbose</dt>
+<dd>Boolean.</dd>
+<dt>sequence-display</dt>
+<dd>A string indicating a Graphviz <code>dot</code> output file format.</dd>
+<dt>chronology-display</dt>
+<dd>A string indicating a Graphviz <code>dot</code> output file format.</dd>
+<dt>sequence-cmd</dt>
+<dd>A string naming the application used to open the sequence graph.</dd>
+<dt>chronology-cmd</dt>
+<dd>A string naming the application used to open the chronology graph.</dd>
+<dt>draw-sequence</dt>
+<dd>Boolean.</dd>
+<dt>draw-chronology</dt>
+<dd>Boolean.</dd>
+<dt>delete-sequence</dt>
+<dd>Boolean.  Delete the sequence graph file after it is displayed.</dd>
+<dt>delete-chronology</dt>
+<dd>Boolean. Delete the chronology graph file after it is displayed.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>An archaeological sequence.</p></li>
+
+<li><p>Description</p>
+
+<p>Given a keyword, EXAMPLE, that indicates one of the example projects defined
+for the <code>hm</code> package, run the project described by the appropriate <code>.ini</code> file.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(run-project/example :roskams-h :delete-sequence nil)
+</code></pre>
+
+<hr />
+
+<p><a id="orgd500612"></a>
+<a id="orga00af8c"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>set-input-file</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(set-input-file seq option file-name header)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>seq</p>
+
+<dl>
+<dd>An archaeological sequence.</dd>
+<dt>option</dt>
+<dd>A string.</dd>
+<dt>file-name</dt>
+<dd>A string or pathname.</dd>
+<dt>header</dt>
+<dd>Boolean</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects.</p></li>
+
+<li><p>Description</p>
+
+<p>If OPTION is recognized, then FILE-NAME and HEADER are registered with the
+configuration associated with the archaeological sequence, SEQ. HEADER is
+interpreted as a boolean.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(set-input-file &quot;contexts&quot; &quot;roskams-h-contexts.ini&quot; t)
+</code></pre>
+
+<hr />
+
+<p><a id="orgb2fca99"></a>
+<a id="orgc3b3ee8"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>set-output-file</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(set-output-file seq option file-name &amp;optional (verbose t))
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>seq</p>
+
+<dl>
+<dd>An archaeological sequence.</dd>
+<dt>option</dt>
+<dd>A string.</dd>
+<dt>file-name</dt>
+<dd>A string or pathname.</dd>
+<dt>verbose</dt>
+<dd>Boolean.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects.</p></li>
+
+<li><p>Description</p>
+
+<p>Registers the output file, FILE-NAME, with the OPTION in the
+configuration associated with the archaeological sequence, SEQ. Checks if OPTION
+is known and errors out if not. If FILE-NAME exists and VERBOSE is non-nil, then asks
+about overwriting it.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(set-output-file *my-seq* &quot;observations&quot; &quot;my-observations.csv&quot;)
+</code></pre>
+
+<hr />
+
+<p><a id="org3e4db6d"></a>
+<a id="org86c2050"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>show-classifiable-attributes</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(show-classifiable-attributes)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>None.</p></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects.</p></li>
+
+<li><p>Description</p>
+
+<p>Write a list of classifiable attributes to standard output.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(show-classifiable-attributes)
+</code></pre>
+
+<hr />
+
+<p><a id="org38c9449"></a>
+<a id="org533d17f"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>show-classifiers</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(show-classifiers)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>None.</p></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side effects.</p></li>
+
+<li><p>Description</p>
+
+<p>Write a list of classifiers to standard output.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(show-classifiers)
+</code></pre>
+
+<hr />
+
+<p><a id="org0588dff"></a>
+<a id="org2fba9e2"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>show-configuration-options</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(show-configuration-options seq section)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>seq</p>
+
+<dl>
+<dd>An archaeological sequence.</dd>
+<dt>section</dt>
+<dd>A string.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>A list of strings.</p></li>
+
+<li><p>Description</p>
+
+<p>Print the options in section SECTION of configuration associated with
+the archaeological sequence, SEQ. Errors out if the configuration is not valid or
+SECTION isn&rsquo;t found in the configuration.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(show-configuration-options *my-sequence* &quot;General configuration&quot;)
+</code></pre>
+
+<hr />
+
+<p><a id="org213e10a"></a>
+<a id="orga9f6a57"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>show-configuration-sections</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(show-configuration-sections seq &amp;optional (sort t))
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>seq</p>
+
+<dl>
+<dd>An archaeological sequence.</dd>
+<dt>sort</dt>
+<dd>Boolean.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>A list of strings.</p></li>
+
+<li><p>Description</p>
+
+<p>Print out the sections in the configuration associated with the
+archaeological sequence, SE, by default in sorted order. If SORT is nil, then
+print out the unsorted section list. Errors out if the configuration associated
+with SEQ is not valid.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(show-configuration-sections *my-sequence* nil)
+</code></pre>
+
+<hr />
+
+<p><a id="org7a2f90b"></a>
+<a id="orgef7ea19"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>show-map</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(show-map attribute)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>A keyword, ATTRIBUTE, one of :edge-style, :node-style, :node-shape, or :arrow-shape.</p></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects</p></li>
+
+<li><p>Description</p>
+
+<p>Write a lookup map of attributes to standard output.  Raise an error if ATTRIBUTES is out of range.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(show-map :edge-style)
+</code></pre>
+
+<hr />
+
+<p><a id="org75c868e"></a>
+<a id="org3c8e2b5"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>write-classifier</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(write-classifier classifier-type seq &amp;optional (verbose t))
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>classifier-type</p>
+
+<dl>
+<dd>A keyword.</dd>
+<dt>seq</dt>
+<dd>An archaeological sequence.</dd>
+<dt>verbose</dt>
+<dd>Boolean.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects.</p></li>
+
+<li><p>Description</p>
+
+<p>Write the classifier, CLASSIFIER-TYPE, to a file specified in the user&rsquo;s
+configuration stored in the archaeological sequence, SEQ. If verbose, indicate
+that a file was written.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(write-classifier :levels *my-sequence* nil)
+</code></pre>
+
+<hr />
+
+<p><a id="orge341c33"></a>
+<a id="org756bc34"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>write-configuration</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(write-configuration seq file-name)
+</code></pre></li>
+
+<li><p>Arguments</p>
+
+<p>seq</p>
+
+<dl>
+<dd>An archaeological sequence.</dd>
+<dt>file-name</dt>
+<dd>A string or pathname.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects.</p></li>
+
+<li><p>Description</p>
+
+<p>Write configuration associated with the archaeological sequence, SEQ, to the
+file, FILE-NAME, in the project directory associated with SEQ.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(write-configuration *my-sequence* &quot;my-config.ini&quot;)
+</code></pre>
+
+<hr />
+
+<p><a id="org1791a5a"></a>
+<a id="org350ed9e"></a></p></li>
+</ul></li>
+
+<li><p>External Function: <code>write-default-configuration</code>     :function:</p>
+
+<ul>
+<li><p>Syntax</p>
+
+<pre><code class="language-lisp">(write-default-configuration file-name)
+</code></pre></li>
+
+<li><p>Argument</p>
+
+<p>file-name</p>
+
+<dl>
+<dd>A string or pathname.</dd>
+</dl></li>
+
+<li><p>Returns</p>
+
+<p>Nothing.  Called for its side-effects.</p></li>
+
+<li><p>Description</p>
+
+<p>Write the default configuration to the file, FILE-NAME.  Returns an error if
+ the directory part of FILE-NAME cannot be found.</p></li>
+
+<li><p>Example</p>
+
+<pre><code class="language-lisp">(write-default-configuration &lt;path/to/default-config.ini&gt;)
+</code></pre></li>
+</ul></li>
+</ul>
+
+<h3 id="index">Index</h3>
+
+<p><a href="#org5833b1d">A</a>  <a href="#org969f355">R</a>  <a href="#org0b6ee28">S</a>  <a href="#org538fc7d">W</a></p>
+
+<h4 id="a">A</h4>
+
+<p><a id="org5833b1d"></a></p>
+
+<ul>
+<li><a href="#org33bad3a"><code>array-fas</code></a>, Function</li>
+</ul>
+
+<h4 id="r">R</h4>
+
+<p><a id="org969f355"></a></p>
+
+<ul>
+<li><a href="#org1a56f80"><code>read-configuration-from-files</code></a>,
+Function</li>
+<li><a href="#org9da1d1d"><code>reset-option</code></a>, Function</li>
+<li><a href="#org0231a8e"><code>run-project</code></a>, Function</li>
+<li><a href="#org14dfe42"><code>run-project/example</code></a>, Function</li>
+</ul>
+
+<h4 id="s">S</h4>
+
+<p><a id="org0b6ee28"></a></p>
+
+<ul>
+<li><a href="#orga00af8c"><code>set-input-file</code></a>, Function</li>
+<li><a href="#orgc3b3ee8"><code>set-output-file</code></a>, Function</li>
+<li><a href="#org86c2050"><code>show-classifiable-attributes</code></a>,
+Function</li>
+<li><a href="#org533d17f"><code>show-classifiers</code></a>, Function</li>
+<li><a href="#org2fba9e2"><code>show-configuration-options</code></a>,
+Function</li>
+<li><a href="#orga9f6a57"><code>show-configuration-sections</code></a>,
+Function</li>
+<li><a href="#orgef7ea19"><code>show-map</code></a>, Function</li>
+</ul>
+
+<h4 id="w">W</h4>
+
+<p><a id="org538fc7d"></a></p>
+
+<ul>
+<li><a href="#org3c8e2b5"><code>write-classifier</code></a>, Function</li>
+<li><a href="#org756bc34"><code>write-configuration</code></a>, Function</li>
+<li><a href="#org350ed9e"><code>write-default-configuration</code></a>,
+Function</li>
+</ul>
+
+<h2 id="colophon">Colophon</h2>
+
+<p>This section of the documentation was generated from Common Lisp source code using a hacked up copy of CLOD, version 1.0.
+The latest version of CLOD is available <a href="http://bitbucket.org/eeeickythump/clod/">here</a>.</p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the GNU General Public License v3.0 &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://www.tsdye.online/harris-matrix/data-tables/" title="Data Tables">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Data Tables
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/www.tsdye.online\/harris-matrix\/';
+      var repo_id  = 'tsdye\/harris-matrix';
+    
+    </script>
+
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

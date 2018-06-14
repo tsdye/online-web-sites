@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/homepage/</loc>
+    <lastmod>2018-06-10T08:43:21-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/hm-package/</loc>
+    <lastmod>2018-06-10T08:43:21-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/requirements/</loc>
+    <lastmod>2018-06-10T08:43:22-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/example-projects/</loc>
+    <lastmod>2018-06-10T08:43:22-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/classifiers/</loc>
+    <lastmod>2018-06-10T08:43:24-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/graph-attributes/</loc>
+    <lastmod>2018-06-10T08:43:24-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/configuration-file/</loc>
+    <lastmod>2018-06-10T08:43:25-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/data-tables/</loc>
+    <lastmod>2018-06-10T08:43:25-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/technical-description/</loc>
+    <lastmod>2018-06-10T08:43:26-10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/</loc>
+    <lastmod>2018-06-10T08:43:21-10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.tsdye.online/harris-matrix/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

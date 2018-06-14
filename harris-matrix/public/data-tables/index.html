@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Data Tables - HM</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+
+    
+    <meta name="description" content="Sequence diagrams for archaeology">
+    
+    <link rel="canonical" href="http://www.tsdye.online/harris-matrix/data-tables/">
+    
+    <meta name="author" content="Thomas S. Dye">
+    
+
+    <meta property="og:url" content="http://www.tsdye.online/harris-matrix/data-tables/">
+    <meta property="og:title" content="HM">
+    <meta property="og:image" content="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+    <meta name="apple-mobile-web-app-title" content="HM">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot');
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.woff')
+               format('woff'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.ttf')
+               format('truetype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/application.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-blue-grey palette-accent-amber">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Data Tables
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/tsdye" title="@tsdye on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/tsdye/harris-matrix" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>HM <span class="version">0.3.0</span></strong>
+        
+          <br>
+          tsdye/harris-matrix
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/tsdye/harris-matrix/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/tsdye/harris-matrix/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Home" href="http://www.tsdye.online/harris-matrix/homepage/">
+	
+	Home
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="The hm package" href="http://www.tsdye.online/harris-matrix/hm-package/">
+	
+	The hm package
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Requirements" href="http://www.tsdye.online/harris-matrix/requirements/">
+	
+	Requirements
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Example projects" href="http://www.tsdye.online/harris-matrix/example-projects/">
+	
+	Example projects
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Classifiers" href="http://www.tsdye.online/harris-matrix/classifiers/">
+	
+	Classifiers
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Graph attributes" href="http://www.tsdye.online/harris-matrix/graph-attributes/">
+	
+	Graph attributes
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Configuration file" href="http://www.tsdye.online/harris-matrix/configuration-file/">
+	
+	Configuration file
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Data tables" href="http://www.tsdye.online/harris-matrix/data-tables/">
+	
+	Data tables
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Technical description" href="http://www.tsdye.online/harris-matrix/technical-description/">
+	
+	Technical description
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/tsdye" target="_blank" title="@tsdye on GitHub">
+              @tsdye on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:tsd@tsdye.com" title="Email of tsd@tsdye.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Data Tables </h1>
+
+			
+
+<p>There are seven data tables potentially used as input to <code>hm</code>.  A project
+requires a table for units of stratification and for observed stratigraphic
+relations, but the other five tables are optional.</p>
+
+<h2 id="units-of-stratification">Units of Stratification, or Contexts</h2>
+
+<p>This input file describes units of stratification, or contexts, identified by the
+archaeologist.</p>
+
+<dl>
+<dt>label</dt>
+<dd>context identifier (primary key)</dd>
+<dt>unit-type</dt>
+<dd>one of <code>interface</code> or <code>deposit</code></dd>
+<dt>position</dt>
+<dd>one of <code>surface</code>, <code>basal</code>, or <code>other</code></dd>
+<dt>period</dt>
+<dd>period identifier (foreign key)</dd>
+<dt>phase</dt>
+<dd>phase identifier (foreign key)</dd>
+<dt>url</dt>
+<dd>node link (svg output only)</dd>
+</dl>
+
+<p>The file <code>roskams-h-contexts.csv</code> is an example.  As this example shows, columns
+may be empty, as the <code>period</code>, <code>phase</code>, and <code>url</code> columns are in this example.
+Note however that each line of the file has five commas so the <code>hm</code> software can
+determine that there are indeed six columns in the table.</p>
+
+<pre><code class="language-text">label,unit-type,position,period,phase,url
+1,deposit,surface,,,
+2,deposit,surface,,,
+3,deposit,other,,,
+4,deposit,other,,,
+5,deposit,basal,,,
+</code></pre>
+
+<h2 id="observed-stratigraphic-relations">Observed Stratigraphic Relations</h2>
+
+<p>This table includes observations of stratigraphic superposition. Its
+first two columns refer to values from the <code>label</code> column of the
+contexts table.</p>
+
+<dl>
+<dt>younger</dt>
+<dd>stratigraphically superior context label (foreign key)</dd>
+<dt>older</dt>
+<dd>stratigraphically inferior context label (foreign key)</dd>
+<dt>url</dt>
+<dd>arc link (svg output only)</dd>
+</dl>
+
+<p>The file <code>roskams-h-observations.csv</code> is an example.  Note that the third column
+is empty save for the column head, <code>url</code>.</p>
+
+<pre><code class="language-text">younger,older,url
+1,3,
+1,4,
+1,5,
+2,3,
+2,5,
+3,5,
+4,5,
+</code></pre>
+
+<h2 id="inferred-parity-relations">Inferences of once-whole contexts</h2>
+
+<p>This table contains inferences of parity between pairs of discontiguous
+contexts.</p>
+
+<dl>
+<dt>first</dt>
+<dd>context label (foreign key)</dd>
+<dt>second</dt>
+<dd>context label (foreign key)</dd>
+</dl>
+
+<p>The file <code>inference-eg.csv</code> in the <code>fig-12-chronology</code> example is shown below.</p>
+
+<pre><code class="language-text">first,second
+7,8
+15,16
+11,14
+</code></pre>
+
+<h2 id="periods">Periods</h2>
+
+<p>This table describes periods, which are groups of interfacial contexts
+believed to have been in use at the same time.</p>
+
+<dl>
+<dt>id</dt>
+<dd>a unique integer to identify the period (primary key)</dd>
+<dt>label</dt>
+<dd>name of the period used in the legend</dd>
+<dt>attribute</dt>
+<dd>zero-based integer scale for a
+<a href="http://www.graphviz.org/doc/info/colors.html#brewer">Brewer color</a></dd>
+<dt>description</dt>
+<dd>optional field not used by <code>hm</code></dd>
+</dl>
+
+<p>An example is the file <code>bldg-1-5-periods.csv</code>.</p>
+
+<pre><code class="language-text">id,label,attribute,description
+1,Building 1,5,
+2,Outside,6,
+3,Building 5,7,
+</code></pre>
+
+<h2 id="phases">Phases</h2>
+
+<p>This table describes phases, which are groups of depositional contexts
+believed to have been deposited pene-contemporaneously, typically
+because they share diagnostic artifactual content.</p>
+
+<dl>
+<dt>id</dt>
+<dd>a unique integer to identify the phase (primary key)</dd>
+<dt>label</dt>
+<dd>name of the phase used in the legend</dd>
+<dt>color</dt>
+<dd>zero-based integer scale for a
+<a href="http://www.graphviz.org/doc/info/colors.html#brewer">Brewer color</a></dd>
+<dt>description</dt>
+<dd>optional field not used by <code>hm</code></dd>
+</dl>
+
+<p>The file <code>phases-eg.csv</code> is shown below.  As this file indicates, the <code>hm</code>
+software does not pay attention to the column headers, which you are free to
+label in any pleasing way.</p>
+
+<pre><code class="language-text">id,label,attribute,url
+1,Phase I,5,http://www.tsdye.com
+2,Phase II,6,http://www.tsdye.com
+</code></pre>
+
+<h2 id="events">Events</h2>
+
+<p>This table associates events and contexts and specifies the nature of
+the association using terms introduced to archaeology by Jeffrey S. Dean in an
+essay entitled &ldquo;Independent dating in archaeological analysis&rdquo; published in
+<em>Advances in Archaeological Method and Theory</em> in 1978.</p>
+
+<dl>
+<dt>theta</dt>
+<dd>unique label (primary key)</dd>
+<dt>context</dt>
+<dd>context identifier (foreign key)</dd>
+<dt>lab</dt>
+<dd>dating laboratory identifier</dd>
+<dt>association</dt>
+<dd>one of <code>disjunct</code>, <code>direct</code>, <code>disparate</code></dd>
+</dl>
+
+<p>An example is the file <code>bldg-1-5-dates.csv</code>.  As this example shows, the <code>hm</code>
+software does not care if you add extra columns to the table.  The software
+works with columns by position, so do not be tempted to switch columns around.</p>
+
+<pre><code class="language-text">theta,context,lab,association,original context
+1,3810+,OxA-11046,disjunct,3810
+8,1297+,OxA-11045,disjunct,3036
+10,3030+,OxA-11044,disjunct,3030
+5,2165+,PL-972424A,disjunct,2198
+4,2165+,PL-980558A,disjunct,2181
+2,2165+,OxA-11043,disjunct,2166
+3,2165+,OxA-11042,disjunct,2165
+28,1951+,OxA-16800,associated,1960
+27,1940+,OxA-16799,associated,1959
+</code></pre>
+
+<h2 id="event-order">Event Order</h2>
+
+<p>This optional table contains information on the temporal order of events
+from the same context.</p>
+
+<dl>
+<dt>older</dt>
+<dd>theta label of older event (foreign key)</dd>
+<dt>younger</dt>
+<dd>theta label of younger event (foreign key)</dd>
+</dl>
+
+<p>The example file <code>date-order.csv</code> is shown below.</p>
+
+<pre><code class="language-text">older,younger
+3,4
+</code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the GNU General Public License v3.0 &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://www.tsdye.online/harris-matrix/configuration-file/" title="Configuration File">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Configuration File
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://www.tsdye.online/harris-matrix/technical-description/" title="Technical Description">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Technical Description
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/www.tsdye.online\/harris-matrix\/';
+      var repo_id  = 'tsdye\/harris-matrix';
+    
+    </script>
+
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

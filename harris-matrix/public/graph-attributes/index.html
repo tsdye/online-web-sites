@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Classifiable Graph Attributes - HM</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+
+    
+    <meta name="description" content="Sequence diagrams for archaeology">
+    
+    <link rel="canonical" href="http://www.tsdye.online/harris-matrix/graph-attributes/">
+    
+    <meta name="author" content="Thomas S. Dye">
+    
+
+    <meta property="og:url" content="http://www.tsdye.online/harris-matrix/graph-attributes/">
+    <meta property="og:title" content="HM">
+    <meta property="og:image" content="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+    <meta name="apple-mobile-web-app-title" content="HM">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot');
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.woff')
+               format('woff'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.ttf')
+               format('truetype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/application.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-blue-grey palette-accent-amber">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Classifiable Graph Attributes
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/tsdye" title="@tsdye on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/tsdye/harris-matrix" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>HM <span class="version">0.3.0</span></strong>
+        
+          <br>
+          tsdye/harris-matrix
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/tsdye/harris-matrix/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/tsdye/harris-matrix/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Home" href="http://www.tsdye.online/harris-matrix/homepage/">
+	
+	Home
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="The hm package" href="http://www.tsdye.online/harris-matrix/hm-package/">
+	
+	The hm package
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Requirements" href="http://www.tsdye.online/harris-matrix/requirements/">
+	
+	Requirements
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Example projects" href="http://www.tsdye.online/harris-matrix/example-projects/">
+	
+	Example projects
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Classifiers" href="http://www.tsdye.online/harris-matrix/classifiers/">
+	
+	Classifiers
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Graph attributes" href="http://www.tsdye.online/harris-matrix/graph-attributes/">
+	
+	Graph attributes
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Configuration file" href="http://www.tsdye.online/harris-matrix/configuration-file/">
+	
+	Configuration file
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Data tables" href="http://www.tsdye.online/harris-matrix/data-tables/">
+	
+	Data tables
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Technical description" href="http://www.tsdye.online/harris-matrix/technical-description/">
+	
+	Technical description
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/tsdye" target="_blank" title="@tsdye on GitHub">
+              @tsdye on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:tsd@tsdye.com" title="Email of tsd@tsdye.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Classifiable Graph Attributes </h1>
+
+			
+
+<p>The <code>hm</code> software is able to apply each of the classifiers to each of the
+17 classifiable graph attributes listed below. The attributes
+vary by their visual saliency and by the number of states they are able to
+express. Fill color, color, and shape (including the polygon attributes) are
+most salient for nodes, followed by font color, pen width, and style. Color,
+style, and arrowhead are most salient for edges, followed by font size,
+font color, and pen width.</p>
+
+<p><a id="org28d8489"></a></p>
+
+<pre><code class="language-lisp">(show-classifiable-attributes)
+</code></pre>
+
+<pre><code class="language-text">edge-color-by
+edge-style-by
+node-color-by
+node-shape-by
+node-style-by
+edge-fontsize-by
+edge-penwidth-by
+node-penwidth-by
+edge-arrowhead-by
+edge-fontcolor-by
+node-fillcolor-by
+node-fontcolor-by
+node-polygon-skew-by
+node-polygon-image-by
+node-polygon-sides-by
+node-polygon-distortion-by
+node-polygon-orientation-by
+</code></pre>
+
+<h2 id="colors">Colors</h2>
+
+<p>The <code>hm</code> software offers several color palettes that might be useful in
+different situations.  However, color should be handled with care because it is
+easy to misuse it.</p>
+
+<p>Edward Tufte&rsquo;s chapter on &ldquo;Color and Information&rdquo; in the book <em>Envisioning
+Information</em> starts off like this:</p>
+
+<blockquote>
+<p>In representing and communicating information, how are we to benefit from
+color&rsquo;s great dominion?  Human eyes are exquisitely sensitive to color
+variations: a trained colorist can distinguish among 1,000,000 colors, at least
+when tested under contrived conditions of pairwise comparison.  Some 20,000
+colors are accessible to many viewers, with the constraints for practical
+applications set by the early limits of human visual memory rather than the
+capacity to discriminate locally between adjacent tints.  For encoding abstract
+information, however, more than 20 or 30 colors frequently produce not
+diminishing but negative returns.</p>
+
+<p>Tying color to information is as elementary and straightforward as color
+technique in art, &ldquo;To paint well is simply this: to put the right color in the
+right place,&rdquo; in Paul Klee&rsquo;s ironic prescription.  The often scant benefits derived from
+coloring data indicate that even putting a good color in place is a complex
+matter.  Indeed, so difficult and subtle that avoiding catastrophe becomes the
+first principle in bringing color to information: <em>Above all, do no harm.</em></p>
+</blockquote>
+
+<p>With this in mind, the <code>hm</code> software uses a selection of named and indexed color
+palettes.</p>
+
+<h3 id="named-color-palettes">Named Color Palettes</h3>
+
+<p>Colors from named color palettes are indicated by a color name, such as
+<code>burlywood3</code>, <code>coral1</code>, or <code>darkgoldenrod</code>. Named color palettes are useful in
+situations where you know ahead of time how many colors will be needed, or when
+you have need or desire to use particular hues.  However, choosing colors that
+work well with one another is difficult for many people and, as Tufte reminds us,
+catastrophe is a real possibility.</p>
+
+<p>The three named color palettes used by <code>hm</code> software include the two general
+purpose palettes, X11 and SVG, and the designer palette, Solarized.</p>
+
+<h4 id="x11">X11</h4>
+
+<p>The <code>hm</code> software recognizes 782 X11 color names, which generally correspond to
+the <a href="http://www.graphviz.org/doc/info/colors.html#x11">Graphviz dot X11 color names</a>.  By far the most useful of these are <code>white</code>
+and <code>black</code>, with <code>dimgray</code> (or <code>dimgrey</code>), <code>gray</code> (or <code>grey</code>), and <code>lightgray</code>
+(or <code>lightgrey</code>) often coming in handy.</p>
+
+<h4 id="svg">SVG</h4>
+
+<p>The SVG palette has 147 names for somewhat fewer colors, given that some colors
+have multiple names. In general, this is a subset of the X11 colors that is most
+useful when graphics output will be scalar vector graphics. The <a href="http://www.graphviz.org/doc/info/colors.html#svg">Graphviz dot SVG
+color names</a> are supported by the <code>hm</code> software.</p>
+
+<h4 id="solarized">Solarized</h4>
+
+<p>The Solarized color palette was developed by a designer interested in computer
+graphics. It includes two sets of background tones, a set of four tones for
+content, and eight accent colors. The accent colors are suited for categorical
+variables and might be useful for classifications with relatively few
+distinctions such as <code>units</code>, <code>adjacent</code>, and <code>reachable</code>. In some cases, they
+might be useful for <code>periods</code> or <code>phases</code>.</p>
+
+<p>A notable feature of the Solarized palette is the relative ease of switching
+from a color scheme with a dark background to one with
+a light background (Fig. <a href="#org9c83973">1</a>).
+A characteristic of the <a href="http://ethanschoonover.com/solarized">Solarized</a> palette is accent colors&mdash;in this case
+violet, cyan, and orange&mdash;look good on either a dark or light background.  An
+example project is included to show off this property of the <a href="http://ethanschoonover.com/solarized">Solarized</a> palette.</p>
+
+<p>When the following command is run on a Linux system, the graph in Figure <a href="#org9c83973">1</a>
+results.</p>
+
+<pre><code class="language-lisp">(run-project/example :roskams-h-solarized-light)
+</code></pre>
+
+<p><a id="org9c83973"></a></p>
+
+
+
+   <figure>              <img src="http://www.tsdye.online/harris-matrix/roskams-h-sequence-solarized-light.png" alt="Figure 1: A correct Harris matrix for Figure classified by adjacency to Context 2. Colors are from the Solarized light palette."/> <figcaption>                                  <p>                     Figure 1: A correct Harris matrix for Figure classified by adjacency to Context 2. Colors are from the <a href="http://ethanschoonover.com/solarized">Solarized</a> light palette.                                                                       </p>                              </figcaption></figure>
+
+
+<p>There is an informative website that describes <a href="http://ethanschoonover.com/solarized">Ethan Schoonover&rsquo;s Solarized
+colors</a>.</p>
+
+<h3 id="indexed-color-palettes">Indexed Color Palettes</h3>
+
+<p>Colors in indexed color palettes are identified by numbers, rather than names.
+This makes them easy to use in situations where the number of colors needed is not
+known ahead of time.  In addition, the color palettes have been designed to
+include colors that work well together, so graphs that use them can have a
+polished look that might be difficult to achieve otherwise.</p>
+
+<p>There are three kinds of indexed color palette that are useful for different
+kinds of data:</p>
+
+<dl>
+<dt>sequential</dt>
+<dd>colors move from dark to light along a single &ldquo;path&rdquo; through
+color space, which makes it easy to visualize the magnitude of
+a value</dd>
+<dt>diverging</dt>
+<dd>colors move from dark to light and back to dark again as they
+move from one edge of the rainbow to the other, a pattern that
+highlights the middle color and is useful for data that have
+both location and scale</dd>
+<dt>qualitative</dt>
+<dd>colors are chosen to be distinct from one another, without
+giving emphasis to one or another, which is useful for
+categorical data</dd>
+</dl>
+
+<p>The <code>hm</code> software uses a color index that is 0 based for all of the indexed
+color palettes.  Note that this is different than the usual scheme for the
+Brewer color palettes in which the base color is 1.</p>
+
+<p>The <code>hm</code> software offers two sets of indexed color palettes, one developed by
+the <a href="http://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">ColorBrewer project</a>, and another developed at the <a href="https://bokeh.github.io/colorcet/">Center for Exploration
+Targeting</a>.</p>
+
+<h4 id="brewer-color-palettes">Brewer Color Palettes</h4>
+
+<p>The <a href="https://graphviz.gitlab.io/_pages/doc/info/colors.html#brewer">Brewer color palettes</a> are built into the GraphViz <code>dot</code> software. There are
+several families of 3 to 12 color palettes, which are most useful for the simple
+classifications.  The <code>hm</code> software accepts the family name of the color scheme
+and then chooses which palette to use based on the number of colors needed.  So,
+for example, the <code>hm</code> software user might choose <code>accent</code>, <code>blues</code>, or <code>brbg</code>
+and the software might apply <code>accent3</code>, <code>blues7</code>, or <code>brbg</code> 5, as appropriate.</p>
+
+<p>Note that the <code>paired</code> palette is useful for classifications such as <code>adjacent</code>
+and <code>reachable</code> that yield three values.  In these cases, the origin and
+adjacent or reachable nodes can be colored with the same hue, and non-adjacent
+or unreachable nodes can be colored with a different hue.  Figure
+illustrates use of the <code>paired</code> color palette with a
+<code>reachable</code> classification.</p>
+
+<h4 id="center-for-exploration-targeting-color-palettes">Center for Exploration Targeting Color Palettes</h4>
+
+<p>These are 256 color palettes that were designed to be &ldquo;perceptually uniform&rdquo;,
+which means that none of the colors sticks out from the others. The idea behind
+perceptual uniformity of colors in the palette is that perceptual variation in a
+graphic that uses these color palettes will primarily track variation in the
+underlying data.</p>
+
+<p>These color palettes will be most useful for the <code>levels</code> and <code>distance</code>
+classifications, which might require dozens of distinct colors to represent the
+range of values. Because both of these classifications yields a number important
+for its magnitude, the palettes included with the <code>hm</code> software are mostly
+sequential (or linear), but also include a rainbow palette.</p>
+
+<p>The name of the palette used by the <code>hm</code> software is shown in the first column
+of Table <a href="#org14359f0">1</a>. The second column gives the name of the color file
+distributed by Colorcet; the names of these files are based on the palette
+labels displayed at the <a href="https://bokeh.github.io/colorcet/">Colorcet website</a>.</p>
+
+<p><a id="org14359f0"></a></p>
+
+<div class="table-caption">
+  <span class="table-number">Table 1:</span>
+  Names used for the Colorcet palettes
+</div>
+
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>file</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cet-bgyw</td>
+<td>linear_bgyw_15-100_c67_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-kbc</td>
+<td>linear_blue_5-95_c73_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-blues</td>
+<td>linear_blue_95-50_c20_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-bmw</td>
+<td>linear_bmw_5-95_c86_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-inferno</td>
+<td>linear_bmy_10-95_c71_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-kgy</td>
+<td>linear_green_5-95_c69_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-gray</td>
+<td>linear_grey_0-100_c0_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-dimgray</td>
+<td>linear_grey_10-95_c0_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-fire</td>
+<td>linear_kryw_0-100_c71_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-kb</td>
+<td>linear_ternary-blue_0-44_c57_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-kg</td>
+<td>linear_ternary-green_0-46_c42_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-kr</td>
+<td>linear_ternary-red_0-50_c52_n256.csv</td>
+</tr>
+
+<tr>
+<td>cet-rainbow</td>
+<td>rainbow_bgyr_35-85_c72_n256.csv</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="nodes">Nodes</h2>
+
+<p>The <code>dot</code> software provides many ways to control how nodes are displayed.</p>
+
+<h3 id="shapes">Shapes</h3>
+
+<p>Node shapes can be set individually, or they can be assigned by <code>hm</code> based on
+the value of a classifier.  The names of the shapes are taken from the <a href="https://graphviz.gitlab.io/_pages/doc/info/shapes.html"><code>dot</code> software</a>.</p>
+
+<p>Here is an example of node shapes set individually in the configuration file.</p>
+
+<pre><code class="language-text">[Graphviz sequence reachability node shapes]
+origin = box
+reachable = triangle
+not-reachable = oval
+</code></pre>
+
+<p>In situations where it is not possible to specify node shapes individually, the
+<code>hm</code> software uses a lookup table to map a classifier to a node shape.  The
+lookup table can be displayed with the following function call.</p>
+
+<p><a id="org5ab6a4a"></a></p>
+
+<pre><code class="language-lisp">(show-map :node-shape)
+</code></pre>
+
+<pre><code class="language-text">0 --&gt; box
+1 --&gt; trapezium
+2 --&gt; ellipse
+3 --&gt; egg
+4 --&gt; triangle
+5 --&gt; diamond
+6 --&gt; oval
+7 --&gt; circle
+8 --&gt; house
+9 --&gt; pentagon
+10 --&gt; parallelogram
+11 --&gt; square
+12 --&gt; star
+13 --&gt; hexagon
+14 --&gt; septagon
+15 --&gt; octagon
+16 --&gt; doublecircle
+17 --&gt; doubleoctagon
+18 --&gt; tripleoctagon
+19 --&gt; invtriangle
+20 --&gt; invtrapezium
+21 --&gt; invhouse
+22 --&gt; Mdiamond
+23 --&gt; Msquare
+24 --&gt; Mcircle
+25 --&gt; lpromoter
+26 --&gt; larrow
+27 --&gt; underline
+28 --&gt; note
+29 --&gt; tab
+30 --&gt; folder
+31 --&gt; box3d
+32 --&gt; component
+33 --&gt; cds
+34 --&gt; signature
+35 --&gt; rpromoter
+36 --&gt; rarrow
+</code></pre>
+
+<h3 id="polygons">Polygons</h3>
+
+<p>Polygons offer another way to classify node shapes.  Instead of working with a
+fixed number of shapes, polygons can take on almost any shape, varying
+continuously along dimensions defined by <code>skew</code>, <code>sides</code>, <code>distortion</code>, and
+<code>orientation</code>.  It is even possible to associate images with polygons.</p>
+
+<p>In theory, the various dimensions of a polygon might be associated with
+different classifiers, with each combination of classifier values yielding its
+own distinct polygon.  The key here is, of course, the term &ldquo;distinct&rdquo;.  At some
+point, complexity in the underlying data defeats the graphical purpose, yielding
+a complex graphic that defies interpretation.</p>
+
+<p>Figure <a href="#orgb2e6448">2</a> shows an example of polygons in use, which builds on the classification
+of Harris&rsquo; Figure 12 by periods (see fig. ).</p>
+
+<p><a id="orgb2e6448"></a></p>
+
+
+
+   <figure>     <a href="http://www.tsdye.online/harris-matrix/fig-12-polygon-1.png">         <img src="http://www.tsdye.online/harris-matrix/fig-12-polygon-1-small.png" alt="Figure 2: Stratigraphic DAG for the information on Figure and periodized according to Figure . Note that the number of node sides and node fill color both reflect the periods classification."/> </a><figcaption>                                  <p>                     Figure 2: Stratigraphic DAG for the information on Figure and periodized according to Figure . Note that the number of node sides and node fill color both reflect the periods classification.                                                                       </p>                              </figcaption></figure>
+
+
+<p>Figure <a href="#orgb2e6448">2</a> can be produced on a Linux system with the following
+function call:</p>
+
+<pre><code class="language-lisp">(run-project/example :fig-12-polygon)
+</code></pre>
+
+<p>Polygons require a bit of set up in the configuration file.  The <code>node-shape-by</code>
+option must be empty, <code>node-shape</code> must be set to <code>polygon</code>, and one of the
+<code>node-polygon-*-by</code> attributes must be set to an appropriate classifier.</p>
+
+<p>The configuration file for Figure <a href="#orgb2e6448">2</a> illustrates these points.  The
+options <code>polygon-sides-min</code> and <code>polygon-sides-max</code> set boundaries for the
+allowable number of sides, while <code>polygon-sides</code> sets the shape of the base
+polygon.  So, in Figure <a href="#orgb2e6448">2</a> the latest period is shown as a rectangle
+and each preceding period adds another side to the polygon.</p>
+
+<pre><code class="language-text">[Graphviz sequence classification]
+node-fillcolor-by = periods
+node-fontcolor-by =
+node-shape-by =
+node-color-by =
+node-penwidth-by =
+node-style-by =
+node-polygon-distortion-by =
+node-polygon-image-by =
+node-polygon-orientation-by =
+node-polygon-sides-by = periods
+...
+
+[Graphviz sequence node attributes]
+shape = polygon
+...
+polygon-sides = 4
+polygon-sides-min = 3
+polygon-sides-max = 16
+</code></pre>
+
+<h3 id="styles">Styles</h3>
+
+<p>Node styles can be set individually, or they can be assigned by <code>hm</code> based on
+the value of a classifier.  The names of the styles are taken from the <a href="https://graphviz.gitlab.io/_pages/doc/info/attrs.html#k:style"><code>dot</code>
+software</a>.  Note that some styles have to do with the node outline and others
+have to do with the node fill.  It is possible to set an option to two values,
+one to control the node outline and the other to control the node fill.</p>
+
+<p>Here is an example of node styles set individually in the configuration file.
+In each case, the first value controls the node outline and the second value
+controls the node fill.</p>
+
+<pre><code class="language-text">[Graphviz sequence reachability node styles]
+origin = solid,filled
+reachable = dashed,filled
+not-reachable = dotted,filled
+</code></pre>
+
+<p>In situations where it is not possible to specify the node styles individually,
+the <code>hm</code> software uses a lookup table to map a classifier to a node style.  The
+lookup table can be displayed with the following function call.</p>
+
+<p><a id="org865f1c6"></a></p>
+
+<pre><code class="language-lisp">(show-map :node-style)
+</code></pre>
+
+<pre><code class="language-text">0 --&gt; solid
+1 --&gt; dashed
+2 --&gt; dotted
+3 --&gt; bold
+4 --&gt; rounded
+5 --&gt; diagonals
+6 --&gt; filled
+7 --&gt; striped
+8 --&gt; wedged
+</code></pre>
+
+<h2 id="arcs">Arcs</h2>
+
+<p>The <code>dot</code> software provides several arc (or edge) styles and a wide range of
+arrowheads.</p>
+
+<h3 id="styles-1">Styles</h3>
+
+<p>The edge styles recognized by the <code>hm</code> software can be shown with the following
+function call.  In each case, the name used by <code>hm</code> matches the <a href="https://graphviz.gitlab.io/_pages/doc/info/attrs.html#k:style">name used by <code>dot</code></a>.</p>
+
+<p><a id="org0d34704"></a></p>
+
+<pre><code class="language-lisp">(show-map :edge-style)
+</code></pre>
+
+<pre><code class="language-text">0 --&gt; solid
+1 --&gt; dashed
+2 --&gt; dotted
+3 --&gt; bold
+</code></pre>
+
+<h3 id="arrowheads">Arrowheads</h3>
+
+<p>The arrowhead styles recognized by the <code>hm</code> software can be shown with the
+following function call.  In each case, the name used by <code>hm</code> matches the <a href="https://graphviz.gitlab.io/_pages/doc/info/arrows.html">name
+used by <code>dot</code></a>.</p>
+
+<p><a id="orgedfb6f9"></a></p>
+
+<pre><code class="language-lisp">(show-map :arrow-shape)
+</code></pre>
+
+<pre><code class="language-text">0 --&gt; none
+1 --&gt; box
+2 --&gt; lbox
+3 --&gt; rbox
+4 --&gt; obox
+5 --&gt; olbox
+6 --&gt; orbox
+7 --&gt; crow
+8 --&gt; lcrow
+9 --&gt; rcrow
+10 --&gt; diamond
+11 --&gt; ldiamond
+12 --&gt; rdiamond
+13 --&gt; odiamond
+14 --&gt; oldiamond
+15 --&gt; ordiamond
+16 --&gt; dot
+17 --&gt; odot
+18 --&gt; inv
+19 --&gt; linv
+20 --&gt; rinv
+21 --&gt; oinv
+22 --&gt; olinv
+23 --&gt; orinv
+24 --&gt; normal
+25 --&gt; lnormal
+26 --&gt; rnormal
+27 --&gt; onormal
+28 --&gt; olnormal
+29 --&gt; ornormal
+30 --&gt; tee
+31 --&gt; ltee
+32 --&gt; rtee
+33 --&gt; vee
+34 --&gt; lvee
+35 --&gt; rvee
+36 --&gt; curve
+37 --&gt; lcurve
+38 --&gt; rcurve
+39 --&gt; icurve
+40 --&gt; licurve
+41 --&gt; ricurve
+</code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the GNU General Public License v3.0 &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://www.tsdye.online/harris-matrix/classifiers/" title="Classifiers">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Classifiers
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://www.tsdye.online/harris-matrix/configuration-file/" title="Configuration File">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Configuration File
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/www.tsdye.online\/harris-matrix\/';
+      var repo_id  = 'tsdye\/harris-matrix';
+    
+    </script>
+
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

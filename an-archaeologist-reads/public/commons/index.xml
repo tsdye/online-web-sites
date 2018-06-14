@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commons on An archaeologist reads</title>
+    <link>http://www.tsdye.online/an-archaeologist-reads/commons/</link>
+    <description>Recent content in Commons on An archaeologist reads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 May 2018 17:45:39 -1000</lastBuildDate>
+    
+	<atom:link href="http://www.tsdye.online/an-archaeologist-reads/commons/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Science in Archaeology</title>
+      <link>http://www.tsdye.online/an-archaeologist-reads/commons/open-science-in-archaeology/</link>
+      <pubDate>Thu, 24 May 2018 17:45:39 -1000</pubDate>
+      
+      <guid>http://www.tsdye.online/an-archaeologist-reads/commons/open-science-in-archaeology/</guid>
+      <description>In archaeology, we are accustomed to investing great effort into collecting data from fieldwork, museum collections, and other sources, followed by detailed description, rigorous analysis, and in many cases ending with publication of our findings in short, highly concentrated reports or journal articles. Very often, these publications are all that is visible of this lengthy process, and even then, most of our journal articles are only accessible to scholars at institutions paying subscription fees to the journal publishers.</description>
+    </item>
+    
+  </channel>
+</rss>

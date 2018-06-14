@@ -1,0 +1,214 @@
+#+hugo_base_dir: .
+#+hugo_auto_set_lastmod: t
+* Homepage
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION:
+  :EXPORT_FILE_NAME: _index
+  :END:
+
+* Archaeology
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: archaeology
+  :END:
+
+** Archaeology
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: _index
+    :END:
+
+The discipline might look different to one outside the academy. What's worth
+reading if heritage preservation is a day-to-day concern?
+
+
+** Wealth in old Hawai`i
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: dye-ao-2014
+   :END:
+
+The journals of Captain Cook and his crew contradict bad-year economic theories
+that posit traditional Hawaiian farmers were living at the margin.
+Recognising that pig herds were wealth-assets in old Hawai‘i, an alternative
+good-year economic theory is developed that interprets the introduction of sweet
+potato and the development of the rain-fed agricultural systems in which it was
+cultivated as processes in the creation and management of wealth. The wealth
+produced in this way was probably used, in part, to promote marriage alliances
+among elite families. According to the good-year economic theory, fluctuations
+in the products of the rain-fed agricultural facilities introduced variability
+into the supply of wealth-assets, which complicated the maintenance of alliances
+and were one cause of the wars that played a crucial role in the emergence of
+primary states in traditional Hawai‘i.
+
+[[http://www.tsdye.online/reprints/dye-wealth.pdf][Reprint]]
+
+* Philosophy
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: philosophy
+  :END:
+
+** Philosophy                                                          :blog:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: _index
+   :END:
+
+ Philosophy isn't wildly popular among archaeologists today. Back in the 1970s,
+ the New Archaeology threw its hat in the logical positivists' ring. This turned
+ out to be a poor choice, for reasons described in detail by [[http://alisonwylie.net/][Alison Wylie]] and
+ [[http://inference-review.com/article/successful-science][Merrilee Salmon]], among others. Most archaeologists have been cool to philosophy
+ since then.
+
+ Why read philosophy now?  Take a look!
+
+** The Discovery of Time                                               :blog:
+   CLOSED: [2018-05-06 Sun 15:05]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: discovery-of-time
+   :END:
+
+This seminal study of how geology and biology became historical sciences was
+written by the philosopher [[https://www.theguardian.com/theguardian/2010/jan/10/stephen-toulmin-obituary][Stephen Toulmin]] and the historian and scientist [[https://en.wikipedia.org/wiki/June_Goodfield][June
+Goodfield]]. It was published by Harper & Row in 1965 and has been reprinted
+regularly since then by the [[http://press.uchicago.edu/ucp/books/book/chicago/D/bo3615904.html][University of Chicago Press]].
+
+ - p. 49 :: Quoting Lucretius' poem /On the Nature of Things/: "Our age cannot
+            look back to earlier things except where reasoning reveals their
+            traces."
+
+ - p. 50 :: /The Limits of the Classical World Picture/ lists the
+            accomplishments for which later generations were indebted to the
+            Greek philosophers: "they had experimented with almost all the forms
+            of theory which were to dominate later thought, and had recognized
+            the characteristic merits and defects of each. In Plato's /Timaeus/,
+            we have the nearest thing in pre-Christian philosophy to a
+            `Big-Bang' cosmology, in Aristotle the outlines of a `Steady-State'
+            theory: the Stoics, in turn, pioneered a `Cyclical Cosmos', while
+            the Epicureans saw the development of the world rather as a random,
+            One-Way Process. Not until many centuries later could scientists put
+            the history of Nature on a solid basis of established facts and
+            secure inferences."
+
+ - p. 262 :: Speaking about the current state of inquiry into cosmological
+             origins, Toulmin and Goodfield look to the history of thought in
+             geology and biology for guidance: "In all other historical
+             sciences, the crucial transition to the phase of cumulative advance
+             has been marked by a changeover from /a priori/ patterns of theory
+             to an empirical, developmental method of enquiry."
+
+ - p. 263 :: "It has always been a struggle for men to renounce the apparent
+             short-cuts which /a priori/ patterns of theory offer them, and to
+             build up a genuinely empirical account of historical change and
+             development laboriously and without preconceptions."
+ - p. 266 :: The discovery of time in geology and biology each required several key components:
+   - recognition of the extent of the past; and
+   - identification of developmental processes, including
+     - repetitive *universal factors* operative at all times and places, and
+     - cumulative and progressive *conditional factors* significant at particular stages
+
+How does archaeology fit in?
+
+| Discipline  | Universal factor    | Conditional factor    |
+|-------------+---------------------+-----------------------|
+| Geology     | Stratigraphy        | Speciation of fossils |
+| Biology     | Genetic inheritance | Selection             |
+| Archaeology | Stratigraphy        | Culture change?       |
+
+I'd argue that archaeology has not become an historical science because it has
+yet to come to grips with the conditional factor. The best analogue for the
+geologists' use of the fossil record is the division of Old World archaeology
+into the Old and New Stone Ages, Bronze Age, and Iron Age, a system that can't
+be applied meaningfully to the New World. The heroic effort of evolutionary
+archaeologists to work out a cultural version of biological evolution holds
+promise, but has yet to bear substantial fruit.
+
+Perhaps it is time to think outside the box?
+
+Here is a BibTeX entry:
+
+#+BEGIN_EXAMPLE
+@Book{toulmin65:_discov_time,
+	address = {New York, NY},
+	year = {1965},
+	publisher = {Harper \& Row},
+	title = {The Discovery of Time},
+	author = {Stephen Toulmin and June Goodfield}
+}
+#+END_EXAMPLE
+
+** On Truth                                                            :blog:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: on-truth
+   :END:
+
+Frank Plumpton Ramsey, who died in 1930 at the age of 26, was "an extraordinary
+scholarly phenomenon," according to his editors, [[http://www.pitt.edu/~rescher/][Nicholas Rescher]] and [[https://www.uni-goettingen.de/en/71635.html][Ulrich
+Majer]]. He was appointed Cambridge University Lecturer in Mathematics at the age
+of 22. According to [[http://philosophy.utoronto.ca/directory/cheryl-misak/][Cheryl Misak]], among many accomplishments in the few short
+years of his career "he managed to figure out how to measure partial belief and
+hence lay the groundwork for decision theory and Bayesian statistics." Misak's
+book, [[https://global.oup.com/academic/product/cambridge-pragmatism-9780198712077?cc=ca&lang=en&][/Cambridge Pragmatism, from Peirce and James to Ramsey and Wittgenstein/]],
+describes how Ramsey took up several pragmatic insights and expanded upon them
+in [[https://www.worldcat.org/title/on-truth-original-manuscript-materials-1927-1929-from-the-ramsey-collection-at-the-university-of-pittsburgh/oclc/965553015&referer=brief_results][/On Truth/]], a book manuscript that was unfinished when he died.
+
+Chapter 5, /Judgment and Time/, "develops some very general considerations about
+events in time." Ramsey argues that Einstein's theory that time is not absolute,
+but is instead relative to an observer's position in space-time, has
+implications for the definition of "event." The common view of event, which
+Ramsey calls the "substance theory", considers the world to comprise a
+collection of enduring substances liable to change, and defines an event as an
+important change in the quality or relations of substances. Ramsey argues that
+the "substance theory" posits substances and absolute time among the ultimate
+constituents of the world, a position that flatly contradicts Einstein's
+theory of relativity.  The problem the substance theory poses for "event" is
+that it confounds two distinct concepts, which can be distinguished if a
+relative theory of time is adopted and events defined as "regions or volumes of
+space-time \dots are taken to be the ultimate constituents of the world."
+
+Ramsey illustrates the problem with the example of an eclipse, which the
+"substance theory" considers an event.  Ramsey argues that an eclipse is instead
+a fact about relations among three events:
+ - the space-time occupied by the sun;
+ - the space-time occupied by earth in its orbit around the sun; and
+ - the space-time occupied by the moon in its orbit around the earth.
+He proposes to call such facts about events "occurrences" to distinguish them
+from the space-time events that are the ultimate constituents of the world.
+
+* Commons
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: commons
+  :END:
+
+
+** Commons
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: _index
+   :END:
+
+The commons describes that part of the world to which you and I cannot be denied
+use and enjoyment. One doesn't hear much about the commons today, but it isn't
+a thing of the past!
+
+The commons is a key component of science, the community practice of inquiry
+that requires experiments be repeatable and analyses be reproducible. It is a
+bedrock for volunteer organizations that create the [[https://www.fsf.org/][finest software]] around.
+Archaeologists are [[https://osf.io/2dfhz/][discovering it]]!
+
+** Open Science in Archaeology
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: open-science-in-archaeology
+   :END:
+
+In archaeology, we are accustomed to investing great effort into collecting data
+from fieldwork, museum collections, and other sources, followed by detailed
+description, rigorous analysis, and in many cases ending with publication of our
+findings in short, highly concentrated reports or journal articles. Very often,
+these publications are all that is visible of this lengthy process, and even
+then, most of our journal articles are only accessible to scholars at
+institutions paying subscription fees to the journal publishers. While this
+traditional model of the archaeological research process has long been effective
+at generating new knowledge about our past, it is increasingly at odds with
+current norms of practice in other sciences. Often described as “open science,”
+these new norms include data stewardship instead of data ownership, transparency
+in the analysis process instead of secrecy, and public involvement instead of
+exclusion. While the concept of open science is not new in archaeology a less
+transparent model often prevails, unfortunately.
+
+[[http://www.tsdye.online/reprints/Marwick_et_al_2017_SAA_Record_Sept.pdf][Reprint]]

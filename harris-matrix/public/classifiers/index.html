@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Classifiers - HM</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+
+    
+    <meta name="description" content="Sequence diagrams for archaeology">
+    
+    <link rel="canonical" href="http://www.tsdye.online/harris-matrix/classifiers/">
+    
+    <meta name="author" content="Thomas S. Dye">
+    
+
+    <meta property="og:url" content="http://www.tsdye.online/harris-matrix/classifiers/">
+    <meta property="og:title" content="HM">
+    <meta property="og:image" content="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+    <meta name="apple-mobile-web-app-title" content="HM">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://www.tsdye.online/harris-matrix/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot');
+        src: url('http://www.tsdye.online/harris-matrix/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.woff')
+               format('woff'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.ttf')
+               format('truetype'),
+             url('http://www.tsdye.online/harris-matrix/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/application.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://www.tsdye.online/harris-matrix/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-blue-grey palette-accent-amber">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Classifiers
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/tsdye" title="@tsdye on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/tsdye/harris-matrix" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://www.tsdye.online/harris-matrix/logo/hm-logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>HM <span class="version">0.3.0</span></strong>
+        
+          <br>
+          tsdye/harris-matrix
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/tsdye/harris-matrix/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/tsdye/harris-matrix/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Home" href="http://www.tsdye.online/harris-matrix/homepage/">
+	
+	Home
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="The hm package" href="http://www.tsdye.online/harris-matrix/hm-package/">
+	
+	The hm package
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Requirements" href="http://www.tsdye.online/harris-matrix/requirements/">
+	
+	Requirements
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Example projects" href="http://www.tsdye.online/harris-matrix/example-projects/">
+	
+	Example projects
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Classifiers" href="http://www.tsdye.online/harris-matrix/classifiers/">
+	
+	Classifiers
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Graph attributes" href="http://www.tsdye.online/harris-matrix/graph-attributes/">
+	
+	Graph attributes
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Configuration file" href="http://www.tsdye.online/harris-matrix/configuration-file/">
+	
+	Configuration file
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Data tables" href="http://www.tsdye.online/harris-matrix/data-tables/">
+	
+	Data tables
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Technical description" href="http://www.tsdye.online/harris-matrix/technical-description/">
+	
+	Technical description
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/tsdye" target="_blank" title="@tsdye on GitHub">
+              @tsdye on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:tsd@tsdye.com" title="Email of tsd@tsdye.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Classifiers </h1>
+
+			
+
+<p>This section provides definitions for the various classifiers used by the <code>hm</code>
+software and shows how to save a classification to a comma-separated-value text
+file. There are two kinds of classifiers: archaeological classifiers that
+reflect observations and inferences made by an archaeologist familiar with the
+stratigraphic situation represented by the sequence diagram; and graph
+theoretical classifiers that take advantage of the DAG representation to deduce
+structural relations that might prove useful to the archaeologist tasked with
+interpreting the sequence diagram.</p>
+
+<p>The <code>hm</code> software currently implements the following classifiers:</p>
+
+<p><a id="orge217e40"></a></p>
+
+<pre><code class="language-lisp">(show-classifiers)
+</code></pre>
+
+<pre><code class="language-text">units
+levels
+phases
+periods
+adjacent
+distance
+reachable
+</code></pre>
+
+<h2 id="archaeological-classifiers">Archaeological Classifiers</h2>
+
+<p>The <code>hm</code> software currently provides three ways to integrate archaeological
+observations about contexts into the sequence diagram, which it calls <code>units</code>,
+<code>phases</code>, and <code>periods</code>.  Some preliminary discussion is in order because
+archaeologists define these terms more or less precisely and have achieved more
+or less consensus on their definitions.  Also, there are very many other terms
+in use that attempt to capture the practice of classifying and grouping
+archaeological contexts.</p>
+
+<p>Steve Roskams discusses this situation on pages 257–258 of <em>Excavation</em> in the
+context of assigning &ldquo;basic units to higher-order categories.&rdquo;</p>
+
+<blockquote>
+<p>This raises the question of how such groups are to be defined—what is the point
+where one stops and another begins?  Should there be a single type of group or a
+whole hierarchy of entities?  How should each be named?  Or are the potential
+configurations so diverse that it is impossible to make useful comparisons
+between sites?</p>
+
+<p>This issue has been approached by a variety of specialists who have produced
+different schemes and terminology.  To some extent the differences are a
+function of the great variety of sites with which they are dealing, and are thus
+entirely legitimate.  Equally, they come, in part, from merely giving a
+different name to the same concept &hellip; This profusion of terminology is to be
+expected, given that thoughts on such matters are at a very formative stage, and
+it is probably right to retain some diversity in any case, given the variety of
+sites and associated stratigraphic sequences, and types of analytical procedures
+applied to them.</p>
+</blockquote>
+
+<p>The <code>units</code> classification offered by the <code>hm</code> software is more precisely
+defined and widely appreciated by archaeologists than either <code>periods</code> or
+<code>phases</code>. The <code>hm</code> software recognizes the basic distinction of depositional
+from interfacial units of stratification and hard-wires this distinction into
+the software, while leaving to the <code>hm</code> user the choice of how it might be
+represented in the sequence diagram.</p>
+
+<p>The <code>hm</code> software takes no such confident stand with <code>periods</code> and <code>phases</code>,
+leaving their definitions (if not their names within the software) completely up
+to the user. From the software&rsquo;s point of the view, there is no difference
+between a <code>period</code> and a <code>phase</code> and there is no relationship between them. The
+<code>hm</code> user is best served by viewing them as ways to incorporate any kind of
+classification of contexts whatsoever. The classifications might be based on
+statistical analysis of the finds collected from each context, presence or
+absence of one or more index fossils, physical characteristics of the contexts
+themselves, etc.</p>
+
+<p>In a sense, the crucial question from the software&rsquo;s point of view is how many
+different kinds of classification might be useful on a single sequence diagram?
+Are two kinds sufficient? The answer to this question does not involve judgments
+about how many or few analyses are best carried out on excavation materials.
+Rather, it involves how many classifications it might be useful to plot on the
+same graphic. If there are a dozen classifications that need to be investigated,
+then the way forward is to use the <code>hm</code> software to make 6–12 sequence diagrams,
+each one showing one or two classifications, as appropriate.</p>
+
+<h3 id="units">Units</h3>
+
+<p>The <code>units</code> classifier is designed for use with excavation data, where both
+depositional and interfacial units are identified and recorded.  Archaeologists
+universally identify and record depositional units (often as `layers&rsquo;) but are
+somewhat ambivalent about interfaces, typically choosing to record interfaces
+that appear to be important and ignoring others.</p>
+
+<p>This practice is potentially problematic for the <code>hm</code> software because it
+assumes that interfaces that are not identified and recorded do not themselves
+represent chunks of time that might be important in a chronological model. In an
+ideal sense, the stratigraphic sequence represents a continuous record of time
+from some point in the past represented by the base of excavation up through to
+the modern surface. Neglecting to identify and record interfaces potentially
+yields a discontinuous model of that continuous record, with gaps introduced by
+the time spans represented by the excluded interfaces.</p>
+
+<p>The default configuration file uses node shape to distinguish deposits from
+interfaces.  Deposits are shaped like a rectangular box and interfaces are
+shaped like a trapezium, as in this snippet from a configuration file:</p>
+
+<pre><code class="language-text">[Graphviz sequence unit node shape]
+deposit = box
+interface = trapezium
+</code></pre>
+
+<p>Individual deposits and interfaces are identified in the input file for contexts
+(see Section ).</p>
+
+<h3 id="periods-and-phases">Periods and Phases</h3>
+
+<p>The stratigraphic DAG for this example shows the Figure 12 section divided into
+four periods (fig. <a href="#org8de9ba8">1</a>).  The oldest period includes the Natural ground and its surface.
+The next oldest period includes Context 9 and its surfaces.  Next is the
+once-whole deposit represented by Contexts 7 and 8, the surfaces of those
+contexts, and all of the various contexts related to construction of the wall
+stub, Context 5.  The youngest period is represented by the Context 1 deposit
+and its surface.</p>
+
+<p><a id="org8de9ba8"></a></p>
+
+
+
+   <figure>     <a href="http://www.tsdye.online/harris-matrix/fig-12-periods.png">         <img src="http://www.tsdye.online/harris-matrix/fig-12-periods-small.png" alt="Figure 1: Stratigraphic DAG for the information on Figure assuming inferences of once-whole contexts, and periodized according to the text. Note that rectangular nodes represent deposits and trapeziums represent interfaces."/> </a><figcaption>                                  <p>                     Figure 1: Stratigraphic DAG for the information on Figure assuming inferences of once-whole contexts, and periodized according to the text. Note that rectangular nodes represent deposits and trapeziums represent interfaces.                                                                       </p>                              </figcaption></figure>
+
+
+<p>On a Linux system, Figure <a href="#org8de9ba8">1</a> can be reproduced with the following
+function call:</p>
+
+<pre><code class="language-lisp">(run-project/example :fig-12-periods)
+</code></pre>
+
+<h2 id="graph-theoretical-classifiers">Graph Theoretical Classifiers</h2>
+
+<p>The graph theoretical classifiers are defined in the context of a general
+definition of a directed graph. The definition used here is paraphrased from the
+book, <em>Structural Models in Anthropology</em> written by Per Hage and Frank Harary.
+This book is the first in a remarkable trilogy that also includes <em>Exchange in
+Oceania: A Graph Theoretic Analysis</em> and <em>Island Networks: Communication,
+Kinship, and Classification Structures in Oceania</em>.</p>
+
+<p>One of the challenges presented by the literature on graph theory is the number
+of synonyms for the basic elements of a graph (table <a href="#orgb7f96af">1</a>), what this
+document and the <code>hm</code> software try to label consistently as nodes and arcs. Hage
+and Harary typically use point and arc for directed graphs, and point and line
+for graphs. The definitions given below and in the following sections are quoted
+verbatim, so it is up to the reader to translate synonyms appropriately.</p>
+
+<p><a id="orgb7f96af"></a></p>
+
+<div class="table-caption">
+  <span class="table-number">Table 1:</span>
+  Some synonyms for node and arc.
+</div>
+
+<table>
+<thead>
+<tr>
+<th>node</th>
+<th>arc</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>point</td>
+<td>line</td>
+</tr>
+
+<tr>
+<td>vertex</td>
+<td>edge</td>
+</tr>
+
+<tr>
+<td>junction</td>
+<td>branch</td>
+</tr>
+
+<tr>
+<td>0-simplex</td>
+<td>1-simplex</td>
+</tr>
+
+<tr>
+<td>element</td>
+<td>element</td>
+</tr>
+</tbody>
+</table>
+
+<p>Hage and Harary define a directed graph on page 68 of <em>Structural Models in
+Anthropology</em> as follows.</p>
+
+<blockquote>
+<p>A <em>directed graph</em> or <em>digraph D</em> consists of a finite set <em>V</em> of points and a
+collection of ordered pairs of distinct points.  Any such pair <em>(u, v)</em> is
+called an <em>arc</em> or <em>directed line</em> and will usually be denoted <em>uv</em>.  The arc
+<em>uv</em> goes from <em>u</em> to <em>v</em> and is incident with <em>u</em> and <em>v</em>.</p>
+</blockquote>
+
+<h3 id="adjacent">Adjacent</h3>
+
+<p>The adjacency classification is the simplest among the graph theoretical
+classifications.  Following on the definition of directed graph, quoted above,
+Hage and Harary define adjacency as follows.</p>
+
+<blockquote>
+<p>The arc <em>uv</em> goes from <em>u</em> to <em>v</em> and is incident with <em>u</em> and <em>v</em>. We also say
+that <em>u</em> is <em>adjacent to v</em> and <em>v</em> is adjacent from <em>u</em>.</p>
+</blockquote>
+
+<p>It is important to note that the sequence diagram represents chronological
+adjacency, rather than physical adjacency.  Two contexts that are in contact
+with one another can be said to be physically adjacent, but they might be
+chronologically separated by one or more other contexts.</p>
+
+<p>This can be seen in the following example, which is based on the stratigraphic
+section shown on Figure .</p>
+
+<p>The sequence diagram can be drawn to highlight the relationship of Context 2 to
+the others. When the sequence diagram is classified so nodes, node labels, and
+edges are colored according to adjacency from Context 2, such that the origin
+node is violet, adjacent nodes are cyan, and nodes not adjacent to Context 2 are
+orange, the graph in Figure <a href="#org3b0eba0">2</a> results.</p>
+
+<p><a id="org3b0eba0"></a></p>
+
+
+
+   <figure>              <img src="http://www.tsdye.online/harris-matrix/roskams-h-sequence-solarized-dark.png" alt="Figure 2: A correct Harris matrix for Figure classified by adjacency to Context 2. Colors are from the Solarized dark palette."/> <figcaption>                                  <p>                     Figure 2: A correct Harris matrix for Figure classified by adjacency to Context 2. Colors are from the <a href="http://ethanschoonover.com/solarized">Solarized</a> dark palette.                                                                       </p>                              </figcaption></figure>
+
+
+<p>The graph was produced on a Linux system with the following function call:</p>
+
+<pre><code class="language-lisp">(run-project/example :roskams-h-solarized-dark)
+</code></pre>
+
+<p>The important sections in the initialization file include the following.</p>
+
+<pre><code class="language-text">[Graph analysis configuration]
+distance-from =
+adjacent-from = 2
+...
+
+[Graphviz sequence classification]
+node-fillcolor-by =
+node-fontcolor-by = adjacent
+node-shape-by =
+node-color-by = adjacent
+node-penwidth-by =
+node-style-by =
+node-polygon-distortion-by =
+node-polygon-image-by =
+node-polygon-orientation-by =
+node-polygon-sides-by =
+node-polygon-skew-by =
+edge-color-by = adjacent
+...
+
+[Graphviz sequence graph attributes]
+colorscheme = solarized
+bgcolor = base02
+fontname = Helvetica
+fontsize = 14.0
+fontcolor = base1
+label = Roskams\' H-structure (corrected)
+labelloc = t
+style = filled
+size =
+ratio = 0.618034
+...
+
+[Graphviz sequence node attributes]
+shape = box
+colorscheme = solarized
+style = filled
+color = base01
+fontsize = 14.0
+fontsize-min = 6.0
+fontsize-max = 22.0
+fontcolor = base01
+fillcolor = base03
+...
+
+[Graphviz sequence adjacent node colors]
+origin = violet
+adjacent = cyan
+not-adjacent = orange
+colorscheme = solarized
+
+[Graphviz sequence adjacent node fontcolors]
+origin = violet
+adjacent = cyan
+not-adjacent = orange
+colorscheme = solarized
+
+[Graphviz sequence adjacent edge colors]
+origin = violet
+adjacent = cyan
+not-adjacent = orange
+colorscheme = solarized
+</code></pre>
+
+<p>Note that Context 2 is in physical contact with Contexts 3 and 5.  The sequence
+diagram (fig. <a href="#org3b0eba0">2</a>) shows Context 2 adjacent to Context 3, but
+because the Context 2 pit cut into Context 3, which itself was cut into Context
+5, Context 2 is not chronologically adjacent to Context 5.</p>
+
+<h3 id="reachable">Reachable</h3>
+
+<p>The graph theoretic definition of reachability requires definitions for directed
+walk and path. Hage and Harary define reachability this way on pages 68&ndash;69 of
+<em>Structural Models in Anthropology</em>, where they use digraph as a synonym for
+directed graph.</p>
+
+<blockquote>
+<p>A (directed) walk in a digraph is an alternating sequence of points and arcs,
+v₀, x₁, v₁, &hellip;, xₙ, vₙ in which each arc xᵢ is vᵢ₋₁vᵢ.  For brevity, we may write
+the sequence of points v₀, v₁, &hellip;, vₙ to indicate the same walk.  The length of
+such a walk is n, the number of occurrences of arcs in it.  A closed walk has
+the same first and last points, and open walk does not, and a spanning walk
+contains all the points.  A path is a walk in which all points are distinct; a
+cycle is a nontrivial closed walk with all points distinct except the first and
+last.  If there is a path from u to v, then v is said to be reachable from u &hellip;</p>
+</blockquote>
+
+<p>Compare this definition with Roskams&rsquo; description of reachability as it is
+conceptualized by users of the Harris matrix on page 158 of the book,
+<em>Excavation</em>:</p>
+
+<blockquote>
+<p>if one travels from a particular unit via the strands running up from it, all
+units through which one passes are provably later than that unit;
+if one travels down, every unit <em>en route</em> is provably earlier;
+any unit which cannot be reached in one of these two ways has no proven
+relationship with the unit in question.</p>
+</blockquote>
+
+<p>This describes all the nodes from which the &ldquo;particular unit&rdquo; is reachable—&rdquo;the
+strands running up from it&rdquo;—and all the nodes reachable from &ldquo;the particular
+unit&rdquo; that are encountered when one &ldquo;travels down&rdquo;.</p>
+
+<p>One key to dating Çatalhöyük has been identifying residual materials in the
+deposits.  A good example of this is Context 1332+, where several seeds were
+recovered and dated.  Initially, the seeds were thought to be associated with
+the Context 1332+ deposit, but four of them were subsequently determined to be
+residual.  The effect of these different residuality determinations on the
+dating project at Çatalhöuyük is discussed by <a href="https://www.sciencedirect.com/science/article/pii/S0305440315002459">Dye and Buck</a>.</p>
+
+<p>The importance of Context 1332+ in the stratigraphy of Çatalhöyük is indicated
+by a graph classified by reachability (fig. <a href="#org087abf2">3</a>).
+This graph assigns dark blue fills to nodes from which Context 1332+ is
+reachable and nodes reachable from Context 1332+. The node for Context 1332+ is
+filled light blue. Nodes from which Context 1332+ is not reachable and nodes not
+reachable from Context 1332+ are filled green.  The colors are taken from the
+Brewer color <code>paired</code> palette.</p>
+
+<p>A stratigraphic DAG for the information displayed on Figure <a href="#org087abf2">3</a>
+might be drawn on a Linux system with the <code>hm</code> software as follows:</p>
+
+<pre><code class="language-lisp">(run-project/example :catal-hoyuk-reachable)
+</code></pre>
+
+<p><a id="org087abf2"></a></p>
+
+
+
+   <figure>     <a href="http://www.tsdye.online/harris-matrix/bldg-1-5-sequence-reachable-1332&#43;.png">         <img src="http://www.tsdye.online/harris-matrix/bldg-1-5-sequence-reachable-1332&#43;-small.png" alt="Figure 3: Stratigraphic DAG of the North Area sequence with nodes classified according to reachability to and from Context 1332+. Context 1332+ is light blue.  Nodes reachable from Context 1332+ are dark blue. Nodes not reachable from Context 1332+ are green."/> </a><figcaption>                                  <p>                     Figure 3: Stratigraphic DAG of the North Area sequence with nodes classified according to reachability to and from Context 1332+. Context 1332+ is light blue.  Nodes reachable from Context 1332+ are dark blue. Nodes not reachable from Context 1332+ are green.                                                                       </p>                              </figcaption></figure>
+
+
+<p>The important sections of the configuration file include the following.</p>
+
+<pre><code class="language-text">[Graph analysis configuration]
+distance-from =
+adjacent-from =
+reachable-from = 1332+
+reachable-limit =
+
+[Graphviz sequence classification]
+node-fillcolor-by = reachable
+...
+
+[Graphviz sequence reachability node fillcolors]
+origin = 0
+reachable = 1
+not-reachable = 2
+colorscheme = paired
+</code></pre>
+
+<p>Classification by reachability is potentially important for decisions on what
+materials to date.  Contexts that are reachable from many contexts or from which
+many contexts are reachable might be thought of as having relatively great
+potential influence in a chronological model.</p>
+
+<h3 id="distance">Distance</h3>
+
+<p>The graph theoretic definition of distance follows directly on the definition of
+reachability.  Hage and Harary define distance this way on page 69 of
+<em>Structural Models in Anthropology</em>.</p>
+
+<blockquote>
+<p>If there is a path from u to v, then v is said to be reachable from u, and the
+distance d (u,v) from u to v is the length of any shortest such path.</p>
+</blockquote>
+
+<p>An example of a graph classified by distance is Figure <a href="#orgd99a3b4">4</a>. This graph
+assigns node fills based on distance from Context 1332+. The node for Context
+1332+ is the lightest blue. Nodes not reachable from Context 1332+ are the
+darkest blue. All other nodes have intermediate shades of blue based on their
+distance from Context 1332+, the farther the node the darker the color.</p>
+
+<p><a id="orgd99a3b4"></a></p>
+
+
+
+   <figure>     <a href="http://www.tsdye.online/harris-matrix/bldg-1-5-sequence-distance-1332&#43;.png">         <img src="http://www.tsdye.online/harris-matrix/bldg-1-5-sequence-distance-1332&#43;-small.png" alt="Figure 4: Stratigraphic DAG of the North Area sequence with nodes shaded by distance from Context 1332+."/> </a><figcaption>                                  <p>                     Figure 4: Stratigraphic DAG of the North Area sequence with nodes shaded by distance from Context 1332+.                                                                       </p>                              </figcaption></figure>
+
+
+<p>This graph was produced on a Linux system with the following function call:</p>
+
+<pre><code class="language-lisp">(run-project/example :catal-hoyuk-distance :draw-chronology nil)
+</code></pre>
+
+<p>The interesting parts of the configuration file follow.</p>
+
+<pre><code class="language-text">[Graph analysis configuration]
+distance-from = 1332+
+
+[Graphviz sequence classification]
+node-fillcolor-by = distance
+
+[Graphviz sequence node fill color schemes]
+levels =
+distance = cet-blues
+</code></pre>
+
+<h3 id="levels">Levels</h3>
+
+<p>The graph theoretic concept of level is closely tied to the stratigraphic
+concept of level.  Hage and Harary define level on page 82 of <em>Structural Models in Anthropology.</em></p>
+
+<blockquote>
+<p>An acyclic digraph D has no cycles &hellip; [and] is said to have a level assignment,
+which assigns a positive integer n for each point v, called its level, if for
+each arc vᵢ vⱼ of D, the corresponding integers satisfy nᵢ &lt; nⱼ.  Thus each arc
+of D is directed from a lower to a higher level.  If a digraph D has a cycle,
+then it cannot have a level assignment.</p>
+</blockquote>
+
+<p>An example of a levels classification can be seen in the stratigraphic DAG of Çatalhöyük (fig. <a href="#org1c00cca">5</a>).</p>
+
+<p><a id="org1c00cca"></a></p>
+
+
+
+   <figure>     <a href="http://www.tsdye.online/harris-matrix/bldg-1-5-sequence-levels.png">         <img src="http://www.tsdye.online/harris-matrix/bldg-1-5-sequence-levels-small.png" alt="Figure 5: Stratigraphic DAG of the North Area sequence at Çatalhöyük with nodes colored by level."/> </a><figcaption>                                  <p>                     Figure 5: Stratigraphic DAG of the North Area sequence at Çatalhöyük with nodes colored by level.                                                                       </p>                              </figcaption></figure>
+
+
+<p>The graph was produced on a Linux system with the following function call:</p>
+
+<pre><code class="language-lisp">(run-project/example :catal-hoyuk-levels :draw-chronology nil)
+</code></pre>
+
+<p>The interesting parts of the configuration file follow.</p>
+
+<pre><code class="language-text">[Graphviz sequence classification]
+node-fillcolor-by = levels
+
+[Graphviz sequence node fill color schemes]
+levels = cet-bgyw
+</code></pre>
+
+<h2 id="write-a-classification-to-a-file">Write a Classification to a File</h2>
+
+<p>In addition to creating graphical output, the <code>hm</code> software can write a
+classification to a comma-separated-value file to communicate with other
+software.  The name of the output file is specified in the configuration file;
+this protocol insures that the user of an <code>hm</code> project created by someone else
+can be certain of a CSV file&rsquo;s contents.</p>
+
+<p>In the example below, the file names for <code>distance</code>, <code>reachable</code>, and <code>adjacent</code>
+classifications are helpfully descriptive, while the name given the <code>phases</code>
+classification is not too helpful.</p>
+
+<pre><code class="language-text">[Output files]
+sequence-dot = fig-12-polygon-1.dot
+chronology-dot =
+distance = fig-12-distance.csv
+reachable = fig-12-reachable.csv
+adjacent = fig-12-adjacent.csv
+phases = foobar.csv
+periods = fig-12-periods.csv
+...
+</code></pre>
+
+<p>The following transcript writes the <code>periods</code> classifier for the
+<code>:fig-12-polygon</code> example to the <code>fig-12-periods.csv</code> file.</p>
+
+<p><a id="org23f94d3"></a></p>
+
+<pre><code class="language-lisp">(defvar *seq*)
+(setq *seq* (run-project/example :fig-12-polygon))
+(write-classifier :periods *seq*)
+</code></pre>
+
+<p>The file <code>fig-12-periods.csv</code> file looks like this:</p>
+
+<p><a id="org44854e0"></a></p>
+
+<pre><code class="language-sh">head ../examples/fig-12-chronology/fig-12-periods.csv
+</code></pre>
+
+<pre><code class="language-text">
+</code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2018 Released under the GNU General Public License v3.0 &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://www.tsdye.online/harris-matrix/example-projects/" title="Example Projects">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Example Projects
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://www.tsdye.online/harris-matrix/graph-attributes/" title="Classifiable Graph Attributes">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Classifiable Graph Attributes
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/www.tsdye.online\/harris-matrix\/';
+      var repo_id  = 'tsdye\/harris-matrix';
+    
+    </script>
+
+    <script src="http://www.tsdye.online/harris-matrix/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

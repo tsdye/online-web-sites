@@ -1,0 +1,18 @@
+baseurl = "http://www.tsdye.online/j20-immigration/"
+themesDir = "./themes"
+languageCode = "en-us"
+theme = "light-hugo"
+canonifyurls = true
+
+title = "Immigration"
+author = "Hawaii J20"
+copyright = "© Copyright 2018 Hawaii J20"
+
+[Params]
+  description = "Frequently Asked Questions"
+  email = "adayofresistance@gmail.com"
+#  github = "tblyler"
+  twitter = "hawaii_j20"
+#  linkedin = "johndoe"
+  facebook = "hawaiij20"
+  logo = "/j20-logo-small.png"
