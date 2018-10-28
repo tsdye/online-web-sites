@@ -58,6 +58,188 @@ primary states in traditional Hawai‘i.
 
  Why read philosophy now?  Take a look!
 
+** Cambridge Pragmatism
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: cambridge-pragmatism
+   :END:
+
+I was drawn to /Cambridge Pragmatism: From Peirce and James to Ramsey and
+Wittgenstein/ by [[http://philosophy.utoronto.ca/directory/cheryl-misak/][Cheryl Misak]] because it brings together subjective probability
+and C. S. Peirce's pragmatism, two lines of thought I admire but whose
+relationship to one another was a mystery to me. Misak is a foremost authority
+on Peirce and pragmatism whose many books and articles are written with a
+clarity that makes them accessible to someone trained as an archaeologist,
+rather than a philosopher.
+
+My admiration of subjective probability goes back more than 25 years, and comes
+from habits acquired during the practice of Bayesian calibration of
+archaeological radiocarbon dates. Early on, I ran across situations where the
+prior information of the Bayesian chronological model improved, often markedly,
+both the accuracy and precision of the date estimate. This was an important
+discovery for my work in Hawai`i where the uncertainty in radiocarbon dating due
+to Industrial Revolution's use of coal power, which pumped "dead" carbon into
+the atmosphere and altered the global radiocarbon balance, makes the last
+quarter of the archaeological sequence almost impossible to date precisely
+without the addition of the prior information made possible by Bayesian
+calibration. Later on, I realized that Bayesian chronological models could be
+constructed to keep an analysis from running off the rails, providing what my
+colleague Tim Rieth calls "bookends" that keep the estimate from straying too
+early or too late. The ad hoc methods used by many archaeologists in Hawai`i
+lack this useful property and, indeed, many of their analyses have run silently
+off the rails. My experience has led me to believe subjective probabilities are
+good for archaeological thinking. The tie in to Misak's book is that the Ramsey
+of its subtitle is Frank Plumpton Ramsey, who laid the mathematical foundations
+of subjective probability at Cambridge in the 1920s. I was keen to know what
+Ramsey made of pragmatism.
+
+My admiration of Peirce and pragmatism is more recent. I'd run across Peirce's
+name when [[https://escholarship.org/uc/item/1hs7w49v][Per Hage]] and [[https://www.nytimes.com/2005/01/25/obituaries/frank-harary-83-a-top-scholar-on-a-mathematical-specialty-dies.html][Frank Harary]] cited his work on the logic of relations in
+[[https://www.worldcat.org/title/structural-models-in-anthropology/oclc/938930741&referer=brief_results][/Structural Models in Anthropology/]] and
+[[https://www.worldcat.org/title/exchange-in-oceania-a-graph-theoretic-analysis/oclc/22307220&referer=brief_results][/Exchange
+in Oceania: A Graph Theoretic Analysis/]]. But it wasn't until I read a
+conference paper by the French archaeologist François Djindjian that I was
+stimulated to read Peirce's two essays, [[http://www.peirce.org/writings/p119.html]["How to Make Our Ideas Clear"]] and [[http://www.peirce.org/writings/p107.html]["The
+Fixation of Belief."]] Peirce's analysis of inquiry as transforming doubt into
+belief through a process that involved abduction, deduction, and induction was
+an eye-opener for me. When I was in graduate school, New Archaeologists were
+arguing that the inductive reasoning used by culture historians was inferior to
+the deductive reasoning they championed. Although I wasn't convinced one was
+better than the other, I thought the two were somehow antithetical and it hadn't
+occurred to me they might be complementary in the way Peirce explained so
+clearly.
+
+The mystery about the relationship of subjective probability and pragmatism
+started many years ago, when I read somewhere (that I've now forgotten and am
+too busy to track down) that Peirce discounted subjective probability and was a
+strong advocate of objective probability. As an undergraduate, I took a course
+on probability theory where I learned a bit about the acrimonious debates
+between frequentists and subjectivists and I was perplexed to imagine that
+Peirce and I appeared to be on opposite sides of the debate. Peirce was a
+scientist deeply involved with issues of measurement---for 32 years he worked
+for the U.S. Coast and Geodetic Survey making careful measurements of the
+intensity of the earth's gravitational field using pendulums that he designed
+and built---and I felt certain that the experience I'd had with Bayesian
+calibration was of a kind that Peirce would have recognized and appreciated.
+
+Misak's book solved my mystery. Peirce was not a staunch objectivist, but
+recognized both objective and subjective probability. However, he believed that
+objective probability is fundamental because it is determined by facts. In his
+view, the degrees of belief calculated by the subjectivist must be keyed to
+objective probability, so that one's beliefs correspond closely to facts. Ramsey
+credits his reading of Peirce with stimulating his interest in probability, an
+interest that led him to formulate the mathematical basis of subjective
+probability. In a sense then, the Bayesian calibration that I practice in
+archaeology counts Peirce and pragmatism among its intellectual ancestors.
+
+** On Truth                                                            :blog:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: on-truth
+   :END:
+
+Frank Plumpton Ramsey, who died in 1930 at the age of 26, was "an extraordinary
+scholarly phenomenon," according to his editors, [[http://www.pitt.edu/~rescher/][Nicholas Rescher]] and [[https://www.uni-goettingen.de/en/71635.html][Ulrich
+Majer]]. He was appointed Cambridge University Lecturer in Mathematics at the age
+of 22. According to [[http://philosophy.utoronto.ca/directory/cheryl-misak/][Cheryl Misak]], among many accomplishments in the few short
+years of his career "he managed to figure out how to measure partial belief and
+hence lay the groundwork for decision theory and Bayesian statistics." Misak's
+book, [[https://global.oup.com/academic/product/cambridge-pragmatism-9780198712077?cc=ca&lang=en&][/Cambridge Pragmatism, from Peirce and James to Ramsey and Wittgenstein/]],
+describes how Ramsey took up several pragmatic insights and expanded upon them
+in [[https://www.worldcat.org/title/on-truth-original-manuscript-materials-1927-1929-from-the-ramsey-collection-at-the-university-of-pittsburgh/oclc/965553015&referer=brief_results][/On Truth/]], a book manuscript that was unfinished when he died.
+
+Chapter 5, /Judgment and Time/, "develops some very general considerations about
+events in time." Ramsey argues that Einstein's theory that time is not absolute,
+but is instead relative to an observer's position in space-time, has
+implications for the definition of "event." The common view of event, which
+Ramsey calls the "substance theory", considers the world to comprise a
+collection of enduring substances liable to change, and defines an event as an
+important change in the quality or relations of substances. Ramsey argues that
+the "substance theory" posits substances and absolute time among the ultimate
+constituents of the world, a position that flatly contradicts Einstein's
+theory of relativity.  The problem the substance theory poses for "event" is
+that it confounds two distinct concepts, which can be distinguished if a
+relative theory of time is adopted and events defined as "regions or volumes of
+space-time \dots are taken to be the ultimate constituents of the world."
+
+Ramsey illustrates the problem with the example of an eclipse, which the
+"substance theory" considers an event.  Ramsey argues that an eclipse is instead
+a fact about relations among three events:
+ - the space-time occupied by the sun;
+ - the space-time occupied by earth in its orbit around the sun; and
+ - the space-time occupied by the moon in its orbit around the earth.
+He proposes to call such facts about events "occurrences" to distinguish them
+from the space-time events that are the ultimate constituents of the world.
+
+** Four Ages of Understanding                                          :blog:
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: four-ages
+   :END:
+The subtitle of this 1,019 page book is /The First Postmodern Survey of
+Philosophy from Ancient Times to the Turn of the Twenty-First Century./ Written
+by [[https://en.wikipedia.org/wiki/John_Deely][John Deely]], a Thomist scholar who spent 15 years translating the seventeenth
+century Latin work, /Tractatus de Signis/ by John Poinsot (also known as John of
+St. Thomas), the [[http://www.worldcat.org/title/four-ages-of-understanding-the-first-postmodern-survey-of-philosophy-from-ancient-times-to-the-turn-of-the-twenty-first-century/oclc/277235600/editions?referer=di&editionsView=true][/Four Ages of Understanding/]] argues that the development of the
+concept of /sign/ is the central thread in the history of philosophy.
+
+The four ages of understanding in the title correspond for the most part with
+the dominant language(s) of philosophy. So far as is known, philosophy got its
+start as an independent line of thought in ancient Greece, where it was
+conceived as the study of nature and given the name "physics". Greek philosphers
+in the first age of understanding didn't dwell on the idea of sign and the Greek
+word that John Locke in the seventeenth century applied to the study of signs,
+σημειον or semiosis, was confined to natural signs, such as symptoms of disease
+or smoke from a fire.  Deely traces Greek philosophy from Thales of Miletus (c.
+625–545 BC) to Proclus (c. AD 410–485) and Pseudo-Dionysius (c. AD 455–c. 535).
+
+With the fall of the Roman empire and subsequent loss of Greek philosophy in the
+West until the thirteenth century revival of Aristotle's works, the Latin age of
+understanding was left to develop its own philosophy of being, which in Deely's
+hands stretches from Augustine's (AD 354–430) introduction of the notion of sign
+through to John Poinsot's (AD 1589–1644) grounding of the concept in the
+/Tractatus de Signis/. The work of Scholastics from Augustine to Poinsot is
+treated in great detail, consistent with Deely's Thomism and his concern and
+obvious love for a scholarly tradition that recognizes the accomplishments of
+predecessors when advancing claims that expand the intellectual horizon. The
+more than 300 pages devoted to the Latin age will likely leave the modern reader
+a bit daunted, but with a firm appreciation for the subtlety, intricacy, and
+complexity of Scholastic thought.
+
+During the modern age, which began with Descartes (AD 1596–1650) and extended
+through to Husserl (AD 1859–1938), Russell (AD 1872–1970), and Wittgenstein (AD
+1889–1950), philosophy was developed in national languages and not in Latin.
+Deely's contempt for modern philosophy runs deep; in his view, the modern
+philosophers who dominate the academy today have "become to philosophy's future
+what the judges of Galileo were to the future of science." Ouch! In Deely's
+view, the moderns, in their justified reaction to the abuses of religious
+authority that blocked the way of inquiry, threw out the semiotic baby with the
+authoritarian bathwater. Their naive view that ideas represent objects in a
+dyadic relationship in the mind ignored the real triadic relation established
+between a representamen and an interpretant by a sign.  Modern debates over
+whether the world exists outside the mind strike Deely as ghastly reminders of
+the damage done to the philosophical tradition when the concept of sign was
+lost or ignored in the modern age.
+
+The future of philosophy belongs to post-modernism, which was introduced
+programmatically by John Locke (AD 1632–1704), but whose foundations were
+developed by the American logician Charles Sanders Peirce (AD 1839–1914).
+According to Deely, Peirce's work was a clear advance on the work of the Latins.
+#+BEGIN_QUOTE
+The Latins, for the most part, got only as far as establishing the being proper
+to signs, the common factor or element which justifies the notion of sign in
+general in Augustine's sense and removes it from every theoretical context of
+nominalism.  But Peirce, in good medieval fashion, goes at once from this as
+established terrain to consider what immediately follows from it, namely the
+action proper to signs … Recall what Peirce said about the sign in its proper
+character as a genuine mediation: anything is related to a second thing, its
+Object, in respect to a quality, its Ground, in such a way as to bring a third
+thing, its Interpretant, into relation to the same Object, and that in such a
+way as to bring a fourth into relation to that Object in the same form, /ad
+infinitum/.
+#+END_QUOTE
+When the action proper to signs is combined with Peirce's claim that all thought
+is in signs, then the infinite semiosis described above becomes a good
+description of the activity that generates an intellectual tradition, such as the
+one Deely uncovers so wonderfully in /Four Ages of Understanding/.
+
 ** The Discovery of Time                                               :blog:
    CLOSED: [2018-05-06 Sun 15:05]
    :PROPERTIES:
@@ -133,43 +315,29 @@ Here is a BibTeX entry:
 }
 #+END_EXAMPLE
 
-** On Truth                                                            :blog:
+** Peirce: A Guide for the Perplexed                                   :blog:
    :PROPERTIES:
-   :EXPORT_FILE_NAME: on-truth
+   :EXPORT_FILE_NAME: perplexed
    :END:
+This [[https://www.bloomsbury.com/us/peirce-a-guide-for-the-perplexed-9781847065155/#sthash.zrwA7smT.dpuf][little book by the philosopher Cornelis de Waal]] is a gem. It provides an
+overview of Peirce's thinking that surveys its breadth, acknowledges its
+history, and elaborates the variety of thoughts generated by Peirce's
+triadic logic. After a lucid chapter on Peirce's life and work, the book is
+organized by Peirce's classification of the sciences, as indicated by the
+chapter titles: Mathematics and philosophy; Phenomenology and the categories;
+The normative science of logic; Semeiotics, or the doctrine of signs; Philosophy
+of science; Pragmatism; Truth and reality; and Mind, God, and cosmos. de Waal
+does not try to distill Peirce's work into a single, coherent philosophical
+system, but treats it as a work in progress, a body of thought shaped more and
+more thoroughly by triadic logic as Peirce worked to root out the ill effects of
+Cartesian dualism.  Peirce's thought had strong roots in the philosophical
+tradition; de Waal gives a good feel for how Peirce fits in this tradition
+without letting the narrative bog down in historical detail.  Peirce's thought
+stays front and center, propped as needed by Aristotle, Duns Scotus, Hegel, and
+Kant.
 
-Frank Plumpton Ramsey, who died in 1930 at the age of 26, was "an extraordinary
-scholarly phenomenon," according to his editors, [[http://www.pitt.edu/~rescher/][Nicholas Rescher]] and [[https://www.uni-goettingen.de/en/71635.html][Ulrich
-Majer]]. He was appointed Cambridge University Lecturer in Mathematics at the age
-of 22. According to [[http://philosophy.utoronto.ca/directory/cheryl-misak/][Cheryl Misak]], among many accomplishments in the few short
-years of his career "he managed to figure out how to measure partial belief and
-hence lay the groundwork for decision theory and Bayesian statistics." Misak's
-book, [[https://global.oup.com/academic/product/cambridge-pragmatism-9780198712077?cc=ca&lang=en&][/Cambridge Pragmatism, from Peirce and James to Ramsey and Wittgenstein/]],
-describes how Ramsey took up several pragmatic insights and expanded upon them
-in [[https://www.worldcat.org/title/on-truth-original-manuscript-materials-1927-1929-from-the-ramsey-collection-at-the-university-of-pittsburgh/oclc/965553015&referer=brief_results][/On Truth/]], a book manuscript that was unfinished when he died.
-
-Chapter 5, /Judgment and Time/, "develops some very general considerations about
-events in time." Ramsey argues that Einstein's theory that time is not absolute,
-but is instead relative to an observer's position in space-time, has
-implications for the definition of "event." The common view of event, which
-Ramsey calls the "substance theory", considers the world to comprise a
-collection of enduring substances liable to change, and defines an event as an
-important change in the quality or relations of substances. Ramsey argues that
-the "substance theory" posits substances and absolute time among the ultimate
-constituents of the world, a position that flatly contradicts Einstein's
-theory of relativity.  The problem the substance theory poses for "event" is
-that it confounds two distinct concepts, which can be distinguished if a
-relative theory of time is adopted and events defined as "regions or volumes of
-space-time \dots are taken to be the ultimate constituents of the world."
-
-Ramsey illustrates the problem with the example of an eclipse, which the
-"substance theory" considers an event.  Ramsey argues that an eclipse is instead
-a fact about relations among three events:
- - the space-time occupied by the sun;
- - the space-time occupied by earth in its orbit around the sun; and
- - the space-time occupied by the moon in its orbit around the earth.
-He proposes to call such facts about events "occurrences" to distinguish them
-from the space-time events that are the ultimate constituents of the world.
+This is a tall order, but one that de Waal pulls off with style, learning, and
+considerable skill.  The book is a joy from start to finish.
 
 * Commons
   :PROPERTIES:

@@ -1,7 +1,7 @@
 +++
 title = "Open Science in Archaeology"
 author = ["Thomas S. Dye"]
-lastmod = 2018-05-24T17:45:39-10:00
+lastmod = 2018-07-18T06:48:55-10:00
 draft = false
 +++
 
@@ -20,4 +20,4 @@ in the analysis process instead of secrecy, and public involvement instead of
 exclusion. While the concept of open science is not new in archaeology a less
 transparent model often prevails, unfortunately.
 
-[Reprint](http://www.tsdye.online/reprints/Marwick_et_al_2017_SAA_Record_Sept.pdf)
+[Reprint](http://www.tsdye.online/reprints/Marwick%5Fet%5Fal%5F2017%5FSAA%5FRecord%5FSept.pdf)

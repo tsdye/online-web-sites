@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://www.tsdye.online/anth-464/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "ANTH 464"
+theme = "hugo-paper"

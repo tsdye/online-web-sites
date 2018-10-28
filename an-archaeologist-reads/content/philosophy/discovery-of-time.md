@@ -2,14 +2,14 @@
 title = "The Discovery of Time"
 author = ["Thomas S. Dye"]
 date = 2018-05-06T15:05:00-10:00
-lastmod = 2018-05-24T17:45:39-10:00
+lastmod = 2018-07-18T06:48:55-10:00
 tags = ["blog"]
 draft = false
 +++
 
 This seminal study of how geology and biology became historical sciences was
 written by the philosopher [Stephen Toulmin](https://www.theguardian.com/theguardian/2010/jan/10/stephen-toulmin-obituary) and the historian and scientist [June
-Goodfield](https://en.wikipedia.org/wiki/June_Goodfield). It was published by Harper & Row in 1965 and has been reprinted
+Goodfield](https://en.wikipedia.org/wiki/June%5FGoodfield). It was published by Harper & Row in 1965 and has been reprinted
 regularly since then by the [University of Chicago Press](http://press.uchicago.edu/ucp/books/book/chicago/D/bo3615904.html).
 
 p. 49

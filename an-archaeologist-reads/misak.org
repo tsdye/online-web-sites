@@ -1,0 +1,55 @@
+* Cambridge Pragmatism
+
+I was drawn to this book by Cheryl Misak because it brings together subjective
+probability and C. S. Peirce's pragmatism, two lines of thought I admire but
+whose relationship to one another was a mystery to me. Misak is a foremost
+authority on Peirce and pragmatism whose many books and articles are written
+with a clarity that makes them accessible to someone trained as an
+archaeologist, rather than a philosopher.
+
+My admiration of subjective probability goes back more than 25 years, and comes
+from habits acquired during the practice of Bayesian calibration of
+archaeological radiocarbon dates. Early on, I ran across situations where the
+prior information of the Bayesian chronological model improved, often markedly,
+both the accuracy and precision of the date estimate. This was an important
+discovery for my work in Hawai`i where the uncertainty in radiocarbon dating due
+to Industrial Revolution's use of coal power, which pumped "dead" carbon into
+the atmosphere and altered the global ^{12}C/^{14}C balance, makes the last
+quarter of the archaeological sequence almost impossible to date precisely
+without the addition of the prior information made possible by Bayesian
+calibration. Later on, I realized that Bayesian chronological models could be
+constructed to keep an analysis from running off the rails, providing what my
+colleague Tim Rieth calls "bookends" that keep the estimate from straying too
+early or too late. The ad hoc methods used by most archaeologists in Hawai`i
+lack this useful property and, indeed, many of them have silently run off the
+rails. My experience has led me to believe subjective probabilities are good for
+archaeological thinking. The tie in to Misak's book is that the Ramsey of its
+subtitle is Frank Plumpton Ramsey, who laid the mathematical foundations of
+subjective probability at Cambridge in the 1920s. I was keen to know what Ramsey
+made of pragmatism.
+
+My admiration of Peirce and pragmatism is more recent.  I'd run across Peirce's
+name when Per Hage and Frank Harary cited his work on the logic of relations in
+their trilogy of books on graph theory and structural anthropology in Oceania.
+But it wasn't until I read a conference paper by the French archaeologist
+Francois Djindjian that I was stimulated to read Peirce's two essays, "How to
+Make Our Ideas Clear" and "The Fixation of Belief."  Peirce's analysis of
+inquiry as transforming doubt into belief through a process that involved
+abduction, deduction, and induction was an eye-opener for me.  When I was in
+graduate school, New Archaeologists were arguing that the inductive reasoning
+used by culture historians was inferior to the deductive reasoning they
+championed.  Although I was never convinced the one was better than the other,
+I'd always thought the two were somehow antithetical and it hadn't occurred to
+me that they might be complementary in the way Peirce explained so clearly.
+
+The mystery about the relationship of subjective probability and pragmatism
+started many years ago, when I read somewhere (that I've now forgotten and am
+too busy to track down) that Peirce discounted subjective probability and was a
+strong advocate of objective probability. As an undergraduate, I took a course
+on probability theory where I learned a bit about the acrimonious debates
+between frequentists and subjectivists and I was perplexed to imagine that
+Peirce and I appeared to be on opposite sides of the debate. Peirce was a
+scientist deeply involved with issues of measurement---his early career was
+spent XXX pendulums---and I felt certain that the experience I'd had with
+Bayesian calibration was of a kind that Peirce would have recognized and
+appreciated.

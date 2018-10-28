@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-10-14 Sun 09:47 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spring 2019 ANTH 464 Hawaiian Archaeology</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Dr. Thomas S. Dye" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Spring 2019 ANTH 464 Hawaiian Archaeology</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org43c47d1">1. Homepage</a></li>
+<li><a href="#orgf3d0d79">2. ANTH 464</a>
+<ul>
+<li><a href="#org4844961">2.1. Syllabus</a>
+<ul>
+<li><a href="#org8eba146">2.1.1. Course Description</a></li>
+<li><a href="#orgbea5cf9">2.1.2. Student Learning Outcomes</a></li>
+<li><a href="#orgb7adb99">2.1.3. Disability Statement</a></li>
+<li><a href="#org06760cf">2.1.4. Stipulations</a></li>
+<li><a href="#org6b83798">2.1.5. Textbook</a></li>
+<li><a href="#mid-term-examination">2.1.6. Mid-Term Examination</a></li>
+<li><a href="#term-paper">2.1.7. Term Paper</a></li>
+<li><a href="#orge9f3299">2.1.8. Grading</a></li>
+</ul>
+</li>
+<li><a href="#orgdba855d">2.2. Course Calendar</a></li>
+<li><a href="#orgfd0a05b">2.3. Term Paper Instructions</a>
+<ul>
+<li><a href="#orgcd6875f">2.3.1. Term Paper Schedule</a></li>
+<li><a href="#choose-topic">2.3.2. Choose excavation report</a></li>
+<li><a href="#form-questions">2.3.3. Reconstitution</a></li>
+<li><a href="#refine-proposal">2.3.4. Acquisition 1</a></li>
+<li><a href="#pitch-research">2.3.5. Acquisition 2</a></li>
+<li><a href="#abstract-and-bibliography">2.3.6. Specific Topic</a></li>
+<li><a href="#introduction-and-outline">2.3.7. Structuration</a></li>
+<li><a href="#two-body-paragraphs">2.3.8. Abstract, Outline, and Bibliography</a></li>
+<li><a href="#first-draft">2.3.9. First draft</a></li>
+<li><a href="#final-term-paper">2.3.10. Final term paper</a></li>
+</ul>
+</li>
+<li><a href="#class-presentations">2.4. Class presentation</a></li>
+<li><a href="#dq">2.5. Discussion Questions</a>
+<ul>
+<li><a href="#dq1">2.5.1. Discussion Questions 1</a></li>
+<li><a href="#dq2">2.5.2. Discussion Questions 2</a></li>
+<li><a href="#dq3">2.5.3. Discussion Questions 3</a></li>
+<li><a href="#dq4">2.5.4. Discussion Questions 4</a></li>
+<li><a href="#dq5">2.5.5. Discussion Questions 5</a></li>
+<li><a href="#dq6">2.5.6. Discussion Questions 6</a></li>
+<li><a href="#dq7">2.5.7. Discussion Questions 7</a></li>
+<li><a href="#dq8">2.5.8. Discussion Questions 8</a></li>
+<li><a href="#dq9">2.5.9. Discussion Questions 9</a></li>
+<li><a href="#dq10">2.5.10. Discussion Questions 10</a></li>
+<li><a href="#dq11">2.5.11. Discussion Questions 11</a></li>
+<li><a href="#dq12">2.5.12. Discussion Questions 12</a></li>
+<li><a href="#dq13">2.5.13. Discussion Questions 13</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org43c47d1" class="outline-2">
+<h2 id="org43c47d1"><span class="section-number-2">1</span> Homepage</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</div>
+
+<div id="outline-container-orgf3d0d79" class="outline-2">
+<h2 id="orgf3d0d79"><span class="section-number-2">2</span> ANTH 464</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+
+<div id="outline-container-org4844961" class="outline-3">
+<h3 id="org4844961"><span class="section-number-3">2.1</span> Syllabus</h3>
+<div class="outline-text-3" id="text-2-1">
+<dl class="org-dl">
+<dt>Meeting Times</dt><dd>MWF 9:30&#x2013;10:20</dd>
+<dt>Classroom</dt><dd>SAUNDERS 345</dd>
+<dt>Instructor</dt><dd>Dr. Thomas S. Dye (<code>tdye@hawaii.edu</code>)
+<dl class="org-dl">
+<dt>Office</dt><dd>Saunders 346B</dd>
+<dt>Office Hour</dt><dd>F 10:30&#x2013;11:30 (or by appointment)</dd>
+</dl></dd>
+</dl>
+</div>
+
+
+<div id="outline-container-org8eba146" class="outline-4">
+<h4 id="org8eba146"><span class="section-number-4">2.1.1</span> Course Description</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+This course is designed to provide undergraduate (and graduate)
+students an in-depth introduction to the archaeology of the Hawaiian
+Islands. Topics that we will consider include (but not be limited to)
+archaeology's contribution to traditional and post-Contact history,
+the geographical and historical origins of the Polynesian discoverers,
+the timing of island colonization and settlement, the development and
+innovation of food production and craft economies, the emergence of
+socio-political hierarchies, and some consequences of contact and
+colonialism.  We will also consider the relevance of archaeology to
+contemporary society.
+</p>
+
+<p>
+Students are expected to be interested in old Hawai`i and curious
+about how archaeology might contribute to Hawaiian history.  There
+will be a research paper (10 pages plus bibliography) and other
+shorter writing assignments. This course is designed for
+upper-division undergraduates and graduate students. We welcome all
+students with interests in old Hawai`i. A background in archaeology is
+helpful but not a prerequisite.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbea5cf9" class="outline-4">
+<h4 id="orgbea5cf9"><span class="section-number-4">2.1.2</span> Student Learning Outcomes</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>Students can evaluate the validity and limitations of
+archaeological theories and research claims.</li>
+<li>Students understand the tempo of change in old Hawai`i.</li>
+<li>Students are familiar with the materials and methods of Hawaiian
+archaeology.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb7adb99" class="outline-4">
+<h4 id="orgb7adb99"><span class="section-number-4">2.1.3</span> Disability Statement</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<p>
+Any student desiring an accommodation based on the impact of a disability should
+contact <code>tdye@hawaii.edu</code> to discuss specific needs. Students with documented
+disabilitites, please contact the KOKUA Program at 808&#x2013;956&#x2013;7511 or visit them
+at the Queen Lili`uokalani Center 013 to coordinate reasonable accommodations.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org06760cf" class="outline-4">
+<h4 id="org06760cf"><span class="section-number-4">2.1.4</span> Stipulations</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<ul class="org-ul">
+<li>Please ask questions outside class with the Laulima "Mailtool" so other
+students can benefit from the conversation</li>
+<li>For private questions, please send an email to <code>tdye@hawaii.edu</code>, visit
+during office hour, or schedule an appointment</li>
+<li>Writing assignments must be submitted as Portable Document Format
+(pdf) files via Laulima</li>
+<li>No credit for late assignments without prior notification and a written
+medical excuse</li>
+<li>Final term papers <i>will not be accepted</i> after the due date and time</li>
+<li>Failure to submit a final draft term paper on time results in a failing
+grade for the course</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6b83798" class="outline-4">
+<h4 id="org6b83798"><span class="section-number-4">2.1.5</span> Textbook</h4>
+<div class="outline-text-4" id="text-2-1-5">
+<p>
+The required textbook for this semester is <i>Hawaii's Past in a World
+of Pacific Islands</i>, by J. M. Bayman and T. S. Dye (2013), SAA Press,
+Washington.
+</p>
+
+<p>
+We will read and discuss the book critically, focusing primarily on
+the archaeological materials and secondarily on the relationship of
+archaeological evidence to other kinds of evidence.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c18146" class="outline-4">
+<h4 id="mid-term-examination"><a id="org9c18146"></a><a id="ID-56ECA156-AEA4-4F7B-B298-05D814C6EC55"></a><span class="section-number-4">2.1.6</span> Mid-Term Examination</h4>
+<div class="outline-text-4" id="text-mid-term-examination">
+<p>
+The mid-term examination includes three essay questions, chosen from a list of
+discussion questions available on Laulima. Note that students have the
+opportunity to discuss these discussioin questions during class meetings leading up
+to the mid-term examination (but not during the examination), although students will
+not know ahead of time which discussion questions will appear on the mid-term
+examination.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb92f68c" class="outline-4">
+<h4 id="term-paper"><a id="orgb92f68c"></a><a id="id:BAA985D7-2A10-4951-BF31-82D482128DF3"></a><span class="section-number-4">2.1.7</span> Term Paper</h4>
+<div class="outline-text-4" id="text-term-paper">
+<p>
+A passing grade in this course requires the student to undertake and complete a
+term-long writing project. The term paper will summarize and critically review
+an archaeological excavation report (or a particular topic taken from the report) and
+supplementary material as appropriate.
+</p>
+
+<p>
+Students may select an excavation report from the following list. These reports
+and supplementary materials are either available online or held on course
+reserve at Hamilton Library. Alternatively, students with particular interests
+may write a term paper on another excavation report; in this case, please
+consult with <code>tdye@hawaii.edu</code> to negotiate a mutually agreeable excavation
+report.
+</p>
+
+<dl class="org-dl">
+<dt>Bellows Dune Site, O`ahu</dt><dd>One of the first excavations of a stratified
+beach site in Hawai`i. The site continues to play an important role in
+archaeological narratives, but its interpretation has changed over time.
+In particular, the dating of the site has been revised.</dd>
+<dt>Site 4727, Hawai`i</dt><dd>A University of Hawai`i field school from 1968 to 1970
+documented the pattern of settlement in the agricultural fields of upland
+Lapakahi <i>ahupua`a</i> on the leeward side of Kohala district. Site 4727 is
+a dwelling surrounded by sweet potato gardens that yielded an
+unexpectedly complex habitation history.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Ordy Pond, O`ahu</dt><dd>A paleoenvironmental coring project at Ordy Pond in the
+`Ewa district yielded crucial evidence for when Polynesians discovered
+the islands and the environmental effects that followed discovery.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Wai`ahukini Cave, Hawai`i</dt><dd>Excavation of a fisherman's shelter
+in the 1960's yielded a large assemblage of fishing gear. One of the few excavations of a
+fisherman's cave before looters destroyed deposits in other coastal caves
+searching for fishhooks to sell. The dating of the site has been revised.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Kal&#0257huipua`a Site E1-355, Hawai`i</dt><dd>A small cave located immediately inland of a
+fishpond was thoroughly excavated in the mid 1970's.  The site yielded a
+large amount of cultural material, primarily food remains, domestic
+tools, and fishing gear.</dd>
+<dt>Fort DeRussy, O`ahu</dt><dd>Archaeology beneath the surface of this military
+installation in  Waik&#0299k&#0299 was undertaken using a backhoe guided by
+nineteenth century maps.   The backhoe unearthed a buried fishpond and
+the archaeologist was able to date construction of an <i>`auwai</i> that
+brought fresh water to the pond.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>K&#0257ne`aki Heiau, O`ahu</dt><dd>A classic excavation designed to investigate the
+history of construction and guide renovation of a temple in Makaha Valley.</dd>
+<dt>H&#0257lawa Pondfield, Hawai`i</dt><dd>An unexpectedly deep excavation in a narrow
+valley on the windward coast of Hawai`i Island revealed a long history of
+taro pondfield construction and renovation.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Kahikinui, Maui</dt><dd>This innovative excavation project took a regional
+perspective and focused on the stratigraphic position of architectural
+features.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Kona Shelter Cave, Hawai`i</dt><dd>A cave excavation at the <i>mauka</i> edge of Kailua
+town yielded abundant material that the archaeologist reconstitutes as
+reflecting subsistence practices and conflict.</dd>
+<dt>Nualolo Kai, Kaua`i</dt><dd>Re-excavation of a site with spectacular preservation
+of normally perishable materials revealed deep stratification. Bishop
+Museum excavations here in the 1950's were extensive, but haven't been
+published.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>H&#0257lawa Dune Site, Moloka`i</dt><dd>Another excavation of a stratified beach site
+from the 1960's that has a prominent place in archaeological narratives.
+The dating of the site has been revised.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>K&#0257newai, O`ahu</dt><dd>Backhoe excavations prior to construction of the Hawaiian
+Studies building here on campus yielded evidence of change
+over time in an irrigation system that fed pondfields in
+one of the most productive agricultural systems on O`ahu.</dd>
+<dt>M&#0257h&#0257`ulep&#0363, Kaua`i</dt><dd>Paleoenvironmental excavations in waterlogged sediments
+at a large cave yielded a rich record of changes over time in the flora
+and fauna of Kaua`i.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Anahulu Valley, O`ahu</dt><dd>The Anahulu Valley project focused on excavation of
+M&#0257hele era sites that are known from land records. The project teamed
+archaeologists under the direction of Pat Kirch with the historical
+anthropologist Marshall Sahlins, who produced an historical ethnography
+of the valley. Student papers will focus on one of the following sites:
+<dl class="org-dl">
+<dt>Site D6-25</dt><dd>The house site of Kaneiaulu.</dd>
+<dt>Site D6-34</dt><dd>The house site of Kainiki.</dd>
+<dt>Site D6-38</dt><dd>The house site of Kalua.</dd>
+</dl></dd>
+<dt>Wailau Valley, Moloka`i</dt><dd>An innovative regional excavation project carried
+out in the pondfields of a large, undeveloped valley for a dissertation
+here in the Anthropology Department.</dd>
+</dl>
+</div>
+</div>
+
+
+<div id="outline-container-orge9f3299" class="outline-4">
+<h4 id="orge9f3299"><span class="section-number-4">2.1.8</span> Grading</h4>
+<div class="outline-text-4" id="text-2-1-8">
+<p>
+The course grade is based on the number of points a student earns on the
+mid-term examination, the term paper, and the class presentation. Note that a
+student must complete the final term paper and turn it in on time to pass the
+course.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orga781e1f"></a>Distribution of Points<br />
+<div class="outline-text-5" id="text-2-1-8-1">
+<p>
+Points will be given for each assignment submitted on time as shown in Table
+<a href="#orgb38c7c2">1</a>. No points will be given for late assignments. Students who fail to
+submit a term paper final draft on time will receive a failing grade for the
+course.
+</p>
+
+<table id="orgb38c7c2">
+<caption class="t-above"><span class="table-number">Table 1:</span> ANTH 464 distribution of points</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Assignment</th>
+<th scope="col" class="org-right">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Term paper 1. Choose excavation report</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 2. Reconstitution</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 3. Acquisition 1</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 4. Acquisition 2</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 5. Specific Topic</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 6. Structuration</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 7. Abstract, Outline, Bibliography</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 8. First draft</td>
+<td class="org-right">16</td>
+</tr>
+
+<tr>
+<td class="org-left">Term paper 9. Final draft</td>
+<td class="org-right">40</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Class presentation</td>
+<td class="org-right">6</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Mid-term examination</td>
+<td class="org-right">20</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">TOTAL</td>
+<td class="org-right">110</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+
+<li><a id="org67015ae"></a>Grading Scale<br />
+<div class="outline-text-5" id="text-2-1-8-2">
+<p>
+Students who complete the term paper final draft and turn it in on time will be
+graded on the point scale in Table <a href="#orgf531964">2</a>. Note that students must
+complete the final term paper and submit it on time to receive a passing final
+grade.
+</p>
+
+<table id="orgf531964">
+<caption class="t-above"><span class="table-number">Table 2:</span> ANTH 464 final grading scale</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Quality of Work</th>
+<th scope="col" class="org-left">Points</th>
+<th scope="col" class="org-left">Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Excellent</td>
+<td class="org-left">&gt; 97</td>
+<td class="org-left">A+</td>
+</tr>
+
+<tr>
+<td class="org-left">Excellent</td>
+<td class="org-left">94&#x2013;97</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-left">Excellent</td>
+<td class="org-left">90&#x2013;93</td>
+<td class="org-left">A-</td>
+</tr>
+
+<tr>
+<td class="org-left">Good</td>
+<td class="org-left">87&#x2013;89</td>
+<td class="org-left">B+</td>
+</tr>
+
+<tr>
+<td class="org-left">Good</td>
+<td class="org-left">84&#x2013;86</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">Good</td>
+<td class="org-left">80&#x2013;83</td>
+<td class="org-left">B-</td>
+</tr>
+
+<tr>
+<td class="org-left">Fair</td>
+<td class="org-left">77&#x2013;79</td>
+<td class="org-left">C+</td>
+</tr>
+
+<tr>
+<td class="org-left">Fair</td>
+<td class="org-left">74&#x2013;76</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-left">Fair</td>
+<td class="org-left">70&#x2013;73</td>
+<td class="org-left">C-</td>
+</tr>
+
+<tr>
+<td class="org-left">Poor</td>
+<td class="org-left">67&#x2013;69</td>
+<td class="org-left">D+</td>
+</tr>
+
+<tr>
+<td class="org-left">Poor</td>
+<td class="org-left">64&#x2013;66</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-left">Poor</td>
+<td class="org-left">60&#x2013;63</td>
+<td class="org-left">D-</td>
+</tr>
+
+<tr>
+<td class="org-left">Failure</td>
+<td class="org-left">&lt; 60</td>
+<td class="org-left">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orgdba855d" class="outline-3">
+<h3 id="orgdba855d"><span class="section-number-3">2.2</span> Course Calendar</h3>
+<div class="outline-text-3" id="text-2-2">
+<table>
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Meeting</th>
+<th scope="col" class="org-left">Topic</th>
+<th scope="col" class="org-left">Discuss</th>
+<th scope="col" class="org-left">Lecture</th>
+<th scope="col" class="org-left">Reading</th>
+<th scope="col" class="org-left">Assignment(s) due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1/7 (M)</td>
+<td class="org-left">Introduction to ANTH 464</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/9 (W)</td>
+<td class="org-left">What is Hawaiian archaeology?</td>
+<td class="org-left">Questions 1</td>
+<td class="org-left">What is Archaeology?</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/11 (F)</td>
+<td class="org-left">History of archaeological research</td>
+<td class="org-left">Questions 1</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Chapter 1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/14 (M)</td>
+<td class="org-left">Environmental setting</td>
+<td class="org-left">Questions 2</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Chapter 2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/16 (W)</td>
+<td class="org-left">The anthropological project</td>
+<td class="org-left">Questions 2</td>
+<td class="org-left">Encountering Old Hawai`i</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/18 (F)</td>
+<td class="org-left">Gift economy and property</td>
+<td class="org-left">Questions 2</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">1/21 (M)</td>
+<td class="org-left"><b>Holiday: Martin Luther King, Jr. Day</b></td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">1/23 (W)</td>
+<td class="org-left">A comparative perspective</td>
+<td class="org-left">Questions 3</td>
+<td class="org-left">Hawai`i in Polynesian Perspective</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/25 (F)</td>
+<td class="org-left">Political development</td>
+<td class="org-left">Questions 3</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/28 (M)</td>
+<td class="org-left">Chronology</td>
+<td class="org-left">Questions 4</td>
+<td class="org-left">Chronological Framework</td>
+<td class="org-left">Chapter 3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">1/30 (W)</td>
+<td class="org-left">Periods of history</td>
+<td class="org-left">Questions 4</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2/1 (F)</td>
+<td class="org-left">Developing a research focus</td>
+<td class="org-left">Questions 4</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#choose-topic">Choose excavation report</a></td>
+</tr>
+
+<tr>
+<td class="org-left">2/4 (M)</td>
+<td class="org-left">Subsistence and settlement</td>
+<td class="org-left">Questions 5</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Chapter 4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2/6 (W)</td>
+<td class="org-left">Archaeological survey</td>
+<td class="org-left">Questions 5</td>
+<td class="org-left">Mapping in Hawai`i <a href="http://vimeo.com/29061006">part 1</a> <a href="https://vimeo.com/29291389">part 2</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2/8 (F)</td>
+<td class="org-left">Archaeological goals</td>
+<td class="org-left">Questions 5</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#form-questions">Reconstitution</a></td>
+</tr>
+
+<tr>
+<td class="org-left">2/11 (M)</td>
+<td class="org-left">Archaeological excavation</td>
+<td class="org-left">Questions 6</td>
+<td class="org-left">Excavation of a Fishing Settlement</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2/13 (W)</td>
+<td class="org-left">Time in archaeology</td>
+<td class="org-left">Questions 6</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2/15 (F)</td>
+<td class="org-left">Archaeological inquiry</td>
+<td class="org-left">Questions 6</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#refine-proposal">Acquisition 1</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">2/18 (M)</td>
+<td class="org-left">Holiday: President's Day</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">2/20 (W)</td>
+<td class="org-left">Review</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">2/22 (F)</td>
+<td class="org-left"><a href="#mid-term-examination">Mid-term examination</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">2/25 (M)</td>
+<td class="org-left">Technology</td>
+<td class="org-left">Questions 7</td>
+<td class="org-left">Abrader Quarries on Hawai`i Island</td>
+<td class="org-left">Chapter 5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2/27 (W)</td>
+<td class="org-left">Patterns of distribution</td>
+<td class="org-left">Questions 7</td>
+<td class="org-left">Pu`uwa`awa`a Volcanic Glass</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/1 (F)</td>
+<td class="org-left">Progress in archaeological inquiry</td>
+<td class="org-left">Questions 7</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#pitch-research">Acquisition 2</a></td>
+</tr>
+
+<tr>
+<td class="org-left">3/4 (M)</td>
+<td class="org-left">Ideology</td>
+<td class="org-left">Questions 8</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Chapter 6</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/6 (W)</td>
+<td class="org-left">Role of specialists</td>
+<td class="org-left">Questions 8</td>
+<td class="org-left">Hawaiian <i>Ko`i</i></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/8 (F)</td>
+<td class="org-left">Neo-evolutionism</td>
+<td class="org-left">Questions 8</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#abstract-and-bibliography">Specific Topic</a></td>
+</tr>
+
+<tr>
+<td class="org-left">3/11 (M)</td>
+<td class="org-left">Coastal settlement</td>
+<td class="org-left">Questions 9</td>
+<td class="org-left">A Coastal Village</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/13 (W)</td>
+<td class="org-left">Settlement over time</td>
+<td class="org-left">Questions 9</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/15 (F)</td>
+<td class="org-left">Classification</td>
+<td class="org-left">Questions 9</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#introduction-and-outline">Structuration</a></td>
+</tr>
+
+<tr>
+<td class="org-left">3/25 (M)</td>
+<td class="org-left">Inland settlement</td>
+<td class="org-left">Questions 10</td>
+<td class="org-left">Rain-fed Agricultural Development</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/27 (W)</td>
+<td class="org-left">Developmental trajectories</td>
+<td class="org-left">Questions 10</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/29 (F)</td>
+<td class="org-left">How to write a term paper</td>
+<td class="org-left">Questions 10</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#two-body-paragraphs">Abstract, Outline, and Bibliography</a></td>
+</tr>
+
+<tr>
+<td class="org-left">4/1 (M)</td>
+<td class="org-left">Scholarly citations</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/3 (W)</td>
+<td class="org-left">Questions of style</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/5 (F)</td>
+<td class="org-left">Is the end in sight?</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#first-draft">First draft</a></td>
+</tr>
+
+<tr>
+<td class="org-left">4/8 (M)</td>
+<td class="org-left">Western contact</td>
+<td class="org-left">Questions 11</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Chapter 7</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/10 (W)</td>
+<td class="org-left">Historic archaeology</td>
+<td class="org-left">Questions 11</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/12 (F)</td>
+<td class="org-left">The future of Hawaiian archaeology</td>
+<td class="org-left">Questions 11</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Chapter 8</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">4/15 (M)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/17 (W)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">4/19 (F)</td>
+<td class="org-left">Holiday: Good Friday</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+<td class="org-left">No class</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">4/22 (M)</td>
+<td class="org-left">Aurora Kagawa, Kohala field system</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/24 (W)</td>
+<td class="org-left">Seth Quintus, Ka`&#0363 field system</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/26 (F)</td>
+<td class="org-left">Kekuewa Kikiloi, Hawaiian archaeology?</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">4/29 (M)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">5/1 (W)</td>
+<td class="org-left"><a href="#final-term-paper">Class presentations</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">5/10 (F)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="#final-term-paper">Final term paper</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgfd0a05b" class="outline-3">
+<h3 id="orgfd0a05b"><span class="section-number-3">2.3</span> Term Paper Instructions</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-orgcd6875f" class="outline-4">
+<h4 id="orgcd6875f"><span class="section-number-4">2.3.1</span> Term Paper Schedule</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<table>
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-left">Assignment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">2/1 (F)</td>
+<td class="org-left"><a href="#choose-topic">Choose excavation report</a></td>
+</tr>
+
+<tr>
+<td class="org-left">2/8 (F)</td>
+<td class="org-left"><a href="#form-questions">Reconstitution</a></td>
+</tr>
+
+<tr>
+<td class="org-left">2/15 (F)</td>
+<td class="org-left"><a href="#refine-proposal">Acquisition 1</a></td>
+</tr>
+
+<tr>
+<td class="org-left">3/1 (F)</td>
+<td class="org-left"><a href="#pitch-research">Acquisition 2</a></td>
+</tr>
+
+<tr>
+<td class="org-left">3/8 (F)</td>
+<td class="org-left"><a href="#abstract-and-bibliography">Specific Topic</a></td>
+</tr>
+
+<tr>
+<td class="org-left">3/15 (F)</td>
+<td class="org-left"><a href="#introduction-and-outline">Structuration</a></td>
+</tr>
+
+<tr>
+<td class="org-left">3/29 (F)</td>
+<td class="org-left"><a href="#two-body-paragraphs">Abstract, Outline, Bibliography</a></td>
+</tr>
+
+<tr>
+<td class="org-left">4/5 (F)</td>
+<td class="org-left"><a href="#first-draft">First draft</a></td>
+</tr>
+
+<tr>
+<td class="org-left">4/15, 17, 29 or 5/1</td>
+<td class="org-left"><a href="#class-presentations">Class presentation</a></td>
+</tr>
+
+<tr>
+<td class="org-left">5/10 (F)</td>
+<td class="org-left"><a href="#final-term-paper">Final term paper</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgc389016" class="outline-4">
+<h4 id="choose-topic"><a id="orgc389016"></a><a id="ID-8AA61042-4B65-4253-B82D-0D22A2E0E18C"></a><span class="section-number-4">2.3.2</span> Choose excavation report</h4>
+<div class="outline-text-4" id="text-choose-topic">
+<p>
+Identify the report you've chosen from the following list. Discuss your
+reasons for choosing it and describe what you hope to learn from it.
+</p>
+
+<dl class="org-dl">
+<dt>Bellows Dune Site, O`ahu</dt><dd>One of the first excavations of a stratified
+beach site in Hawai`i.</dd>
+<dt>Site 4727, Hawai`i</dt><dd>Site 4727 is a dwelling surrounded by sweet potato
+gardens that yielded an unexpectedly complex habitation history.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Ordy Pond, O`ahu</dt><dd>A paleoenvironmental coring project at Ordy Pond in the
+`Ewa district yielded crucial evidence for when Polynesians discovered
+the islands and the environmental effects that followed discovery.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Wai`ahukini Cave, Hawai`i</dt><dd>Excavation of a fisherman's shelter
+in the 1960's yielded a large assemblage of fishing gear.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Kal&#0257huipua`a Site E1-355, Hawai`i</dt><dd>A small cave located immediately inland of a
+fishpond was thoroughly excavated in the mid 1970's.</dd>
+<dt>Fort DeRussy, O`ahu</dt><dd>Archaeology beneath the surface of this military
+installation in  Waik&#0299k&#0299 was undertaken using a backhoe guided by
+nineteenth century maps.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>K&#0257ne`aki Heiau, O`ahu</dt><dd>A classic excavation designed to investigate the
+history of construction and guide renovation of a temple in Makaha Valley.</dd>
+<dt>H&#0257lawa Pondfield, Hawai`i</dt><dd>An unexpectedly deep excavation in a narrow
+valley on the windward coast of Hawai`i Island revealed a long history of
+taro pondfield construction and renovation.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Kahikinui, Maui</dt><dd>This innovative excavation project took a regional
+perspective and focused on the stratigraphic position of architectural
+features.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Kona Shelter Cave, Hawai`i</dt><dd>A cave excavation at the <i>mauka</i> edge of Kailua
+town yielded abundant material that the archaeologist reconstitutes as
+reflecting subsistence practices and conflict.</dd>
+<dt>Nualolo Kai, Kaua`i</dt><dd>Re-excavation of a site with spectacular preservation
+of normally perishable materials revealed deep stratification.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>H&#0257lawa Dune Site, Moloka`i</dt><dd>Another excavation of a stratified beach site
+from the 1960's that has a prominent place in archaeological narratives.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>K&#0257newai, O`ahu</dt><dd>Backhoe excavations prior to construction of the Hawaiian
+Studies building here on campus yielded evidence of change
+over time in an irrigation system that fed pondfields in
+one of the most productive agricultural systems on O`ahu.</dd>
+<dt>M&#0257h&#0257`ulep&#0363, Kaua`i</dt><dd>Paleoenvironmental excavations in waterlogged sediments
+at a large cave yielded a rich record of changes over time in the flora
+and fauna of Kaua`i.</dd>
+</dl>
+
+<dl class="org-dl">
+<dt>Anahulu Valley, O`ahu</dt><dd>The Anahulu Valley project focused on excavation of
+M&#0257hele era sites that are known from land records. Student papers will
+focus on one of the following sites:
+<dl class="org-dl">
+<dt>Site D6-25</dt><dd>The house site of Kaneiaulu.</dd>
+<dt>Site D6-34</dt><dd>The house site of Kainiki.</dd>
+<dt>Site D6-38</dt><dd>The house site of Kalua.</dd>
+</dl></dd>
+<dt>Wailau Valley, Moloka`i</dt><dd>An innovative regional excavation project carried
+out in the pondfields of a large, undeveloped valley for a dissertation
+here in the Anthropology Department.</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org0506968" class="outline-4">
+<h4 id="form-questions"><a id="org0506968"></a><a id="ID-3B1287B4-BFF1-40DC-9AED-B2A7FA9F2DB8"></a><span class="section-number-4">2.3.3</span> Reconstitution</h4>
+<div class="outline-text-4" id="text-form-questions">
+<p>
+Summarize in your own words what the author(s) of the report claimed the
+excavation had revealed about old Hawai`i.  Take care to state the claims as
+precisely as you can.  The critical part of your paper, which you will write
+later, will compare the evidence from the excavation with these claims.  Do your
+best to state the claims at face value and try not to read into them your own
+opinions and experiences.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org798cf8d" class="outline-4">
+<h4 id="refine-proposal"><a id="org798cf8d"></a><a id="ID-891F56A2-152F-4EA4-A66E-7B328994295E"></a><span class="section-number-4">2.3.4</span> Acquisition 1</h4>
+<div class="outline-text-4" id="text-refine-proposal">
+<p>
+Every archaeologist comes to an excavation with background knowledge&#x2014;beliefs
+about the past&#x2014;that are used to <b>guide inquiry</b> and to <b>frame hypotheses</b> the
+excavation might be expected to test. What background knowledge did the
+author(s) of the report you are reviewing bring to their work? Draw as much of
+this as possible from the report itself, however, be aware that it is rare to
+find a full discussion of background information in an excavation report. Is
+background information provided for each of the claims made in the
+reconstitution? If not, what is missing?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf2e7db6" class="outline-4">
+<h4 id="pitch-research"><a id="orgf2e7db6"></a><a id="ID-80B52ECA-1397-4852-88F0-0817CA33C182"></a><span class="section-number-4">2.3.5</span> Acquisition 2</h4>
+<div class="outline-text-4" id="text-pitch-research">
+<p>
+Attempt to fill in any missing background information based on your readings
+(including the textbook), the lectures, class discussions, and specific
+questions you have for the instructor. What beliefs about old Hawai`i were
+commonly held by archaeologists when the fieldwork for your excavation report
+was carried out?
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga81fe15" class="outline-4">
+<h4 id="abstract-and-bibliography"><a id="orga81fe15"></a><a id="ID-4A80C976-BA79-455A-A28B-753F45FA2250"></a><span class="section-number-4">2.3.6</span> Specific Topic</h4>
+<div class="outline-text-4" id="text-abstract-and-bibliography">
+<p>
+Identify the specific topic that will be the focus of your term paper.  You can
+choose to review the complete excavation report, or you can choose to focus on
+some part of the report that catches your interest.  Describe why you have made
+this choice and suggest why the reader might find your topic interesting.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd265139" class="outline-4">
+<h4 id="introduction-and-outline"><a id="orgd265139"></a><a id="ID-F4E71772-5D44-4011-916E-6AFB4F922F33"></a><span class="section-number-4">2.3.7</span> Structuration</h4>
+<div class="outline-text-4" id="text-introduction-and-outline">
+<p>
+Referring to your <a href="#abstract-and-bibliography">specific topic</a>, describe how the excavation was structured to
+record space and time. Are space and time treated in a way that will make it
+possible to test hypotheses and fields of inquiry identified in <a href="#refine-proposal">acquisition</a>?
+Were they treated in a way that will support the <a href="#form-questions">reconstitution claims</a>? How were
+the artifacts of interest classified?  Referring again to <a href="#refine-proposal">acquisition</a> and
+<a href="#form-questions">reconstitution</a>, are the classifications used in the report reasonable and useful?
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org442dd9a" class="outline-4">
+<h4 id="two-body-paragraphs"><a id="org442dd9a"></a><a id="ID-998239EC-6BED-4D52-8598-7D1770F83BBC"></a><span class="section-number-4">2.3.8</span> Abstract, Outline, and Bibliography</h4>
+<div class="outline-text-4" id="text-two-body-paragraphs">
+<p>
+Write a 75 word abstract summarizing the paper you hope to write.
+Attach an outline with section headings and a draft of your bibliography. This
+bibliography should identify a list of five or more sources that include books,
+journals, and on-line resources. You can use Google and Wikipedia as much or
+little as you like, but your bibliography <i>must</i> include some books and/or
+journal articles.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbaa726f" class="outline-4">
+<h4 id="first-draft"><a id="orgbaa726f"></a><a id="ID-EF1EECA5-A0E9-44ED-A052-849E3696B472"></a><span class="section-number-4">2.3.9</span> First draft</h4>
+<div class="outline-text-4" id="text-first-draft">
+<p>
+Here your goal is to produce a coherent whole. Use material from previous
+writing assignments as much as possible. The draft can be rough but it must be
+complete, with an introduction, a body, and a conclusion. It also needs in-text
+citations and a bibliography of references cited! You will receive feedback on
+your draft.
+</p>
+
+<p>
+"Write your first draft with your heart. Re-write with your head."
+~ from the movie <i>Finding Forrester</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf3321ab" class="outline-4">
+<h4 id="final-term-paper"><a id="orgf3321ab"></a><a id="ID-C7E954BD-698D-4BC8-A2AF-18F5C293A964"></a><span class="section-number-4">2.3.10</span> Final term paper</h4>
+<div class="outline-text-4" id="text-final-term-paper">
+<p>
+"I'm not a very good writer, but I'm an excellent rewriter." ~ James Michener
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2911d58" class="outline-3">
+<h3 id="class-presentations"><a id="org2911d58"></a><a id="ID-89825B74-0BDC-4B77-9C4D-7315918EC0A7"></a><span class="section-number-3">2.4</span> Class presentation</h3>
+<div class="outline-text-3" id="text-class-presentations">
+<p>
+Your research presentation should <i>not</i> be a simple "replay" of your
+topic but should be re-designed so that you
+</p>
+<ul class="org-ul">
+<li>spend some time talking spontaneously</li>
+<li>employ more than one medium (such as slides)</li>
+<li>engage your classmates in discussion</li>
+</ul>
+
+<p>
+A successful presentation will focus on one part of the research, without trying
+to cover all of the research in your paper. You will have about 15&#x2013;20 minutes
+to make your presentation; this will include time devoted to questions and
+answers.
+</p>
+
+<p>
+Your presentation will be graded separately from your paper.
+</p>
+</div>
+</div>
+<div id="outline-container-org79a0452" class="outline-3">
+<h3 id="dq"><a id="org79a0452"></a><a id="ID-809535A3-6707-452E-8ADF-C864ADD66568"></a><span class="section-number-3">2.5</span> Discussion Questions</h3>
+<div class="outline-text-3" id="text-dq">
+<p>
+These discussion questions help guide the conversation.  They are meant to
+augment the questions you bring to class.  Also, note that Discussion Questions
+1&#x2013;6 include the three questions that will appear on the mid-term examination.
+</p>
+</div>
+
+<div id="outline-container-org0300c02" class="outline-4">
+<h4 id="dq1"><a id="org0300c02"></a><a id="ID-DD0031BD-09F3-4B77-AAA2-9F0371D79B76"></a><span class="section-number-4">2.5.1</span> Discussion Questions 1</h4>
+<div class="outline-text-4" id="text-dq1">
+<ul class="org-ul">
+<li>How has the institutional framework of Hawaiian archaeology changed
+over time?</li>
+<li>What was the innovation introduced by the settlement pattern
+approach?</li>
+<li>What research questions occupy Hawaiian archaeologists today?</li>
+<li>How is archaeology different from history?</li>
+<li>How is historicism different from social science?</li>
+<li>Why study archaeology?</li>
+<li>Is the temple on L&#0257na`i Island a site?  Why, or why not?</li>
+<li>What is the necessary condition of inquiry?  Is scientific inquiry
+fundamentally different from other forms of inquiry?  Why or why
+not?</li>
+<li>List the three logical steps of and describe
+them in your own terms.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3227160" class="outline-4">
+<h4 id="dq2"><a id="org3227160"></a><a id="ID-5E5901A3-3E54-40B8-8E65-0B8EA4D0976B"></a><span class="section-number-4">2.5.2</span> Discussion Questions 2</h4>
+<div class="outline-text-4" id="text-dq2">
+<ul class="org-ul">
+<li>Describe the geological stages of islands in the Hawaiian Chain,
+starting at Hawai`i Island in the southeast and ending at H&#0333lanik&#0363
+in the northwest.  What is responsible for the differences?</li>
+<li>From the point of view of Polynesian sailors, describe the factors
+that make the Hawaiian chain an isolated landmass.</li>
+<li>Imagine yourself on the voyage with the Polynesian discoverers of
+Hawai`i.  What strange and unusual plants and animals might you
+have seen when you first stepped ashore?</li>
+<li>Briefly describe one of the misunderstandings between <i>kanaka
+maoli</i> and Cook's crew, focusing on the different ideas at its
+heart.  Are your ideas today closer to Cook's crew's ideas, or to
+the ideas held by <i>kanaka maoli</i> in 1778&#x2013;1779?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org683f0ae" class="outline-4">
+<h4 id="dq3"><a id="org683f0ae"></a><a id="ID-2E5E517C-8B62-4661-B272-5E64E57FD1F3"></a><span class="section-number-4">2.5.3</span> Discussion Questions 3</h4>
+<div class="outline-text-4" id="text-dq3">
+<ul class="org-ul">
+<li>Compare and contrast the three different ways archaeologists have
+tried to estimate the date when Polynesians discovered Hawai`i.
+What is the best estimate of the discovery date?</li>
+<li>Hawaiian archaeologists routinely confuse <i>sites</i> and <i>surface</i>
+<i>architectural features</i>.  Is this a problem?  Why or why not?</li>
+<li>How does Hommon's model for the development of traditional Hawaiian
+settlement relate to the division of lands into <i>moku</i> and <i>ahupua`a</i>?</li>
+<li>From the lecture, summarize the archaeological sequence of Hawai`i
+in terms of Discovery, Colonization, Settlement, and Innovation.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeed9979" class="outline-4">
+<h4 id="dq4"><a id="orgeed9979"></a><a id="ID-E3006932-E424-470F-9122-29D33B0E834E"></a><span class="section-number-4">2.5.4</span> Discussion Questions 4</h4>
+<div class="outline-text-4" id="text-dq4">
+<ul class="org-ul">
+<li>Describe the differences between Tongan and Hawaiian kinship
+terms.  How do the differences in terms reflect differences in
+social organization?</li>
+<li>What is the <i>fahu</i> relationship in Tonga?  How was it involved in
+the relationship of the sacred Tu`i Tonga to the secular Tu`i
+Kanokupolu?</li>
+<li>Describe the movement of people and things through the Tongan
+empire.  How did the movement of people and things support the high
+status of the Tu`i Tonga?</li>
+<li>Traditional Hawaiian political power is sometimes characterized as
+territorial in comparison to Tonga.  Describe the territorial
+organization of Hawaiian kingship.  Suggest some ideas why Hawaiian
+kings were different from kings in Tonga.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org643f3cb" class="outline-4">
+<h4 id="dq5"><a id="org643f3cb"></a><a id="ID-D972834D-1D4B-474B-8820-6BDCF9442710"></a><span class="section-number-4">2.5.5</span> Discussion Questions 5</h4>
+<div class="outline-text-4" id="text-dq5">
+<ul class="org-ul">
+<li>What influence did the introduction of the Polynesian rat have on
+Hawaiian natural history?  Were these changes good or bad for the
+Polynesian colonists?  Why?</li>
+<li>Describe the process by which Polynesians transformed the Hawaiian
+landscape, changing it from its natural state to one more like the
+homeland islands.</li>
+<li>How does traditional Hawaiian rain-fed agriculture differ from
+traditional irrigated agriculture?  How are the two types of
+agriculture distributed across the islands?</li>
+<li>Describe the leeward Kohala field system.  How and when did it
+develop?</li>
+<li>Describe the distribution of faunal remains in archaeological sites
+on the leeward side of Hawai`i Island.  What does this pattern
+indicate about traditional Hawaiian behavior?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7c346c2" class="outline-4">
+<h4 id="dq6"><a id="org7c346c2"></a><a id="ID-A201459D-7F1D-43AA-A021-6F77FCCC84F5"></a><span class="section-number-4">2.5.6</span> Discussion Questions 6</h4>
+<div class="outline-text-4" id="text-dq6">
+<ul class="org-ul">
+<li>Why is the base of surface architecture important to an
+archaeologist?</li>
+<li>How old are the oldest well-dated Hawaiian habitation structures?
+How are their construction dates related to the traditional
+Hawaiian cultural sequence?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7155c52" class="outline-4">
+<h4 id="dq7"><a id="org7155c52"></a><a id="ID-F0E8330E-2C66-4AD4-BF81-FD81A929DC69"></a><span class="section-number-4">2.5.7</span> Discussion Questions 7</h4>
+<div class="outline-text-4" id="text-dq7">
+<ul class="org-ul">
+<li>On page 67 the textbook contrasts "the more or less synchronic
+perspective on Hawaiian craft economies in the post-contact period"
+offered by study of museum ethnographic collections with "the
+long-term historical development of Hawaiian technologies and craft
+economies" offered by archaeological study.  What are some things
+that can be learned by archaeological study that can't be learned
+from museum collections?</li>
+<li>Over the years there have been suggestions that fishhooks and adzes
+changed over time, so that there are early forms and late forms of
+both artifacts.  Why aren't these artifacts used to date sites in
+Hawai`i?</li>
+<li>Describe the difference between "attached specialists" and
+"independent specialists."  Why has this distinction so far proved
+impossible to make with archaeological materials from Hawai`i?
+(Hint: see .)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org077fb6c" class="outline-4">
+<h4 id="dq8"><a id="org077fb6c"></a><a id="ID-C1F0B771-FD07-4118-B778-3D32E440B3F7"></a><span class="section-number-4">2.5.8</span> Discussion Questions 8</h4>
+<div class="outline-text-4" id="text-dq8">
+<ul class="org-ul">
+<li>How was the topography of the Waim&#0257nalo Plain (slide 5) expressed
+in the distribution of remains in the excavation (slide 30)?  What
+kinds of remains were recovered?</li>
+<li>What is an otolith?  How did the identification of <i>`&#0333`io</i> otoliths
+change the picture of traditional Hawaiian fishing at Waim&#0257nalo?</li>
+<li>Compare the photograph of the stratigraphic profile (slide 13) with
+the stratigraphic profile drawn by Kim Kalama (slide 15).  What
+kinds of thing are easier to see in the drawing?  Why?</li>
+<li>What kinds of activities are represented in the artifact
+collection?  How would you characterize traditional Hawaiian
+settlement at the site?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org63de2f4" class="outline-4">
+<h4 id="dq9"><a id="org63de2f4"></a><a id="ID-882D8A11-BB24-4B2B-9F78-7E986655CD0D"></a><span class="section-number-4">2.5.9</span> Discussion Questions 9</h4>
+<div class="outline-text-4" id="text-dq9">
+<ul class="org-ul">
+<li>Describe the distribution of Pu`uwa`awa`a volcanic glass away from
+its source in North Kona.  How does this distribution indicate the
+value of the glass?</li>
+<li>Describe the differences between "cost surface overland", "`as the
+crow flies' overland", and "canoe from depot" models of volcanic
+glass distribution.  Is it useful to have these different models?
+Why or why not?</li>
+<li>At the time of European contact, Hawaiian <i>ali`i</i> were among the
+most powerful people in all of Polynesia. Many archaeologists
+believe that warfare was essential for <i>ali`i</i> to establish power.
+Where does the evidence to support the importance of warfare in old
+Hawai`i come from?  Does the archaeological record show that
+Hawaiian society was war-like?  Why or why not?</li>
+<li>What is the "correlate method" for identifying states with
+archaeological materials?  Accepting that contact-era Hawaiian
+society was a state, does the "correlate method" work?  Why or why
+not?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf68af8c" class="outline-4">
+<h4 id="dq10"><a id="orgf68af8c"></a><a id="ID-3600A22E-2310-4862-BF9E-85163F52A46B"></a><span class="section-number-4">2.5.10</span> Discussion Questions 10</h4>
+<div class="outline-text-4" id="text-dq10">
+<ul class="org-ul">
+<li>Describe the parts of a traditional Hawaiian adze blade.  Which
+features do Hawaiian archaeologists use to classify the adze
+blades? Do these features relate to the form of the tool, its
+function, or both?  How so?</li>
+<li>Describe the two reduction sequences identified for Hawaiian
+adzes.  How do these sequences relate to the form of the finished
+tool?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaba1a0e" class="outline-4">
+<h4 id="dq11"><a id="orgaba1a0e"></a><a id="ID-C9871A51-7726-435D-A1D4-BF35091672E5"></a><span class="section-number-4">2.5.11</span> Discussion Questions 11</h4>
+<div class="outline-text-4" id="text-dq11">
+<ul class="org-ul">
+<li>Describe the post-contact history of the Hawaiian adze.  What
+social and economic factors contributed to the persistence of stone
+adze use in the post-contact period?</li>
+<li>Describe the changes in Hawaiian household settlement pattern when
+traditional building materials were abandoned and imported
+materials took their place.  How were these settlement pattern changes
+related to social changes?</li>
+<li>What are the cross-cultural attributes of wealth-assets?  How are
+wealth-assets distinguished from other valuables?</li>
+<li>Describe the development of the leeward Kohala field system.  Would
+a map of the field system that charts development by successive
+generations of Hawaiian farmers be useful?  Why or why not?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org04e3741" class="outline-4">
+<h4 id="dq12"><a id="org04e3741"></a><a id="ID-7C22A177-089F-46A0-A861-BA132ECCCDBA"></a><span class="section-number-4">2.5.12</span> Discussion Questions 12</h4>
+<div class="outline-text-4" id="text-dq12">
+<ul class="org-ul">
+<li>There is no doubt that canoes were valuable in old Hawai`i.  Were
+they also wealth-assets?  Why or why not?</li>
+<li>Describe the scale of abrader quarrying at Kahuku.  Does it
+surprise you?  Why or why not?  What does the scale of abrader
+quarrying indicate about old Hawai`i?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfb5749b" class="outline-4">
+<h4 id="dq13"><a id="orgfb5749b"></a><a id="ID-AFE642F9-47E8-4DA3-AE8B-5FFE99EDF058"></a><span class="section-number-4">2.5.13</span> Discussion Questions 13</h4>
+<div class="outline-text-4" id="text-dq13">
+<ul class="org-ul">
+<li>Describe the next generation of Hawaiian archaeologists and compare
+it to the current generation.  What are the similarities and
+differences?  What changes to archaeological practice should the
+new generation of archaeologists strive to establish?</li>
+<li>Does archaeology have a future in Hawai`i?  Is archaeology useful
+in the process of decolonization, or does it work to maintain a
+colonized mindset?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Dr. Thomas S. Dye</p>
+<p class="date">Created: 2018-10-14 Sun 09:47</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

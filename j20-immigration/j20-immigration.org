@@ -13,36 +13,48 @@
   :EXPORT_HUGO_SECTION: post
   :END:
 
+
 ** DONE Why should undocumented immigrants be allowed to stay?
-   CLOSED: [2018-06-12 Tue 12:32]
+   CLOSED: [2018-06-23 Sat 07:04]
    :PROPERTIES:
    :EXPORT_FILE_NAME: allow-to-stay
    :EXPORT_HUGO_MENU: "main"
    :END:
 
-*** Question
-Many immigrants have followed the law and are in our country legally.
-Why should aliens who entered our country illegally be allowed to live here?
+*** Question:
+Many immigrants have followed the law and are in our country legally. Why should
+undocumented immigrants who entered our country illegally be allowed to live
+here?
 
 
-*** Answer
-Most of the undocumented immigrants who live in Hawaii have done nothing
-illegal arising from their immigration status. Immigrants are undocumented for
-one of two reasons: (1) They have entered our country by crossing the border
-without being processed, which is a misdemeanor, or (2) They have entered our
-country with a visa, but have overstayed, which is a civil offense, and not a
-crime. The great majority of undocumented immigrants in Hawaii have overstayed
-their visas.
+*** Background:
+Immigrants to the U.S. are undocumented for one of two reasons:
+ - They have entered our country by crossing the border without being processed,
+   which is a misdemeanor, or
+ - They have entered our country with a visa, but have overstayed, which is a
+   petty offense, and not a crime.
+
+Neither of these reasons involves a felony, which is the most serious kind of
+crime.
+
+*** Answer:
+The great majority of undocumented immigrants in Hawaii have overstayed their
+visas and have done nothing illegal arising from their immigration status. Most
+of them are living peaceably among us and are contributing to our economy and
+local communities. Many of them have U.S. families, including native born
+children, to whom they provide support. Deporting them breaks up families and
+communities. It is better for all of us to give undocumented immigrants a path
+to citizenship so they can continue to live peaceably among us.
 
 
 ** DONE Don't undocumented immigrants pose a criminal threat?
-   CLOSED: [2018-06-12 Tue 14:31]
+   CLOSED: [2018-06-23 Sat 07:34]
    :PROPERTIES:
    :EXPORT_FILE_NAME: criminal-threat
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
+*** Question:
 Attorney General Jeff Sessions has characterized the Chicago sanctuary law as
 "an official policy of protecting criminal aliens who prey on their own
 residents." Along the same lines, President Trump claimed that "sanctuary cities release
@@ -52,150 +64,236 @@ there because they feel they're safe, and in many cases, they are very bad
 actors. We have gang members; we have predators, rapists, killers, a lot of bad
 people."  Don't undocumented aliens pose a criminal threat?
 
-*** Answer
-Some undocumented immigrants do pose a criminal threat, but most do not. With
-respect to crime in general, undocumented immigrants have a crime rate that is
-44% below that of native-born U.S. citizens. The average undocumented immigrant
-poses less of a criminal threat than the average U.S. citizen.
+
+*** Background:
+
+The link between [[https://www.themarshallproject.org/2018/03/30/the-myth-of-the-criminal-immigrant][immigration and crime]] is a myth that exists in the imaginations
+of Americans and nowhere else. With respect to crime in general, undocumented
+immigrants have a crime rate that is 44% below that of native-born U.S.
+citizens.
+
+*** Answer:
+
+Some undocumented immigrants do pose a criminal threat, but most do not. The
+average undocumented immigrant poses less of a criminal threat than the average
+U.S. citizen.
 
 
 ** DONE What is wrong with deporting undocumented aliens?
-   CLOSED: [2018-06-12 Tue 12:32]
+   CLOSED: [2018-06-23 Sat 07:34]
    :PROPERTIES:
    :EXPORT_FILE_NAME: wrong-with-deporting
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
+*** Question:
 Why shouldn’t undocumented immigrants be deported?
 
-*** Answer
+*** Background:
+
+Undocumented immigrants [[https://www.newamericaneconomy.org/issues/undocumented-immigrants/][work]], [[https://bipartisanpolicy.org/blog/how-do-undocumented-immigrants-pay-federal-taxes-an-explainer/][pay taxes]], and [[https://professionals.collegeboard.org/guidance/financial-aid/undocumented-students][send their children to school]].
+Some, such as the Kona coffee farmer, [[http://www.staradvertiser.com/2017/07/08/breaking-news/kona-coffee-farmer-says-goodbye-to-family-ahead-of-deportation/][Andres Magana Ortiz]], are leaders in our
+communities. Many are married to U.S. citizens, and many of their [[http://www.alllaw.com/articles/nolo/us-immigration/can-child-undocumented-immigrant-become-citizen.html][children are
+U.S. citizens by birth]].
+
+*** Answer:
 The estimated 45,000 undocumented immigrants living in Hawaii are so well
 integrated into our communities that even their friends and neighbors may not
-know they are undocumented. Undocumented immigrants work, pay taxes, and send
-their children to school. Some are leaders in our communities. Many are married
-to U.S. citizens, and many of their children are U.S. citizens by birth.
-Deporting undocumented immigrants would break up families and remove the main
-source of financial support for many minor children.
+know they are undocumented. Deporting undocumented immigrants would break up
+families and remove the main source of financial support for many minor
+children.
 
-** Why shouldn't Hawai`i comply with federal law?
+** DONE Why shouldn't Hawai`i comply with federal law?
+   CLOSED: [2018-06-23 Sat 07:43]
    :PROPERTIES:
    :EXPORT_FILE_NAME: comply-with-feds
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
-The federal government is following the law in trying to remove
-illegal aliens. Why should the State refuse to comply with federal law?
+*** Question:
+The federal government is following the law in trying to remove illegal aliens.
+Why should the State refuse to comply with federal law?
 
-*** Answer
-Hawai`i is following the law and it will continue to follow the law if it enacts
-a sanctuary law. Immigration and the enforcement of immigration law is purely a
-federal function. The State and its counties receive no federal funds to support
-federal immigration programs. Yet President Trump wants states and their local
-governments to help federal immigration agencies, such as the federal
-Immigration and Customs Enforcement agency (ICE). For example, Trump wants local
-police to act as ICE agents to help identify and deport all undocumented
-immigrants.
 
-** Hasn't the US always deported undocumented immigrants?
+*** Background:
+
+Immigration and the enforcement of immigration law is a federal function, not a
+state function.  State and county law enforcement agents, such as the sheriff or
+the local police, are not legally required to enforce immigration law.
+
+The State of Hawai`i and its counties receive no federal funds to support federal
+immigration programs.
+
+Yet President Trump wants states and their local governments to help federal
+immigration agencies, such as the federal Immigration and Customs Enforcement
+agency (ICE). For example, Trump wants local police to act as ICE agents to help
+identify and deport all undocumented immigrants.
+
+*** Answer:
+Hawai`i *is* following the law. Importantly, Hawai`i will continue to follow the
+law if it enacts a sanctuary law, such as the Ho`okipa bill introduced during
+the 2018 legislative session.
+
+** DONE Hasn't the US always deported undocumented immigrants?
+   CLOSED: [2018-06-23 Sat 08:58]
    :PROPERTIES:
    :EXPORT_FILE_NAME: always-deported
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
+*** Question:
 Undocumented immigrants are deportable. Hasn't the US always deported
 undocumented immigrants?
 
-*** Answer
-In the past, the Obama administration was responsible for deporting
+*** Background:
+The U.S. is a nation of immigrants.
+
+For more than a century after the nation was founded in 1776, immigration was
+not regulated.  Immigrants did not need documentation.
+
+The [[https://www.fairus.org/legislation/reports-and-analysis/history-of-us-immigration-laws][federal government first began to regulate immigration in 1875]], when it
+prohibited entry to prostitutes and criminals. At this time, the U.S. welcomed
+most immigrants. The Statue of Liberty, a monument to the nation's welcoming
+attitude toward immigrants started construction in 1875.
+
+In 1882, the Chinese exclusion law prohibited immigration of Chinese and first
+empowered the federal government to deport immigrants. The [[https://en.wikipedia.org/wiki/Geary_Act][Geary Act of 1892]]
+required Chinese to apply for certificates of residence; Chinese without
+certificates were the first immigrants to be deported because they were
+undocumented. Undocumented immigrants from other nations were not deported. The
+Chinese exclusion act was repealed in 1943.
+
+The first limit on the number of immigrants was imposed in 1921.
+
+More recently, the Obama administration was responsible for deporting
 millions of undocumented immigrants who had committed serious crimes. However,
 those who had committed no serious crime were allowed to remain in the U.S.
-Today, Trump seeks to deport all undocumented immigrants without exception,
-whether they have committed a serious crime or not. The federal
-Immigration and Customs Enforcement agency (ICE) has recently used
-increasingly harsh tactics to identify and deport undocumented immigrants,
-including separating children from their parents. Local police should not get
-involved with that kind of questionable activity because there is more than
-enough serious crime in our communities for police to handle.
 
-** Why should the state provide a safe space for undocumented immigrants?
+Today, the Trump administration seeks to deport all undocumented immigrants
+without exception, whether they have committed a serious crime or not. The
+federal Immigration and Customs Enforcement agency (ICE) has recently used
+increasingly harsh tactics to identify and deport undocumented immigrants,
+including separating children from their parents.
+
+*** Answer:
+
+For much of its history, the U.S. welcomed undocumented immigrants and gave them
+a path to citizenship. The first undocumented immigrants to be deported in 1892
+were Chinese, a racist practice that ended in 1943. Since that time deportation
+of undocumented immigrants has been selective. The Trump administration's plan
+to deport all undocumented immigrants is novel.
+
+
+** DONE Why should the state provide a safe space for undocumented immigrants?
+   CLOSED: [2018-06-23 Sat 09:23]
    :PROPERTIES:
    :EXPORT_FILE_NAME: safe-space
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_AUTHOR: "Hawaii J20"
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
-The sanctuary state bill the State Legislature considered in the
-2018 session would have provided a safe place for illegal aliens. Why should the
-State do that?
+*** Question:
+The Ho`okipa bill introduced to the Hawai`i State Legislature in 2018 would have
+provided a safe place for undocumented immigrants. Why should the State do that?
 
-*** Answer
-The sanctuary bill considered in 2018 does not provide any additional
-protections to undocumented immigrants than it does to citizens. There is no law
-requiring the State or its counties to assist federal Immigration and Customs
-Enforcement agency (ICE), and the sanctuary state bill merely limits Hawaii’s
-local law enforcement agencies from assisting ICE. Some state and local
-governments across the nation do provide assistance to ICE, while more than 600
-others refuse to do so because they believe assisting ICE will disrupt their
-communities.
+*** Background:
+The [[https://www.capitol.hawaii.gov/measure_indiv.aspx?billtype=SB&billnumber=2290&year=2018][Ho`okipa bill introduced in 2018]] does not provide any additional
+protections to undocumented immigrants than it does to citizens.
 
-** Why shouldn't the state assist ICE?
+Here is its description:
+#+BEGIN_QUOTE
+Prohibits state law enforcement agencies from complying with federal immigration
+detainers or honoring requests for non-public information unless specifically
+required to do so by a warrant signed by a judge or federal, state, or local
+law.
+#+END_QUOTE
+
+There is no law requiring the State or its counties to assist the federal
+Immigration and Customs Enforcement agency (ICE), and the Ho`okipa  bill
+merely limits Hawaii’s local law enforcement agencies from assisting ICE, except
+as required by law.
+
+Some state and local governments across the nation do provide assistance to ICE,
+while [[https://en.wikipedia.org/wiki/Sanctuary_city][more than 500 other state and local governments]] refuse to do so because
+they believe assisting ICE will disrupt their communities.
+
+*** Answer:
+The Ho`okipa bill introduced to the Hawai`i State Legislature in 2018 does not
+provide a safe place for undocumented immigrants. It simply directs local law
+enforcement agents to assist the federal Immigration and Customs Enforcement
+agency (ICE) only as required by law.
+
+** DONE Why shouldn't local law enforcement agencies assist ICE?
+   CLOSED: [2018-06-23 Sat 10:03]
    :PROPERTIES:
    :EXPORT_FILE_NAME: assist-ice
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_AUTHOR: "Hawaii J20"
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
+*** Question:
 Why shouldn't local law enforcement agencies assist their law enforcement
 colleagues at the federal Immigration and Customs Enforcement agency (ICE)?
 
-*** Answer
-Immigration enforcement is a federal function. When undocumented
-immigrants fear that local police are acting as ICE agents who can initiate
-deportation, they are reluctant to make contact with the police. They are
-reluctant to report crimes and suspected crimes to the police, and they are
-reluctant to come forth as witnesses to crimes. That makes our communities less
-safe for everyone.
+*** Background:
+Immigration enforcement is a federal function. Local law enforcement agencies
+are concerned with policing our communities.  Immigration enforcement is not a
+function carried out by local law enforcement agencies.
 
-** Doesn't a state sanctuary law contradict federal law?
+When undocumented immigrants fear that local police are acting as ICE agents who
+can initiate deportation, they are reluctant to make contact with the police.
+They are reluctant to report crimes and suspected crimes to the police, and they
+are reluctant to come forth as witnesses to crimes.
+
+More than [[https://en.wikipedia.org/wiki/Sanctuary_city][500 state and local governments]] across the U.S. recognize this
+problem.
+
+When members of the community are reluctant to contact the police, the police
+have a more difficult time fighting crime. That makes our communities less safe
+for everyone.
+
+*** Answer:
+Local law enforcement agencies *should* assist ICE as required by law. They
+*should not* provide additional assistance to ICE, beyond what is required by
+law, because this will interfere with their ability to police local communities.
+
+** DONE Doesn't a state sanctuary law contradict federal law?
+   CLOSED: [2018-06-23 Sat 10:19]
    :PROPERTIES:
    :EXPORT_FILE_NAME: contradict-fed-law
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_AUTHOR: "Hawaii J20"
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
-Doesn't a state sanctuary law contradict federal law?
+*** Question:
+Wouldn't a state sanctuary law contradict federal law?
 
-*** Answer
-Hawaii’s proposed sanctuary state bill does not conflict with federal
-law because it allows federal immigration efforts to continue. Constitutional
-experts agree that the provisions of Hawaii’s proposed sanctuary state bill are
-legal. None of its provisions have been found by any court to be in violation of
-federal law or the U.S. Constitution.
+*** Background:
+The [[https://www.capitol.hawaii.gov/measure_indiv.aspx?billtype=SB&billnumber=2290&year=2018][Ho`okipa bill introduced to the Hawai`i State Legislature in 2018]] does not
+conflict with federal law because it allows federal immigration efforts to
+continue. Constitutional experts agree that the provisions of the Ho`okipa bill
+are legal. None of its provisions have been found by any court to be in
+violation of federal law or the U.S. Constitution.
 
-** Aren't undocumented immigrants a drain on our social services?
+Similar sanctuary laws are common in the U.S.  There are [[https://en.wikipedia.org/wiki/Sanctuary_city][more than 500 state and
+local governments that have adopted some form of sanctuary law]].
+
+*** Answer:
+No, sanctuary laws are common in the U.S. They do not contradict federal law.
+
+** DONE Aren't undocumented immigrants a drain on our social services?
+   CLOSED: [2018-06-23 Sat 10:34]
    :PROPERTIES:
    :EXPORT_FILE_NAME: social-services
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_AUTHOR: "Hawaii J20"
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
-Illegal aliens are a drain on our communities because they get welfare
+*** Question:
+Undocumented immigrants are a drain on our communities because they get welfare
 and free health care, so why shouldn’t they be deported?
 
-*** Answer
+*** Background:
 Undocumented immigrants support government financially because they pay
 taxes. Yet they do not qualify for the most costly government assistance
 programs, such as Social Security, Medicare, and Medicaid, although they may
@@ -203,43 +301,364 @@ qualify for some smaller government assistance programs. Studies show that
 undocumented immigrants pay about as much in taxes as they receive in government
 programs.
 
-** Won't a sanctuary law disrupt the flow of federal funds to Hawai`i?
+
+*** Answer:
+Undocumented immigrants are not a drain on our communities.
+** DONE Won't a sanctuary law disrupt the flow of federal funds to Hawai`i?
+   CLOSED: [2018-06-23 Sat 11:10]
    :PROPERTIES:
    :EXPORT_FILE_NAME: disrupt-fed-funds
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_AUTHOR: "Hawaii J20"
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
+*** Question:
 If Hawaii refuses to cooperate with Trump and his immigration
 policies, he will retaliate by withholding federal grants to Hawaii. Why should
 Hawai`i unnecessarily put hundreds of millions of federal dollars at risk?
 
-*** Answer
-Actually, very little federal funding would be at risk, because federal
-law allows grant moneys to be withheld only when a state does not comply with
-the requirements of that particular grant. There is only one grant related to
-immigration enforcement, and Hawaii receives a relatively small amount from it.
+*** Background:
+Actually, very little federal funding would be at risk, because federal law
+allows grant moneys to be withheld only when a state does not comply with the
+requirements of that particular grant.  The [[https://www.everycrsreport.com/reports/R44797.html#_Toc478130447][federal government must take care
+not to coerce states]] by withholding funds.
+
+There is only one federal grant related to law enforcement, the [[https://www.bja.gov/jag/][Edward Byrne
+Memorial Justice Assistance Grant (JAG) Program]]. Hawaii receives a relatively
+small amount from the Byrne JAG program. [[https://www.bja.gov/Programs/JAG/jag17/17HI.pdf][Hawaii's allocation for FY 2017 was
+$840,284.00]]. Of this total, the Department of Attorney General will receive
+$504,170.40 and $336,113.60 will be directly awarded to the counties. The state
+portion of the Byrne JAG grant represents 0.6% of the Department of Attorney
+General's operating budget.
+
+The Federal Department of Justice (DOJ) under Attorney General Sessions has
+attempted to attach [[https://www.justice.gov/opa/pr/attorney-general-sessions-announces-immigration-compliance-requirements-edward-byrne-memorial][conditions to the Byrne JAG grant]]. These conditions seek to
+expand state and local government requirements to cooperate with the federal
+government in its efforts to enforce federal immigration laws. In September,
+2017 a [[https://www.clearinghouse.net/detail.php?id=16080][federal judge in Chicago granted a nationwide injunction]] against these
+conditions, holding that it was likely AG Sessions had exceeded his authority by
+imposing them.
+
 It should be noted that, despite Hawaii’s high-profile challenge to Trump’s
 Muslim travel ban, the federal budget proposed by Trump would actually increase
 total federal funding for Hawaii.
 
-** Why should we worry about people different than us?
+
+*** Answer:
+The federal government is barred by law from coercing states in this way. The
+Trump administration might threaten to withhold funds, but such a threat would
+be a bully's bluster. In any event, the amount of federal funding in question is
+not great. It represents less than 1% of the State Attorney General's annual
+budget.
+
+** DONE Why should we worry about people different than us?
+   CLOSED: [2018-07-01 Sun 14:15]
    :PROPERTIES:
    :EXPORT_FILE_NAME: waste-time
-   :EXPORT_DATE: 2018-06-12
    :EXPORT_AUTHOR: "Hawaii J20"
    :EXPORT_HUGO_MENU: :menu "main"
    :END:
 
-*** Question
+*** Question:
 Why should we waste time worrying about undocumented immigrants?
 
-*** Answer
+*** Answer:
 Hawai`i has a rich immigrant heritage that continues and should be allowed
 continue, despite any risk of losing a small amount of federal grant money. Most
 of us who live in Hawaii are either immigrants or the descendants of immigrants
 who sought better lives for themselves and their children. Immigrants have
 contributed significantly to our society and the unique character of Hawaii’s
 culture. Today’s immigrants, whether documented or not, are no different.
+** DONE Did my Senator support the Ho`okipa Bill?
+   CLOSED: [2018-07-01 Sun 14:16]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: state-senate
+   :EXPORT_AUTHOR: "Hawaii J20"
+   :EXPORT_HUGO_MENU: :menu "main"
+   :END:
+
+*** Question:
+Did my State Senator support the Ho`okipa Bill during the 2018 legislative
+session?
+
+*** Background:
+
+In the following table, the marks in the Ho`ikipa column have these meanings:
+=++= introduced the bill and voted aye; =+= voted aye; =+/-= voted aye with
+reservations; =-= voted nay. Note that senator names are linked to legislative
+web sites with contact information.
+
+Or, [[file:/qgis2web_2018_07_02-16_28_17_275091/index.html][view a map of Senate districts]], where bluer indicates stronger support for
+the Ho`okipa bill and redder is the opposite.
+
+| Dist. | Senator                    | Ho`okipa | Party | Areas Represented                                                                                            |
+|-------+----------------------------+----------+-------+--------------------------------------------------------------------------------------------------------------|
+|     1 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=kkahele&year=2018][Kaiali‘i Kahele]]            | +        | Dem   | Hilo                                                                                                         |
+|     2 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=ruderman&year=2018][Russell E. Ruderman]]        | +        | Dem   | Puna, Ka`u                                                                                                   |
+|     3 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=green&year=2018][Josh Green]]                 | +        | Dem   | Kona, Ka`u                                                                                                   |
+|     4 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=inouye&year=2018][Lorraine Inouye]]            | +        | Dem   | Hilo, Hamakua, Kohala, Waimea, Waikoloa, Kona                                                                |
+|     5 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=keithagaran&year=2018][Gilbert S. C. Keith-Agaran]] | +        | Dem   | Wailuku, Waihe'e, Kahului                                                                                    |
+|     6 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=baker&year=2018][Rosalyn Baker]]              | +        | Dem   | South and West Maui                                                                                          |
+|     7 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=english&year=2018][J. Kalani English]]          | +        | Dem   | Kalawao, Hana, East and Upcountry Maui, Moloka`i, Lana`i and Kaho`olawe                                      |
+|     8 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=kouchi&year=2018][Ronald D. Kouchi]]           | +        | Dem   | Kauai, Ni'ihau                                                                                               |
+|     9 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=chang&year=2018][Stanley Chang]]              | ++       | Dem   | Honolulu, Hawai`i Kai, `Aina Haina, Wai`alae-Kahala, Diamond Head                                            |
+|    10 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=ihara&year=2018][Les Ihara, Jr.]]             | +        | Dem   | Kaimuki, Kapahulu, Palolo, Maunalani Heights, St. Louis Heights, Mo`ili`ili, Ala Wai                         |
+|    11 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=taniguchi&year=2018][Brian Taniguchi]]            | ++       | Dem   | Manoa, Makiki, Punchbowl, Papakolea                                                                          |
+|    12 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=galuteria&year=2018][Brickwood Galuteria]]        | +        | Dem   | Kaka`ako, Ala Moana, Waikiki, McCully, Mo`ili`ili                                                            |
+|    13 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=krhoads&year=2018][Karl Rhoads]]                | ++       | Dem   | Liliha, Palama, Iwilei, Kalihi, Nu`uanu, Pacific Heights, Pauoa, Lower Tantalus, Downtown                    |
+|    14 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=nakashima&year=2018][Donna Mercado Kim]]          | +/-      | Dem   | Moanalua, `Aiea, Fort Shafter, Kalihi Valley, Halawa Valley                                                  |
+|    15 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=wakai&year=2018][Glenn Wakai]]                | +        | Dem   | Kalihi, Mapunapuna, Airport, Salt Lake, Aliamanu, Foster Village, Hickam, Pearl Harbor                       |
+|    16 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=harimoto&year=2018][Breene Harimoto]]            | +        | Dem   | Pearl City, Momilani, Pearlridge, `Aiea, Royal Summit, `Aiea Heights, Newtown, Waimalu, Halawa, Pearl Harbor |
+|    17 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=nishihara&year=2018][Clarence K. Nishihara]]      | +        | Dem   | Waipahu, Pearl City, Crestview, Manana, Pacific Palisades                                                    |
+|    18 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=kidani&year=2018][Michelle Kidani]]            | +        | Dem   | Mililani Town, Waipi`o Gentry, Waikele, Village Park, Royal Kunia                                            |
+|    19 | Will Espero                | +        | Dem   | `Ewa Beach, `Ewa by Gentry, Ocean Pointe, `Ewa Villages, Iroquois Point                                      |
+|    20 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=gabbard&year=2018][Mike Gabbard]]               | -        | Dem   | Makakilo, Kapolei, Kalaeloa, `Ewa, Waipahu                                                                   |
+|    21 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=shimabukuro&year=2018][Maile Shimabukuro]]          | +        | Dem   | Kalaeloa, Honokai Hale, Ko `Olina, Nanakuli, Ma`ili, Wai`anae, Makaha, Makua                                 |
+|    22 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=delacruz&year=2018][Donovan Dela Cruz]]          | +        | Dem   | Mililani Mauka, Waipi`o Acres, Wheeler, Wahiawa, Whitmore Village, Poamoho                                   |
+|    23 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=riviere&year=2018][Gil Riviere]]                | -        | Dem   | Kunia, Schofield Barracks, Wahiawa, Waialua, Hale`iwa, Kahuku, La`ie, Ka`a`awa, Kane`ohe                     |
+|    24 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=tokuda&year=2018][Jill N. Tokuda]]             | +        | Dem   | `Ahuimanu, He`eia, Kane`ohe, Kane`ohe MCAB                                                                   |
+|    25 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=lthielen&year=2018][Laura Thielen]]              | +        | Dem   | Kailua, Lanikai, Enchanted Lake, Keolu Hills, Maunawili, Waimanalo, Hawai`i Kai, Portlock                    |
+
+*** Answer:
+
+Support for the 2018 Ho`okipa Bill was strong in the Senate, where it was
+introduced by Senators Rhoads, Chang, and Taniguchi. Twenty-two senators
+consistently voted for the bill. Senator Mercado Kim had reservations, and
+Senators Gabbard and Riviere voted against the bill.
+
+
+** DONE Did my Representative support the Ho`okipa Bill?
+   CLOSED: [2018-07-01 Sun 14:16]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: state-representatives
+   :EXPORT_AUTHOR: "Hawaii J20"
+   :EXPORT_HUGO_MENU: :menu "main"
+   :END:
+
+*** Question:
+
+Did my representative support the Ho`okipa Bill during the 2018 legislative session?
+
+*** Background:
+
+In the following table, the marks in the =Ho`ikipa= column have these meanings:
+=++= introduced the bill and voted aye; =+= voted aye; =+/-= voted aye with
+reservations; =-= voted nay. Note that representative names are linked to
+legislative web sites with contact information.
+
+Or, [[file:/qgis2web_2018_07_02-15_43_47_875455/index.html][view a map of House districts]], where bluer indicates stronger support for
+the Ho`okipa bill and redder is the opposite.
+
+| Dist. | Representative       | Ho`okipa | Party | Areas Represented                                                                                         |
+|-------+----------------------+----------+-------+-----------------------------------------------------------------------------------------------------------|
+|     1 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=nakashima&year=2018][Mark Nakashima]]       | +        | Dem   | Hāmākua, North and South Hilo                                                                             |
+|     2 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=todd&year=2018][Chris Toshiro Todd]]   | +        | Dem   | Keaukaha, parts of Hilo, Pana`ewa, Waiakea                                                                |
+|     3 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=onishi&year=2018][Richard Onishi]]       | +        | Dem   | Hilo, Kea`au, Kurtistown, Puna                                                                            |
+|     4 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=Sanbuenaventura&year=2018][Joy San Buenaventura]] | +        | Dem   | Puna                                                                                                      |
+|     5 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=creagan&year=2018][Richard Creagan]]      | ++       | Dem   | Na'alehu, Ocean View, Captain Cook, Kailua-Kona                                                           |
+|     6 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=lowen&year=2018][Nicole Lowen]]         | ++       | Dem   | North Kona, Holualoa, Kalaoa, Honokōhau                                                                   |
+|     7 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=evans&year=2018][Cindy Evans]]          | +/-      | Dem   | North Kona, North Kohala, South Kohala                                                                    |
+|     8 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=hashimoto&year=2018][Troy Hashimoto]]       | +        | Dem   | Kahakuloa, Waihe`e, Waiehu, Pu`uohala, Wailuku, Kahului                                                   |
+|     9 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=woodson&year=2018][Justin Woodson]]       | +        | Dem   | Kahului, Pu`unēnē, Old Sand Hills, Maui Lani                                                              |
+|    10 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=mckelvey&year=2018][Angus McKelvey]]       | +        | Dem   | West Maui, Mā`alaea, North Kīhei                                                                          |
+|    11 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=ing&year=2018][Kaniela Ing]]          | ++       | Dem   | Kīhei, Wailea, Makena                                                                                     |
+|    12 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=yamashita&year=2018][Kyle Yamashita]]       | +        | Dem   | Sprecklesville, Pukalani, Makawao, Kula, Keokea, Ulupalakua, Kahului                                      |
+|    13 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=decoite&year=2018][Lynn DeCoite]]         | +        | Dem   | Kalawao, Haiku, Hāna, Kaupo, Kīpahulu, Nahiku, Pā`ia, Kaho`olawe, Lāna`i, Moloka`i, Molokini              |
+|    14 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=nakamura&year=2018][Nadine Nakamura]]      | +        | Dem   | Hanalei, Princeville, Kīlauea, Anahola, Kapa`a, Wailua                                                    |
+|    15 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=tokioka&year=2018][James Tokioka]]        | +/-      | Dem   | Wailuā Homesteads, Hanamā`ulu, Līhu`e, Puhi, Old Kōloa Town, `Ōma`o                                       |
+|    16 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=morikawa&year=2018][Dee Morikawa]]         | +        | Dem   | Ni`ihau, Lehua, Kōloa, Waimea                                                                             |
+|    17 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=ward&year=2018][Gene Ward]]            | -        | Rep   | Honolulu, Hawai`i Kai, Kalama Valley                                                                      |
+|    18 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=hashem&year=2018][Mark Hashem]]          | +/-      | Dem   | Haha`ione, Kuliouou, Niu Valley, `Āina Haina, Wai`alae, Kāhala                                            |
+|    19 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=kobayashi&year=2018][Bertrand Kobayashi]]   | +        | Dem   | Wai`alae-Kāhala, Diamond Head, Kaimuki, Kapahulu                                                          |
+|    20 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=say&year=2018][Calvin K.Y. Say]]      | +        | Dem   | St. Louis Heights, Pālolo Valley, Maunalani Heights, Wilhelmina Rise, Kaimukī                             |
+|    21 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=nishimoto&year=2018][Scott Nishimoto]]      | +        | Dem   | Mō`ili`ili, McCully, Kaimukī                                                                              |
+|    22 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=brower&year=2018][Tom Brower]]           | ++       | Dem   | Waikīkī, Ala Moana                                                                                        |
+|    23 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=choy&year=2018][Isaac Choy]]           | +/-      | Dem   | Mānoa, Punahou, University, Mō`ili`ili                                                                    |
+|    24 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=belatti&year=2018][Della Au Belatti]]     | +        | Dem   | Makiki, Tantalus, Papakōlea, McCully, Pawa`a, Manoa                                                       |
+|    25 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=luke&year=2018][Sylvia Luke]]          | +/-      | Dem   | Makiki, Punchbowl, Nu`uanu, Dowsett Highlands, Pacific Heights, Pauoa                                     |
+|    26 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=saiki&year=2018][Scott Saiki]]          | +        | Dem   | McCully, Kaheka, Kaka`ako, Downtown Honolulu                                                              |
+|    27 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=johanson&year=2018][Takashi Ohno]]         | +        | Dem   | Nu`uanu, Liliha, Pauoa, `Ālewa Heights                                                                    |
+|    28 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=mizuno&year=2018][John Mizuno]]          | +        | Dem   | Kalihi Valley, Kamehameha Heights, portion of lower Kalihi                                                |
+|    29 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=holt&year=2018][Daniel Holt]]          | +        | Dem   | Kalihi, Kapālama, Iwilei, Chinatown                                                                       |
+|    30 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=cachola&year=2018][Romy Cachola]]         | +        | Dem   | Sand Island, Mokauea, Kapalama, Kalihi Kai                                                                |
+|    31 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=johanson&year=2018][Aaron Johanson]]       | +        | Dem   | Moanalua, Red Hill, Foster Village, `Aiea, Fort Shafter, Moanalua Gardens, Aliamanu, Lower Pearlridge     |
+|    32 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=ichiyama&year=2018][Linda Ichiyama]]       | +        | Dem   | Moanalua Valley, Salt Lake, Aliamanu                                                                      |
+|    33 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=kong&year=2018][Sam Kong]]             | +        | Dem   | `Aiea                                                                                                     |
+|    34 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=takayama&year=2018][Gregg Takayama]]       | +/-      | Dem   | Pearl City, Waimalu, Pacific Palisades                                                                    |
+|    35 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=takumi&year=2018][Roy Takumi]]           | +        | Dem   | Pearl City, Mānana, Waipi`o                                                                               |
+|    36 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=fukumoto&year=2018][Beth Fukumoto]]        | +        | Dem   | Mililani, Mililani Mauka                                                                                  |
+|    37 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=yamane&year=2018][Ryan Yamane]]          | +        | Dem   | Mililani, Waipi`o Gentry, Waikele                                                                         |
+|    38 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=aquino&year=2018][Henry Aquino]]         | +        | Dem   | Waipahu                                                                                                   |
+|    39 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=cullen&year=2018][Ty Cullen]]            | +        | Dem   | Royal Kunia, Village Park, Waipahu, Makakilo, West Loch                                                   |
+|    40 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2018][Bob McDermott]]        | -        | Rep   | `Ewa, `Ewa Beach, `Ewa Gentry, Iroquois Point                                                             |
+|    41 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=LoPresti&year=2018][Matthew LoPresti]]     | +        | Dem   | `Ewa Villages, `Ewa Beach, Ewa Gentry, Ocean Pointe, West Loch                                            |
+|    42 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=har&year=2018][Sharon Har]]           | +/-      | Dem   | Kapolei, Makakilo                                                                                         |
+|    43 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=Tupola&year=2018][Andria Tupola]]        | -        | Rep   | `Ewa Villages, Kalaeloa, Honokai Hale, Nanakai Gardens, Ko Olina, Kahe Point, Nānākuli, Lualualei, Mā`ili |
+|    44 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=gates&year=2018][Cedric Gates]]         | +        | Dem   | Wai`anae, Mākaha, Makua, Mā`ili                                                                           |
+|    45 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=matsumoto&year=2018][Lauren Matsumoto]]     | -        | Rep   | Schofield, Mokuleia, Waialua, Kunia, Waipi`o Acres, Mililani                                              |
+|    46 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=learmont&year=2018][Leah Learmont]]        | +        | Dem   | Wahiawa, Whitmore Village                                                                                 |
+|    47 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=quinlan&year=2018][Sean Quinlan]]         | +        | Dem   | Waialua, Haleiwa, Pupukea, Kahuku, Laie, Hau`ula, Waiāhole, Sunset Beach, Punalu`u, Ka`a`awa              |
+|    48 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=Keohokalole&year=2018][Jarrett Keohokalole]]  | ++       | Dem   | Kāne`ohe, He`eia, Ahuimanu, Kahalu`u, Ha`ikū Valley, Mokuoloe                                             |
+|    49 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=hashimoto&year=2018][Ken Ito]]              | +        | Dem   | Kāne`ohe, Maunawili, Olomana                                                                              |
+|    50 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=thielen&year=2018][Cynthia Thielen]]      | -        | Rep   | Kailua, Kāne`ohe Bay                                                                                      |
+|    51 | [[https://www.capitol.hawaii.gov/memberpage.aspx?member=clee&year=2018][Chris Lee]]            | +        | Dem   | Lanikai, Waimānalo                                                                                        |
+
+*** Answer:
+
+In meetings prior to the 2018 session, House leaders made clear to Hawai`i J20
+and other supportive groups that the Ho`okipa Bill would not pass the
+legislature in 2018. Still, support for the Ho`okipa Bill was strong.
+
+Support for the 2018 Ho`okipa Bill, introduced by Representatives Ing, Brower,
+Creagan, Keohokalole, and Lowen, was divided along party lines. Thirty-nine
+Democrats supported the bill, while all five Republicans voted against it. Seven
+Democrats were "on the fence," either voting with reservations or, in the case
+of Representatives Luke and Takayama, refusing to hear the bill in committee.
+
+Technically, the refusals by Representative Luke to hear the House version of
+the Ho`okipa Bill in the Finance Committee and by Representative Takayama to
+hear the Senate version of the Ho`okipa Bill in the Public Safety Committee
+killed the 2018 Ho`okipa Bill.
+
+** DONE Why should taxpayers foot the bill for a sanctuary state?
+   CLOSED: [2018-07-02 Mon 18:56]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: taxpayers
+   :EXPORT_AUTHOR: "Hawaii J20"
+   :EXPORT_HUGO_MENU: :menu "main"
+   :END:
+
+*** Question:
+
+Why should taxpayers bear the burden of supporting undocumented aliens?
+
+*** Background:
+Immigration is a federal function that citizens support with the money they pay
+in taxes to the Internal Revenue Service. However, the federal government
+routinely deputizes local law enforcement agents to assist in immigration
+enforcement, even though the federal government does not provide funding to
+local governments for this purpose. This cooperation means local taxpayers
+effectively pay twice for immigration enforcement -- once with their federal
+taxes, and again with their state and local taxes.
+
+Here in Hawai`i local law enforcement agents routinely cooperate with federal
+agencies on immigration issues. One common request, a warrant-less detainer,
+asks local law enforcement agents to hold an arrested undocumented immigrant at
+OCCC for 48 hours longer than the allowable 24 hours. Federal judges in other
+districts have ruled these warrant-less detainers are unlawful. The direct cost
+to Hawai`i taxpayers for the cooperation of our local law enforcement agents
+over the last 10 years has been estimated at $300,000. In addition, holding
+immigrants on warrant-less detainers contributes to the overcrowding of OCCC, a
+facility already bursting at the seams.
+
+*** Answer:
+A state sanctuary bill will save Hawai`i taxpayers money by refusing to honor
+requests for non-public information and warrant-less detainers issued by ICE.
+Taxpayers will not have to pay twice for immigration enforcement.
+
+** DONE Where can I get a copy of the Ho`okipa Bill passed by the Senate in 2018?
+   CLOSED: [2018-08-04 Sat 18:00]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: senate
+   :EXPORT_AUTHOR: "Hawaii J20"
+   :EXPORT_HUGO_MENU: :menu "main"
+   :END:
+
+*** Question:
+Can I get a digital copy of the Ho`okipa Bill passed by the Senate in 2018?
+
+*** Background:
+The Ho`okipa Bill passed third reading, as amended (SD 2). In the vote on the
+Senate floor there were 23 ayes, Senator Kim voted aye with reservations, and
+Senators Gabbard and Riviere voted no. The Ho`okipa Bill was transmitted to the
+House of Representatives on March 6, 2018.
+
+*** Answer:
+    Here is a link to a PDF version of the [[https://www.capitol.hawaii.gov/session2018/bills/SB2290_SD2_.PDF][Ho`okipa Bill passed by the Senate in 2018]].
+* Workspace                                                        :noexport:
+
+** Senate Table for export
+
+| Dist. | Name                       | Ho`okipa | Party | Areas Represented                                                                                            |
+|-------+----------------------------+----------+-------+--------------------------------------------------------------------------------------------------------------|
+|     1 | Kaiali‘i Kahele            | +        | Dem   | Hilo                                                                                                         |
+|     2 | Russell E. Ruderman        | +        | Dem   | Puna, Ka`u                                                                                                   |
+|     3 | Josh Green                 | +        | Dem   | Kona, Ka`u                                                                                                   |
+|     4 | Lorraine Inouye            | +        | Dem   | Hilo, Hamakua, Kohala, Waimea, Waikoloa, Kona                                                                |
+|     5 | Gilbert S. C. Keith-Agaran | +        | Dem   | Wailuku, Waihe'e, Kahului                                                                                    |
+|     6 | Rosalyn Baker              | +        | Dem   | South and West Maui                                                                                          |
+|     7 | J. Kalani English          | +        | Dem   | Kalawao, Hana, East and Upcountry Maui, Moloka`i, Lana`i and Kaho`olawe                                      |
+|     8 | Ronald D. Kouchi           | +        | Dem   | Kauai, Ni'ihau                                                                                               |
+|     9 | Stanley Chang              | ++       | Dem   | Honolulu,Hawai`i Kai, `Aina Haina, Wai`alae-Kahala, Diamond Head                                             |
+|    10 | Les Ihara, Jr.             | +        | Dem   | Kaimuki, Kapahulu, Palolo, Maunalani Heights, St. Louis Heights, Mo`ili`ili, Ala Wai                         |
+|    11 | Brian Taniguchi            | ++       | Dem   | Manoa, Makiki, Punchbowl, Papakolea                                                                          |
+|    12 | Brickwood Galuteria        | +        | Dem   | Kaka`ako, Ala Moana, Waikiki, McCully, Mo`ili`ili                                                            |
+|    13 | Karl Rhoads                | ++       | Dem   | Liliha, Palama, Iwilei, Kalihi, Nu`uanu, Pacific Heights, Pauoa, Lower Tantalus, Downtown                    |
+|    14 | Donna Mercado Kim          | +/-      | Dem   | Moanalua, `Aiea, Fort Shafter, Kalihi Valley, Halawa Valley                                                  |
+|    15 | Glenn Wakai                | +        | Dem   | Kalihi, Mapunapuna, Airport, Salt Lake, Aliamanu, Foster Village, Hickam, Pearl Harbor                       |
+|    16 | Breene Harimoto            | +        | Dem   | Pearl City, Momilani, Pearlridge, `Aiea, Royal Summit, `Aiea Heights, Newtown, Waimalu, Halawa, Pearl Harbor |
+|    17 | Clarence K. Nishihara      | +        | Dem   | Waipahu, Pearl City, Crestview, Manana, Pacific Palisades                                                    |
+|    18 | Michelle Kidani            | +        | Dem   | Mililani Town, Waipi`o Gentry, Waikele, Village Park, Royal Kunia                                            |
+|    19 | Will Espero                | +        | Dem   | `Ewa Beach, `Ewa by Gentry, Ocean Pointe, `Ewa Villages, Iroquois Point                                      |
+|    20 | Mike Gabbard               | -        | Dem   | Makakilo, Kapolei, Kalaeloa, `Ewa, Waipahu                                                                   |
+|    21 | Maile Shimabukuro          | +        | Dem   | Kalaeloa, Honokai Hale, Ko `Olina, Nanakuli, Ma`ili, Wai`anae, Makaha, Makua                                 |
+|    22 | Donovan Dela Cruz          | +        | Dem   | Mililani Mauka, Waipi`o Acres, Wheeler, Wahiawa, Whitmore Village, Poamoho                                   |
+|    23 | Gil Riviere                | -        | Dem   | Kunia, Schofield Barracks, Wahiawa, Waialua, Hale`iwa, Kahuku, La`ie, Ka`a`awa, Kane`ohe                     |
+|    24 | Jill N. Tokuda             | +        | Dem   | `Ahuimanu, He`eia, Kane`ohe, Kane`ohe MCAB                                                                   |
+|    25 | Laura Thielen              | +        | Dem   | Kailua, Lanikai, Enchanted Lake, Keolu Hills, Maunawili, Waimanalo, Hawai`i Kai, Portlock                    |
+
+** House table for export
+
+| Dist. | Representative       | Ho`okipa | Party | Areas Represented                                                                                         |
+|-------+----------------------+----------+-------+-----------------------------------------------------------------------------------------------------------|
+|     1 | Mark Nakashima       | +        | Dem   | Hāmākua, North and South Hilo                                                                             |
+|     2 | Chris Toshiro Todd   | +        | Dem   | Keaukaha, parts of Hilo, Pana`ewa, Waiakea                                                                |
+|     3 | Richard Onishi       | +        | Dem   | Hilo, Kea`au, Kurtistown, Puna                                                                            |
+|     4 | Joy San Buenaventura | +        | Dem   | Puna                                                                                                      |
+|     5 | Richard Creagan      | ++       | Dem   | Na'alehu, Ocean View, Captain Cook, Kailua-Kona                                                           |
+|     6 | Nicole Lowen         | ++       | Dem   | North Kona, Holualoa, Kalaoa, Honokōhau                                                                   |
+|     7 | Cindy Evans          | +/-      | Dem   | North Kona, North Kohala, South Kohala                                                                    |
+|     8 | Troy Hashimoto       | +        | Dem   | Kahakuloa, Waihe`e, Waiehu, Pu`uohala, Wailuku, Kahului                                                   |
+|     9 | Justin Woodson       | +        | Dem   | Kahului, Pu`unēnē, Old Sand Hills, Maui Lani                                                              |
+|    10 | Angus McKelvey       | +        | Dem   | West Maui, Mā`alaea, North Kīhei                                                                          |
+|    11 | Kaniela Ing          | ++       | Dem   | Kīhei, Wailea, Makena                                                                                     |
+|    12 | Kyle Yamashita       | +        | Dem   | Sprecklesville, Pukalani, Makawao, Kula, Keokea, Ulupalakua, Kahului                                      |
+|    13 | Lynn DeCoite         | +        | Dem   | Kalawao, Haiku, Hāna, Kaupo, Kīpahulu, Nahiku, Pā`ia, Kaho`olawe, Lāna`i, Moloka`i, Molokini              |
+|    14 | Nadine Nakamura      | +        | Dem   | Hanalei, Princeville, Kīlauea, Anahola, Kapa`a, Wailua                                                    |
+|    15 | James Tokioka        | +/-      | Dem   | Wailuā Homesteads, Hanamā`ulu, Līhu`e, Puhi, Old Kōloa Town, `Ōma`o                                       |
+|    16 | Dee Morikawa         | +        | Dem   | Ni`ihau, Lehua, Kōloa, Waimea                                                                             |
+|    17 | Gene Ward            | -        | Rep   | Honolulu, Hawai`i Kai, Kalama Valley                                                                      |
+|    18 | Mark Hashem          | +/-      | Dem   | Haha`ione, Kuliouou, Niu Valley, `Āina Haina, Wai`alae, Kāhala                                            |
+|    19 | Bertrand Kobayashi   | +        | Dem   | Wai`alae-Kāhala, Diamond Head, Kaimuki, Kapahulu                                                          |
+|    20 | Calvin K.Y. Say      | +        | Dem   | St. Louis Heights, Pālolo Valley, Maunalani Heights, Wilhelmina Rise, Kaimukī                             |
+|    21 | Scott Nishimoto      | +        | Dem   | Mō`ili`ili, McCully, Kaimukī                                                                              |
+|    22 | Tom Brower           | ++       | Dem   | Waikīkī, Ala Moana                                                                                        |
+|    23 | Isaac Choy           | +/-      | Dem   | Mānoa, Punahou, University, Mō`ili`ili                                                                    |
+|    24 | Della Au Belatti     | +        | Dem   | Makiki, Tantalus, Papakōlea, McCully, Pawa`a, Manoa                                                       |
+|    25 | Sylvia Luke          | +/-      | Dem   | Makiki, Punchbowl, Nu`uanu, Dowsett Highlands, Pacific Heights, Pauoa                                     |
+|    26 | Scott Saiki          | +        | Dem   | McCully, Kaheka, Kaka`ako, Downtown Honolulu                                                              |
+|    27 | Takashi Ohno         | +        | Dem   | Nu`uanu, Liliha, Pauoa, `Ālewa Heights                                                                    |
+|    28 | John Mizuno          | +        | Dem   | Kalihi Valley, Kamehameha Heights, portion of lower Kalihi                                                |
+|    29 | Daniel Holt          | +        | Dem   | Kalihi, Kapālama, Iwilei, Chinatown                                                                       |
+|    30 | Romy Cachola         | +        | Dem   | Sand Island, Mokauea, Kapalama, Kalihi Kai                                                                |
+|    31 | Aaron Johanson       | +        | Dem   | Moanalua, Red Hill, Foster Village, `Aiea, Fort Shafter, Moanalua Gardens, Aliamanu, Lower Pearlridge     |
+|    32 | Linda Ichiyama       | +        | Dem   | Moanalua Valley, Salt Lake, Aliamanu                                                                      |
+|    33 | Sam Kong             | +        | Dem   | `Aiea                                                                                                     |
+|    34 | Gregg Takayama       | +/-      | Dem   | Pearl City, Waimalu, Pacific Palisades                                                                    |
+|    35 | Roy Takumi           | +        | Dem   | Pearl City, Mānana, Waipi`o                                                                               |
+|    36 | Beth Fukumoto        | +        | Dem   | Mililani, Mililani Mauka                                                                                  |
+|    37 | Ryan Yamane          | +        | Dem   | Mililani, Waipi`o Gentry, Waikele                                                                         |
+|    38 | Henry Aquino         | +        | Dem   | Waipahu                                                                                                   |
+|    39 | Ty Cullen            | +        | Dem   | Royal Kunia, Village Park, Waipahu, Makakilo, West Loch                                                   |
+|    40 | Bob McDermott        | -        | Rep   | `Ewa, `Ewa Beach, `Ewa Gentry, Iroquois Point                                                             |
+|    41 | Matthew LoPresti     | +        | Dem   | `Ewa Villages, `Ewa Beach, Ewa Gentry, Ocean Pointe, West Loch                                            |
+|    42 | Sharon Har           | +/-      | Dem   | Kapolei, Makakilo                                                                                         |
+|    43 | Andria Tupola        | -        | Rep   | `Ewa Villages, Kalaeloa, Honokai Hale, Nanakai Gardens, Ko Olina, Kahe Point, Nānākuli, Lualualei, Mā`ili |
+|    44 | Cedric Gates         | +        | Dem   | Wai`anae, Mākaha, Makua, Mā`ili                                                                           |
+|    45 | Lauren Matsumoto     | -        | Rep   | Schofield, Mokuleia, Waialua, Kunia, Waipi`o Acres, Mililani                                              |
+|    46 | Leah Learmont        | +        | Dem   | Wahiawa, Whitmore Village                                                                                 |
+|    47 | Sean Quinlan         | +        | Dem   | Waialua, Haleiwa, Pupukea, Kahuku, Laie, Hau`ula, Waiāhole, Sunset Beach, Punalu`u, Ka`a`awa              |
+|    48 | Jarrett Keohokalole  | ++       | Dem   | Kāne`ohe, He`eia, Ahuimanu, Kahalu`u, Ha`ikū Valley, Mokuoloe                                             |
+|    49 | Ken Ito              | +        | Dem   | Kāne`ohe, Maunawili, Olomana                                                                              |
+|    50 | Cynthia Thielen      | -        | Rep   | Kailua, Kāne`ohe Bay                                                                                      |
+|    51 | Chris Lee            | +        | Dem   | Lanikai, Waimānalo                                                                                        |

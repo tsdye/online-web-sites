@@ -1,6 +1,6 @@
 +++
 title = "Homepage"
 author = ["Thomas S. Dye"]
-lastmod = 2018-05-24T17:45:39-10:00
+lastmod = 2018-07-18T06:48:55-10:00
 draft = false
 +++

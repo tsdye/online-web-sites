@@ -1,20 +1,20 @@
 +++
 title = "Why should we worry about people different than us?"
 author = ["Hawaii J20"]
-date = 2018-06-12
-lastmod = 2018-06-13T14:11:31-10:00
+date = 2018-07-01T14:15:00-10:00
+lastmod = 2018-08-04T18:04:08-10:00
 draft = false
 [menu.main]
   weight = 2011
   identifier = "why-should-we-worry-about-people-different-than-us"
 +++
 
-## Question {#question}
+## Question: {#question}
 
 Why should we waste time worrying about undocumented immigrants?
 
 
-## Answer {#answer}
+## Answer: {#answer}
 
 Hawai\`i has a rich immigrant heritage that continues and should be allowed
 continue, despite any risk of losing a small amount of federal grant money. Most

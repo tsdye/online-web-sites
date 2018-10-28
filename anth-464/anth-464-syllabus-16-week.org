@@ -1,0 +1,1204 @@
+#+CATEGORY: ANTH 464
+#+OPTIONS: broken-links:nil todo:nil
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+STARTUP: entitiespretty
+#+STARTUP: noinlineimages
+#+hugo_base_dir: .
+
+
+#+TITLE: Spring 2019 ANTH 464 Hawaiian Archaeology
+#+AUTHOR: Dr. Thomas S. Dye
+* Homepage
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION:
+  :EXPORT_AUTHOR: "ANTH 464"
+  :END:
+
+* ANTH 464
+  :PROPERTIES:
+   :EXPORT_HUGO_SECTION: post
+  :END:
+
+** Syllabus
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: anth-464-s19-syllabus
+   :EXPORT_TITLE: Spring 2019 Syllabus for Hawaiian Archaeology ANTH 464
+   :EXPORT_LATEX_CLASS: koma-article
+   :EXPORT_HUGO_WEIGHT: auto
+   :EXPORT_HUGO_MENU: :menu main
+   :EXPORT_DATE: 2018-10-14
+   :END:
+
+  - Meeting Times :: MWF 9:30--10:20
+  - Classroom :: SAUNDERS 345
+  - Instructor :: Dr. Thomas S. Dye (=tdye@hawaii.edu=)
+    - Office :: Saunders 346B
+    - Office Hour :: F 10:30--11:30 (or by appointment)
+
+
+*** Course Description
+
+ This course is designed to provide undergraduate (and graduate)
+ students an in-depth introduction to the archaeology of the Hawaiian
+ Islands. Topics that we will consider include (but not be limited to)
+ archaeology's contribution to traditional and post-Contact history,
+ the geographical and historical origins of the Polynesian discoverers,
+ the timing of island colonization and settlement, the development and
+ innovation of food production and craft economies, the emergence of
+ socio-political hierarchies, and some consequences of contact and
+ colonialism.  We will also consider the relevance of archaeology to
+ contemporary society.
+
+ Students are expected to be interested in old Hawai`i and curious
+ about how archaeology might contribute to Hawaiian history.  There
+ will be a research paper (10 pages plus bibliography) and other
+ shorter writing assignments. This course is designed for
+ upper-division undergraduates and graduate students. We welcome all
+ students with interests in old Hawai`i. A background in archaeology is
+ helpful but not a prerequisite.
+
+*** Student Learning Outcomes
+  - Students can evaluate the validity and limitations of
+    archaeological theories and research claims.
+  - Students understand the tempo of change in old Hawai`i.
+  - Students are familiar with the materials and methods of Hawaiian
+    archaeology.
+
+*** Disability Statement
+
+ Any student desiring an accommodation based on the impact of a disability should
+ contact =tdye@hawaii.edu= to discuss specific needs. Students with documented
+ disabilitites, please contact the KOKUA Program at 808--956--7511 or visit them
+ at the Queen Lili`uokalani Center 013 to coordinate reasonable accommodations.
+
+*** Stipulations
+  - Please ask questions outside class with the Laulima "Mailtool" so other
+    students can benefit from the conversation
+  - For private questions, please send an email to =tdye@hawaii.edu=, visit
+    during office hour, or schedule an appointment
+  - Writing assignments must be submitted as Portable Document Format
+    (pdf) files via Laulima
+  - No credit for late assignments without prior notification and a written
+    medical excuse
+  - Final term papers /will not be accepted/ after the due date and time
+  - Failure to submit a final draft term paper on time results in a failing
+    grade for the course
+
+*** Textbook
+
+ The required textbook for this semester is /Hawaii's Past in a World
+ of Pacific Islands/, by J. M. Bayman and T. S. Dye (2013), SAA Press,
+ Washington.
+
+ We will read and discuss the book critically, focusing primarily on
+ the archaeological materials and secondarily on the relationship of
+ archaeological evidence to other kinds of evidence.
+
+*** Mid-Term Examination
+    :PROPERTIES:
+    :CUSTOM_ID: mid-term-examination
+    :END:
+ The mid-term examination includes three essay questions, chosen from a list of
+ discussion questions available on Laulima. Note that students have the
+ opportunity to discuss these discussioin questions during class meetings leading up
+ to the mid-term examination (but not during the examination), although students will
+ not know ahead of time which discussion questions will appear on the mid-term
+ examination.
+
+*** Term Paper
+    :PROPERTIES:
+    :ID:       id:BAA985D7-2A10-4951-BF31-82D482128DF3
+    :CUSTOM_ID: term-paper
+    :END:
+
+ A passing grade in this course requires the student to undertake and complete a
+ term-long writing project. The term paper will summarize and critically review
+ an archaeological excavation report (or a particular topic taken from the report) and
+ supplementary material as appropriate.
+
+ Students may select an excavation report from the following list. These reports
+ and supplementary materials are either available online or held on course
+ reserve at Hamilton Library. Alternatively, students with particular interests
+ may write a term paper on another excavation report; in this case, please
+ consult with =tdye@hawaii.edu= to negotiate a mutually agreeable excavation
+ report.
+
+   - Bellows Dune Site, O`ahu :: One of the first excavations of a stratified
+        beach site in Hawai`i. The site continues to play an important role in
+        archaeological narratives, but its interpretation has changed over time.
+        In particular, the dating of the site has been revised.
+   - Site 4727, Hawai`i :: A University of Hawai`i field school from 1968 to 1970
+        documented the pattern of settlement in the agricultural fields of upland
+        Lapakahi /ahupua`a/ on the leeward side of Kohala district. Site 4727 is
+        a dwelling surrounded by sweet potato gardens that yielded an
+        unexpectedly complex habitation history.
+ #  Rosendahl Hawaiian Archaeology 3, Arlas in the Tuggle volume.
+   - Ordy Pond, O`ahu :: A paleoenvironmental coring project at Ordy Pond in the
+        `Ewa district yielded crucial evidence for when Polynesians discovered
+        the islands and the environmental effects that followed discovery.
+  #      Athens article, Athens rat paper.
+   - Wai`ahukini Cave, Hawai`i :: Excavation of a fisherman's shelter
+        in the 1960's yielded a large assemblage of fishing gear. One of the few excavations of a
+        fisherman's cave before looters destroyed deposits in other coastal caves
+        searching for fishhooks to sell. The dating of the site has been revised.
+  #      Sinoto DRS, Mulrooney et al., fishhook web site.
+   - Kal\amacron{}huipua`a Site E1-355, Hawai`i :: A small cave located immediately inland of a
+        fishpond was thoroughly excavated in the mid 1970's.  The site yielded a
+        large amount of cultural material, primarily food remains, domestic
+        tools, and fishing gear.
+   - Fort DeRussy, O`ahu :: Archaeology beneath the surface of this military
+        installation in  Waik\imacron{}k\imacron{} was undertaken using a backhoe guided by
+        nineteenth century maps.   The backhoe unearthed a buried fishpond and
+        the archaeologist was able to date construction of an /`auwai/ that
+        brought fresh water to the pond.
+ #       Davis IARII report.
+   - K\amacron{}ne`aki Heiau, O`ahu :: A classic excavation designed to investigate the
+        history of construction and guide renovation of a temple in Makaha Valley.
+   - H\amacron{}lawa Pondfield, Hawai`i :: An unexpectedly deep excavation in a narrow
+        valley on the windward coast of Hawai`i Island revealed a long history of
+        taro pondfield construction and renovation.
+ # McCoy et al.
+   - Kahikinui, Maui :: This innovative excavation project took a regional
+        perspective and focused on the stratigraphic position of architectural
+        features.
+ # Dixon Kahikinui from SHPD
+   - Kona Shelter Cave, Hawai`i :: A cave excavation at the /mauka/ edge of Kailua
+        town yielded abundant material that the archaeologist reconstitutes as
+        reflecting subsistence practices and conflict.
+   - Nualolo Kai, Kaua`i :: Re-excavation of a site with spectacular preservation
+        of normally perishable materials revealed deep stratification. Bishop
+        Museum excavations here in the 1950's were extensive, but haven't been
+        published.
+ #  Hunt et al.
+   - H\amacron{}lawa Dune Site, Moloka`i :: Another excavation of a stratified beach site
+        from the 1960's that has a prominent place in archaeological narratives.
+        The dating of the site has been revised.
+ # Kirch, Kirch and McCoy.
+   - K\amacron{}newai, O`ahu :: Backhoe excavations prior to construction of the Hawaiian
+                       Studies building here on campus yielded evidence of change
+                       over time in an irrigation system that fed pondfields in
+                       one of the most productive agricultural systems on O`ahu.
+   - M\amacron{}h\amacron{}`ulep\umacron{}, Kaua`i :: Paleoenvironmental excavations in waterlogged sediments
+        at a large cave yielded a rich record of changes over time in the flora
+        and fauna of Kaua`i.
+ # Burney.
+   - Anahulu Valley, O`ahu :: The Anahulu Valley project focused on excavation of
+        M\amacron{}hele era sites that are known from land records. The project teamed
+        archaeologists under the direction of Pat Kirch with the historical
+        anthropologist Marshall Sahlins, who produced an historical ethnography
+        of the valley. Student papers will focus on one of the following sites:
+     - Site D6-25 :: The house site of Kaneiaulu.
+     - Site D6-34 :: The house site of Kainiki.
+     - Site D6-38 :: The house site of Kalua.
+   - Wailau Valley, Moloka`i :: An innovative regional excavation project carried
+        out in the pondfields of a large, undeveloped valley for a dissertation
+        here in the Anthropology Department.
+
+
+*** Grading
+
+ The course grade is based on the number of points a student earns on the
+ mid-term examination, the term paper, and the class presentation. Note that a
+ student must complete the final term paper and turn it in on time to pass the
+ course.
+
+**** Distribution of Points
+
+ Points will be given for each assignment submitted on time as shown in Table
+ [[point-dist]]. No points will be given for late assignments. Students who fail to
+ submit a term paper final draft on time will receive a failing grade for the
+ course.
+
+ #+name: point-dist
+ #+caption: ANTH 464 distribution of points
+  | Assignment                                    | Maximum |
+  |-----------------------------------------------+---------|
+  | Term paper 1. Choose excavation report        |       4 |
+  | Term paper 2. Reconstitution                  |       4 |
+  | Term paper 3. Acquisition 1                   |       4 |
+  | Term paper 4. Acquisition 2                   |       4 |
+  | Term paper 5. Specific Topic                  |       4 |
+  | Term paper 6. Structuration                   |       4 |
+  | Term paper 7. Abstract, Outline, Bibliography |       4 |
+  | Term paper 8. First draft                     |      16 |
+  | Term paper 9. Final draft                     |      40 |
+  |-----------------------------------------------+---------|
+  | Class presentation                            |       6 |
+  |-----------------------------------------------+---------|
+  | Mid-term examination                          |      20 |
+  |-----------------------------------------------+---------|
+  | TOTAL                                         |     110 |
+  #+TBLFM: @13$2=vsum(@INVALID..@-1)
+
+
+**** Grading Scale
+ Students who complete the term paper final draft and turn it in on time will be
+ graded on the point scale in Table [[grading-scale]]. Note that students must
+ complete the final term paper and submit it on time to receive a passing final
+ grade.
+
+ #+name: grading-scale
+ #+caption: ANTH 464 final grading scale
+ | Quality of Work | Points | Grade |
+ |-----------------+--------+-------|
+ | Excellent       |   \gt 97 | A+    |
+ | Excellent       | 94--97 | A     |
+ | Excellent       | 90--93 | A-    |
+ | Good            | 87--89 | B+    |
+ | Good            | 84--86 | B     |
+ | Good            | 80--83 | B-    |
+ | Fair            | 77--79 | C+    |
+ | Fair            | 74--76 | C     |
+ | Fair            | 70--73 | C-    |
+ | Poor            | 67--69 | D+    |
+ | Poor            | 64--66 | D     |
+ | Poor            | 60--63 | D-    |
+ | Failure         |   \lt 60 | F     |
+
+
+** Course Calendar
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: anth-464-s19-course-calendar
+   :EXPORT_HUGO_WEIGHT: auto
+   :EXPORT_HUGO_MENU: :menu main
+   :EXPORT_DATE: 2018-10-14
+   :END:
+
+ | Meeting  | Topic                                  | Discuss  | Lecture                            | Reading  | Assignment(s) due                   |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 1-7 (M)  | Introduction to ANTH 464               |          |                                    |          |                                     |
+ | 1-9 (W)  | What is Hawaiian archaeology?          | Q. 1     | [[http://tsdye.online/anth-464-lectures/anth-464-what-is-archaeology.html][What is Archaeology?]]               |          |                                     |
+ | 1-11 (F) | History of archaeological research     | Q. 1     |                                    | Ch. 1    |                                     |
+ | 1-14 (M) | Environmental setting                  | Q. 2     |                                    | Ch. 2    |                                     |
+ | 1-16 (W) | The anthropological project            | Q. 2     | Encountering Old Hawai`i           |          |                                     |
+ | 1-18 (F) | Gift economy and property              | Q. 2     |                                    |          |                                     |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 1-21 (M) | *Holiday: Martin Luther King, Jr. Day* | No class | No class                           | No class | No class                            |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 1-23 (W) | A comparative perspective              | Q. 3     | Hawai`i in Polynesian Perspective  |          |                                     |
+ | 1-25 (F) | Political development                  | Q. 3     |                                    |          |                                     |
+ | 1-28 (M) | Chronology                             | Q. 4     | Chronological Framework            | Ch. 3    |                                     |
+ | 1-30 (W) | Periods of history                     | Q. 4     |                                    |          |                                     |
+ | 2-1 (F)  | Developing a research focus            | Q. 4     |                                    |          | Choose excavation report            |
+ | 2-4 (M)  | Subsistence and settlement             | Q. 5     |                                    | Ch. 4    |                                     |
+ | 2-6 (W)  | Archaeological survey                  | Q. 5     | Mapping in Hawai`i [[http://vimeo.com/29061006][part 1]] [[https://vimeo.com/29291389][part 2]]   |          |                                     |
+ | 2-8 (F)  | Archaeological goals                   | Q. 5     |                                    |          | Reconstitution                      |
+ | 2-11 (M) | Archaeological excavation              | Q. 6     | Excavation of a Fishing Settlement |          |                                     |
+ | 2-13 (W) | Time in archaeology                    | Q. 6     |                                    |          |                                     |
+ | 2-15 (F) | Archaeological inquiry                 | Q. 6     |                                    |          | Acquisition 1                       |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 2-18 (M) | Holiday: President's Day               | No class | No class                           | No class | No class                            |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 2-20 (W) | Review                                 |          |                                    |          |                                     |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 2-22 (F) | Mid-term examination                   |          |                                    |          |                                     |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 2-25 (M) | Technology                             | Q. 7     | Abrader Quarries on Hawai`i Island | Ch. 5    |                                     |
+ | 2-27 (W) | Patterns of distribution               | Q. 7     | Pu`uwa`awa`a Volcanic Glass        |          |                                     |
+ | 3-1 (F)  | Progress in archaeological inquiry     | Q. 7     |                                    |          | Acquisition 2                       |
+ | 3-4 (M)  | Ideology                               | Q. 8     |                                    | Ch. 6    |                                     |
+ | 3-6 (W)  | Role of specialists                    | Q. 8     | Hawaiian /Ko`i/                    |          |                                     |
+ | 3-8 (F)  | Neo-evolutionism                       | Q. 8     |                                    |          | Specific Topic                      |
+ | 3-11 (M) | Coastal settlement                     | Q. 9     | A Coastal Village                  |          |                                     |
+ | 3-13 (W) | Settlement over time                   | Q. 9     |                                    |          |                                     |
+ | 3-15 (F) | Classification                         | Q. 9     |                                    |          | Structuration                       |
+ | 3-25 (M) | Inland settlement                      | Q. 10    | Rain-fed Agricultural Development  |          |                                     |
+ | 3-27 (W) | Developmental trajectories             | Q. 10    |                                    |          |                                     |
+ | 3-29 (F) | How to write a term paper              | Q. 10    |                                    |          | Abstract, Outline, and Bibliography |
+ | 4-1 (M)  | Scholarly citations                    |          |                                    |          |                                     |
+ | 4-3 (W)  | Q. of style                            |          |                                    |          |                                     |
+ | 4-5 (F)  | Is the end in sight?                   |          |                                    |          | First draft                         |
+ | 4-8 (M)  | Western contact                        | Q. 11    |                                    | Ch. 7    |                                     |
+ | 4-10 (W) | Historic archaeology                   | Q. 11    |                                    |          |                                     |
+ | 4-12 (F) | The future of Hawaiian archaeology     | Q. 11    |                                    | Ch. 8    |                                     |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 4-15 (M) | Class presentations                    |          |                                    |          |                                     |
+ | 4-17 (W) | Class presentations                    |          |                                    |          |                                     |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 4-19 (F) | Holiday: Good Friday                   | No class | No class                           | No class | No class                            |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 4-22 (M) | Aurora Kagawa, Kohala field system     |          |                                    |          |                                     |
+ | 4-24 (W) | Seth Quintus, Ka`\umacron{} field system        |          |                                    |          |                                     |
+ | 4-26 (F) | Kekuewa Kikiloi, Hawaiian archaeology? |          |                                    |          |                                     |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 4-29 (M) | Class presentations                    |          |                                    |          |                                     |
+ | 5-1 (W)  | Class presentations                    |          |                                    |          |                                     |
+ |----------+----------------------------------------+----------+------------------------------------+----------+-------------------------------------|
+ | 5-10 (F) |                                        |          |                                    |          | Final term paper                    |
+
+** Term Paper Instructions
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: anth-464-term-paper
+   :EXPORT_HUGO_WEIGHT: auto
+   :EXPORT_HUGO_MENU: :menu main
+   :EXPORT_DATE: 2018-10-14
+   :END:
+*** Term Paper Schedule
+
+ | Date     | Assignment                                                |
+ |----------+-----------------------------------------------------------|
+ | 2-1 (F)  | [[#choose-topic][Choose excavation report]]               |
+ | 2-8 (F)  | [[#form-questions][Reconstitution]]                       |
+ | 2-15 (F) | [[#refine-proposal][Acquisition 1]]                       |
+ | 3-1 (F)  | [[#pitch-research][Acquisition 2]]                        |
+ | 3-8 (F)  | [[#abstract-and-bibliography][Specific Topic]]            |
+ | 3-15 (F) | [[#introduction-and-outline][Structuration]]              |
+ | 3-29 (F) | [[#two-body-paragraphs][Abstract, Outline, Bibliography]] |
+ | 4-5 (F)  | [[#first-draft][First draft]]                             |
+ | 5-10 (F) | [[#final-term-paper][Final term paper]]                   |
+
+
+*** Choose excavation report
+    :PROPERTIES:
+    :ID:       8AA61042-4B65-4253-B82D-0D22A2E0E18C
+    :CUSTOM_ID: choose-topic
+    :END:
+
+ Identify the report you've chosen from the following list. Discuss your
+ reasons for choosing it and describe what you hope to learn from it.
+
+   - Bellows Dune Site, O`ahu :: One of the first excavations of a stratified
+        beach site in Hawai`i.
+   - Site 4727, Hawai`i :: Site 4727 is a dwelling surrounded by sweet potato
+        gardens that yielded an unexpectedly complex habitation history.
+ #  Rosendahl Hawaiian Archaeology 3, Arlas in the Tuggle volume.
+   - Ordy Pond, O`ahu :: A paleoenvironmental coring project at Ordy Pond in the
+        `Ewa district yielded crucial evidence for when Polynesians discovered
+        the islands and the environmental effects that followed discovery.
+  #      Athens article, Athens rat paper.
+   - Wai`ahukini Cave, Hawai`i :: Excavation of a fisherman's shelter
+        in the 1960's yielded a large assemblage of fishing gear.
+  #      Sinoto DRS, Mulrooney et al., fishhook web site.
+   - Kal\amacron{}huipua`a Site E1-355, Hawai`i :: A small cave located immediately inland of a
+        fishpond was thoroughly excavated in the mid 1970's.
+   - Fort DeRussy, O`ahu :: Archaeology beneath the surface of this military
+        installation in  Waik\imacron{}k\imacron{} was undertaken using a backhoe guided by
+        nineteenth century maps.
+ #       Davis IARII report.
+   - K\amacron{}ne`aki Heiau, O`ahu :: A classic excavation designed to investigate the
+        history of construction and guide renovation of a temple in Makaha Valley.
+   - H\amacron{}lawa Pondfield, Hawai`i :: An unexpectedly deep excavation in a narrow
+        valley on the windward coast of Hawai`i Island revealed a long history of
+        taro pondfield construction and renovation.
+ # McCoy et al.
+   - Kahikinui, Maui :: This innovative excavation project took a regional
+        perspective and focused on the stratigraphic position of architectural
+        features.
+ # Dixon Kahikinui from SHPD
+   - Kona Shelter Cave, Hawai`i :: A cave excavation at the /mauka/ edge of Kailua
+        town yielded abundant material that the archaeologist reconstitutes as
+        reflecting subsistence practices and conflict.
+   - Nualolo Kai, Kaua`i :: Re-excavation of a site with spectacular preservation
+        of normally perishable materials revealed deep stratification.
+ #  Hunt et al.
+   - H\amacron{}lawa Dune Site, Moloka`i :: Another excavation of a stratified beach site
+        from the 1960's that has a prominent place in archaeological narratives.
+ # Kirch, Kirch and McCoy.
+   - K\amacron{}newai, O`ahu :: Backhoe excavations prior to construction of the Hawaiian
+                       Studies building here on campus yielded evidence of change
+                       over time in an irrigation system that fed pondfields in
+                       one of the most productive agricultural systems on O`ahu.
+   - M\amacron{}h\amacron{}`ulep\umacron{}, Kaua`i :: Paleoenvironmental excavations in waterlogged sediments
+        at a large cave yielded a rich record of changes over time in the flora
+        and fauna of Kaua`i.
+ # Burney.
+   - Anahulu Valley, O`ahu :: The Anahulu Valley project focused on excavation of
+        M\amacron{}hele era sites that are known from land records. Student papers will
+        focus on one of the following sites:
+     - Site D6-25 :: The house site of Kaneiaulu.
+     - Site D6-34 :: The house site of Kainiki.
+     - Site D6-38 :: The house site of Kalua.
+   - Wailau Valley, Moloka`i :: An innovative regional excavation project carried
+        out in the pondfields of a large, undeveloped valley for a dissertation
+        here in the Anthropology Department.
+
+*** Reconstitution
+    :PROPERTIES:
+    :ID:       3B1287B4-BFF1-40DC-9AED-B2A7FA9F2DB8
+    :CUSTOM_ID: form-questions
+    :END:
+
+ Summarize in your own words what the author(s) of the report claimed the
+ excavation had revealed about old Hawai`i.  Take care to state the claims as
+ precisely as you can.  The critical part of your paper, which you will write
+ later, will compare the evidence from the excavation with these claims.  Do your
+ best to state the claims at face value and try not to read into them your own
+ opinions and experiences.
+
+
+*** Acquisition 1
+    :PROPERTIES:
+    :ID:       891F56A2-152F-4EA4-A66E-7B328994295E
+    :CUSTOM_ID: refine-proposal
+    :END:
+
+ Every archaeologist comes to an excavation with background knowledge---beliefs
+ about the past---that are used to *guide inquiry* and to *frame hypotheses* the
+ excavation might be expected to test. What background knowledge did the
+ author(s) of the report you are reviewing bring to their work? Draw as much of
+ this as possible from the report itself, however, be aware that it is rare to
+ find a full discussion of background information in an excavation report. Is
+ background information provided for each of the claims made in the
+ reconstitution? If not, what is missing?
+
+*** Acquisition 2
+    :PROPERTIES:
+    :ID:       80B52ECA-1397-4852-88F0-0817CA33C182
+    :CUSTOM_ID: pitch-research
+    :END:
+
+ Attempt to fill in any missing background information based on your readings
+ (including the textbook), the lectures, class discussions, and specific
+ questions you have for the instructor. What beliefs about old Hawai`i were
+ commonly held by archaeologists when the fieldwork for your excavation report
+ was carried out?
+
+
+*** Specific Topic
+    :PROPERTIES:
+    :ID:       4A80C976-BA79-455A-A28B-753F45FA2250
+    :CUSTOM_ID: abstract-and-bibliography
+    :END:
+
+ Identify the specific topic that will be the focus of your term paper.  You can
+ choose to review the complete excavation report, or you can choose to focus on
+ some part of the report that catches your interest.  Describe why you have made
+ this choice and suggest why the reader might find your topic interesting.
+
+*** Structuration
+    :PROPERTIES:
+    :ID:       F4E71772-5D44-4011-916E-6AFB4F922F33
+    :CUSTOM_ID: introduction-and-outline
+    :END:
+
+ Referring to your [[#abstract-and-bibliography][specific topic]], describe how the excavation was structured to
+ record space and time. Are space and time treated in a way that will make it
+ possible to test hypotheses and fields of inquiry identified in [[#refine-proposal][acquisition]]?
+ Were they treated in a way that will support the [[#form-questions][reconstitution claims]]? How were
+ the artifacts of interest classified?  Referring again to [[#refine-proposal][acquisition]] and
+ [[*Reconstitution][reconstitution]], are the classifications used in the report reasonable and useful?
+
+
+*** Abstract, Outline, and Bibliography
+    :PROPERTIES:
+    :ID:       998239EC-6BED-4D52-8598-7D1770F83BBC
+    :CUSTOM_ID: two-body-paragraphs
+    :END:
+
+ Write a 75 word abstract summarizing the paper you hope to write.
+ Attach an outline with section headings and a draft of your bibliography. This
+ bibliography should identify a list of five or more sources that include books,
+ journals, and on-line resources. You can use Google and Wikipedia as much or
+ little as you like, but your bibliography /must/ include some books and/or
+ journal articles.
+
+*** First draft
+    :PROPERTIES:
+    :ID:       EF1EECA5-A0E9-44ED-A052-849E3696B472
+    :CUSTOM_ID: first-draft
+    :END:
+
+ Here your goal is to produce a coherent whole. Use material from previous
+ writing assignments as much as possible. The draft can be rough but it must be
+ complete, with an introduction, a body, and a conclusion. It also needs in-text
+ citations and a bibliography of references cited! You will receive feedback on
+ your draft.
+
+ "Write your first draft with your heart. Re-write with your head."
+ ~ from the movie /Finding Forrester/
+
+*** Final term paper
+    :PROPERTIES:
+    :ID:       C7E954BD-698D-4BC8-A2AF-18F5C293A964
+    :CUSTOM_ID: final-term-paper
+    :END:
+
+ "I'm not a very good writer, but I'm an excellent rewriter." ~ James Michener
+
+** Class presentation
+   :PROPERTIES:
+   :CUSTOM_ID: class-presentations
+   :EXPORT_FILE_NAME: anth-464-class-presentation
+   :EXPORT_HUGO_WEIGHT: auto
+   :EXPORT_HUGO_MENU: :menu main
+   :EXPORT_DATE: 2018-10-14
+   :END:
+
+ Your research presentation should /not/ be a simple "replay" of your
+ topic but should be re-designed so that you
+  - spend some time talking spontaneously
+  - employ more than one medium (such as slides)
+  - engage your classmates in discussion
+
+ A successful presentation will focus on one part of the research, without trying
+ to cover all of the research in your paper. You will have about 15--20 minutes
+ to make your presentation; this will include time devoted to questions and
+ answers.
+
+ Your presentation will be graded separately from your paper.
+** Discussion Questions
+   :PROPERTIES:
+   :CUSTOM_ID: dq
+   :EXPORT_FILE_NAME: anth-464-discussion-questions
+   :EXPORT_HUGO_WEIGHT: auto
+   :EXPORT_HUGO_MENU: :menu main
+   :EXPORT_OPTIONS: toc:t
+   :EXPORT_DATE: 2018-10-14
+   :END:
+ These discussion questions help guide the conversation.  They are meant to
+ augment the questions you bring to class.  Also, note that Discussion Questions
+ 1--6 include the three questions that will appear on the mid-term examination.
+
+*** DONE Discussion Questions 1
+    :PROPERTIES:
+    :CUSTOM_ID: dq1
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from              [2015-09-09 Wed 15:02]
+    :END:
+
+  - How has the institutional framework of Hawaiian archaeology changed
+    over time?
+  - What was the innovation introduced by the settlement pattern
+    approach?
+  - What research questions occupy Hawaiian archaeologists today?
+  - How is archaeology different from history?
+  - How is historicism different from social science?
+  - Why study archaeology?
+  - Is the temple on L\amacron{}na`i Island a site?  Why, or why not?
+  - What is the necessary condition of inquiry?  Is scientific inquiry
+   fundamentally different from other forms of inquiry?  Why or why
+   not?
+  - List the three logical steps of archaeological inquiry and describe
+   them in your own terms.
+
+*** DONE Discussion Questions 2
+    :PROPERTIES:
+    :CUSTOM_ID: dq2
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-09 Wed 15:54]
+    :END:
+    # Chapter 2
+  - Describe the geological stages of islands in the Hawaiian Chain,
+    starting at Hawai`i Island in the southeast and ending at H\omacron{}lanik\umacron
+    in the northwest.  What is responsible for the differences?
+  - From the point of view of Polynesian sailors, describe the factors
+    that make the Hawaiian chain an isolated landmass.
+  - Imagine yourself on the voyage with the Polynesian discoverers of
+    Hawai`i.  What strange and unusual plants and animals might you
+    have seen when you first stepped ashore?
+  - Briefly describe one of the misunderstandings between /kanaka
+    maoli/ and Cook's crew, focusing on the different ideas at its
+    heart.  Are your ideas today closer to Cook's crew's ideas, or to
+    the ideas held by /kanaka maoli/ in 1778--1779?
+
+*** DONE Discussion Questions 3
+    :PROPERTIES:
+    :CUSTOM_ID: dq3
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-09 Wed 15:55]
+    :END:
+  - Compare and contrast the three different ways archaeologists have
+    tried to estimate the date when Polynesians discovered Hawai`i.
+    What is the best estimate of the discovery date?
+  - Hawaiian archaeologists routinely confuse /sites/ and /surface/
+    /architectural features/.  Is this a problem?  Why or why not?
+  - How does Hommon's model for the development of traditional Hawaiian
+    settlement relate to the division of lands into /moku/ and /ahupua`a/?
+  - From the lecture, summarize the archaeological sequence of Hawai`i
+    in terms of Discovery, Colonization, Settlement, and Innovation.
+*** DONE Discussion Questions 4
+    :PROPERTIES:
+    :CUSTOM_ID: dq4
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-09 Wed 15:55]
+    :END:
+ # Tonga/Hawaii lecture
+  - Describe the differences between Tongan and Hawaiian kinship
+    terms.  How do the differences in terms reflect differences in
+    social organization?
+  - What is the /fahu/ relationship in Tonga?  How was it involved in
+    the relationship of the sacred Tu`i Tonga to the secular Tu`i
+    Kanokupolu?
+  - Describe the movement of people and things through the Tongan
+    empire.  How did the movement of people and things support the high
+    status of the Tu`i Tonga?
+  - Traditional Hawaiian political power is sometimes characterized as
+    territorial in comparison to Tonga.  Describe the territorial
+    organization of Hawaiian kingship.  Suggest some ideas why Hawaiian
+    kings were different from kings in Tonga.
+
+*** DONE Discussion Questions 5
+    :PROPERTIES:
+    :CUSTOM_ID: dq5
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-09 Wed 16:18]
+    :END:
+ # Chapter 4
+  - What influence did the introduction of the Polynesian rat have on
+    Hawaiian natural history?  Were these changes good or bad for the
+    Polynesian colonists?  Why?
+  - Describe the process by which Polynesians transformed the Hawaiian
+    landscape, changing it from its natural state to one more like the
+    homeland islands.
+  - How does traditional Hawaiian rain-fed agriculture differ from
+    traditional irrigated agriculture?  How are the two types of
+    agriculture distributed across the islands?
+  - Describe the leeward Kohala field system.  How and when did it
+    develop?
+  - Describe the distribution of faunal remains in archaeological sites
+    on the leeward side of Hawai`i Island.  What does this pattern
+    indicate about traditional Hawaiian behavior?
+
+*** DONE Discussion Questions 6
+    :PROPERTIES:
+    :CUSTOM_ID: dq6
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "DONE"       [2015-09-11 Fri 09:01]
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 08:38]
+    :END:
+ # Archaeological mapping, surface architecture
+
+  # - Describe the similarities and differences in the maps of H\amacron{}paiali`i
+  #   Heiau drawn by John F. G. Stokes (slide 23), Henry E. P. Kekahuna
+  #   (slide 25), and J. Keone Kalawe (slide 45).  Which do you prefer?
+  #   Why?
+  - Why is the base of surface architecture important to an
+    archaeologist?
+  - How old are the oldest well-dated Hawaiian habitation structures?
+    How are their construction dates related to the traditional
+    Hawaiian cultural sequence?
+*** DONE Discussion Questions 7
+    :PROPERTIES:
+    :CUSTOM_ID: dq7
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 09:01]
+    :END:
+ # Textbook, Chapter 5.
+  - On page 67 the textbook contrasts "the more or less synchronic
+    perspective on Hawaiian craft economies in the post-contact period"
+    offered by study of museum ethnographic collections with "the
+    long-term historical development of Hawaiian technologies and craft
+    economies" offered by archaeological study.  What are some things
+    that can be learned by archaeological study that can't be learned
+    from museum collections?
+  - Over the years there have been suggestions that fishhooks and adzes
+    changed over time, so that there are early forms and late forms of
+    both artifacts.  Why aren't these artifacts used to date sites in
+    Hawai`i?
+  - Describe the difference between "attached specialists" and
+    "independent specialists."  Why has this distinction so far proved
+    impossible to make with archaeological materials from Hawai`i?
+    (Hint: see the logic of archaeological inquiry.)
+
+*** DONE Discussion Questions 8
+    :PROPERTIES:
+    :CUSTOM_ID: dq8
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 08:30]
+    - State "TODO"       from "DONE"       [2015-09-10 Thu 06:12]
+    - State "DONE"       from "TODO"       [2015-09-10 Thu 06:12]
+    :END:
+ # Excavation lecture
+  - How was the topography of the Waim\amacron{}nalo Plain (slide 5) expressed
+    in the distribution of remains in the excavation (slide 30)?  What
+    kinds of remains were recovered?
+  - What is an otolith?  How did the identification of /`\omacron{}`io/ otoliths
+    change the picture of traditional Hawaiian fishing at Waim\amacron{}nalo?
+  - Compare the photograph of the stratigraphic profile (slide 13) with
+    the stratigraphic profile drawn by Kim Kalama (slide 15).  What
+    kinds of thing are easier to see in the drawing?  Why?
+  - What kinds of activities are represented in the artifact
+    collection?  How would you characterize traditional Hawaiian
+    settlement at the site?
+
+*** DONE Discussion Questions 9
+    :PROPERTIES:
+    :CUSTOM_ID: dq9
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 09:29]
+    :END:
+ # Texbook Chapter 6, PWW glass lecture
+
+  - Describe the distribution of Pu`uwa`awa`a volcanic glass away from
+    its source in North Kona.  How does this distribution indicate the
+    value of the glass?
+  - Describe the differences between "cost surface overland", "`as the
+    crow flies' overland", and "canoe from depot" models of volcanic
+    glass distribution.  Is it useful to have these different models?
+    Why or why not?
+  - At the time of European contact, Hawaiian /ali`i/ were among the
+    most powerful people in all of Polynesia. Many archaeologists
+    believe that warfare was essential for /ali`i/ to establish power.
+    Where does the evidence to support the importance of warfare in old
+    Hawai`i come from?  Does the archaeological record show that
+    Hawaiian society was war-like?  Why or why not?
+  - What is the "correlate method" for identifying states with
+    archaeological materials?  Accepting that contact-era Hawaiian
+    society was a state, does the "correlate method" work?  Why or why
+    not?
+
+*** DONE Discussion Questions 10
+    :PROPERTIES:
+    :CUSTOM_ID: dq10
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 09:38]
+    :END:
+ # Hawaiian Ko`i
+  - Describe the parts of a traditional Hawaiian adze blade.  Which
+    features do Hawaiian archaeologists use to classify the adze
+    blades? Do these features relate to the form of the tool, its
+    function, or both?  How so?
+  - Describe the two reduction sequences identified for Hawaiian
+    adzes.  How do these sequences relate to the form of the finished
+    tool?
+*** DONE Discussion Questions 11
+    :PROPERTIES:
+    :CUSTOM_ID: dq11
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 10:43]
+    :END:
+    # Chapter 7, Rain-fed agriculture
+
+  - Describe the post-contact history of the Hawaiian adze.  What
+    social and economic factors contributed to the persistence of stone
+    adze use in the post-contact period?
+  - Describe the changes in Hawaiian household settlement pattern when
+    traditional building materials were abandoned and imported
+    materials took their place.  How were these settlement pattern changes
+    related to social changes?
+  - What are the cross-cultural attributes of wealth-assets?  How are
+    wealth-assets distinguished from other valuables?
+  - Describe the development of the leeward Kohala field system.  Would
+    a map of the field system that charts development by successive
+    generations of Hawaiian farmers be useful?  Why or why not?
+
+*** DONE Discussion Questions 12
+    :PROPERTIES:
+    :CUSTOM_ID: dq12
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 11:06]
+    :END:
+ # Abrader quarries
+
+  - There is no doubt that canoes were valuable in old Hawai`i.  Were
+    they also wealth-assets?  Why or why not?
+  - Describe the scale of abrader quarrying at Kahuku.  Does it
+    surprise you?  Why or why not?  What does the scale of abrader
+    quarrying indicate about old Hawai`i?
+
+*** DONE Discussion Questions 13
+    :PROPERTIES:
+    :CUSTOM_ID: dq13
+    :END:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2015-09-11 Fri 11:06]
+    :END:
+ # Chapter 8
+  - Describe the next generation of Hawaiian archaeologists and compare
+    it to the current generation.  What are the similarities and
+    differences?  What changes to archaeological practice should the
+    new generation of archaeologists strive to establish?
+  - Does archaeology have a future in Hawai`i?  Is archaeology useful
+    in the process of decolonization, or does it work to maintain a
+    colonized mindset?
+
+* Class Records                                                    :noexport:
+** Spring 2017                                                     :noexport:
+
+*** Attendance
+ 1 = attended, 0 = did not attend
+
+ | Name              | 1/9 | 1/11 | 1/13 | 1/18 | 1/20 | 1/23 | 1/25 | 1/27 | 1/30 | 2/1 | 2/3 | 2/6 | 2/8 | 2/10 | 2/13 | 2/15 | 2/17 | 2/22 | 2/24 | 2/27 | 3/1 | 3/3 | 3/6 | 3/8 | 3/10 | 3/13 | 3/15 | 3/17 | 3/20 | 3/22 | 3/24 | 4/3 | 4/5 | 4/7 | 4/10 | 4/12 | 4/17 | 4/19 | 4/21 | 4/24 | 4/26 | 4/28 | 5/1 | 5/3 | User ID  | Topic       |
+ |-------------------+-----+------+------+------+------+------+------+------+------+-----+-----+-----+-----+------+------+------+------+------+------+------+-----+-----+-----+-----+------+------+------+------+------+------+------+-----+-----+-----+------+------+------+------+------+------+------+------+-----+-----+----------+-------------|
+ | Camit, Ian        |   1 |    1 |    1 |    1 |    0 |    1 |    1 |    1 |    0 |   1 |   1 |   1 |   1 |    1 |    1 |    0 |    1 |    0 |    0 |    1 |   1 |   1 |   0 |   1 |    1 |    1 |    1 |    0 |    1 |    0 |    1 |   1 |   1 |   1 |    1 |    0 |    0 |    1 |    1 |    1 |    1 |    1 |   1 |   1 | icamit   | trails      |
+ | Dulay, Daries     |   1 |    1 |    1 |    1 |    1 |    1 |    0 |    1 |    1 |   0 |   0 |   0 |   0 |    1 |    1 |    0 |    0 |    1 |    1 |    1 |   0 |   0 |   0 |   1 |    0 |    1 |    1 |    1 |    0 |    0 |    1 |   0 |   1 |   1 |    1 |    0 |    0 |    0 |    0 |    1 |    0 |    0 |   0 |   1 | daries   | petroglyphs |
+ | Forti, Savannah   |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    0 |   1 |   1 |   1 |   1 |    1 |    1 |    0 |    0 |    1 |    1 |    1 |   1 |   0 |   1 |   1 |    0 |    1 |    1 |    1 |    1 |    1 |    0 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   0 |   1 | forti    | Halawa      |
+ | Hezekia, Kauilani |   0 |    1 |    1 |    1 |    1 |    1 |    1 |    0 |    1 |   1 |   0 |   0 |   1 |    1 |    1 |    0 |    0 |    1 |    1 |    1 |   0 |   0 |   1 |   1 |    1 |    1 |    1 |    1 |    0 |    1 |    0 |   0 |   1 |   0 |    1 |    1 |    0 |    0 |    0 |    1 |    1 |    0 |   1 |   1 | kmhezeki | Kanewai     |
+ | Klem, Jonathon    |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    0 |    1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    0 |    1 |    1 |   1 |   0 |   0 |    1 |    0 |    1 |    0 |    1 |    1 |    1 |    1 |   1 |   1 | jklem    | archaic     |
+ | Leafa, Demelsa    |   0 |    1 |    0 |    1 |    0 |    0 |    0 |    0 |    0 |   0 |   1 |   1 |   1 |    1 |    1 |    0 |    1 |    1 |    1 |    0 |   0 |   0 |   1 |   1 |    1 |    1 |    1 |    1 |    0 |    0 |    1 |   0 |   0 |   0 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |   0 |   0 | dleafa   | plants      |
+ | Maripuu, Sara     |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    0 |    1 |   1 |   1 |   0 |   1 |    1 |    0 |    0 |    1 |    1 |    1 |    0 |   1 |   0 |   1 |   0 |    1 |    0 |    0 |    0 |    0 |    0 |    0 |   0 |   0 |   0 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |   0 |   0 | smaripuu | heiau       |
+ | Viereck, Henry    |   1 |    1 |    0 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |   1 |   1 |   0 |    1 |    1 |    0 |    1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   0 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |   1 | hviereck | dating      |
+
+ I missed class on 2/15
+
+
+** Spring 2018
+*** TODO Attendance
+ 1 = attended, 0 = did not attend
+
+| Name                       | Presentation | 4/25 | 4/27 | 4/23 | 4/16 | 4/18 | 4/20 | 4/9 | 4/11 | 4/13 | 4/2 | 4/4 | 4/6 | 3/19 | 3/21 | 3/23 | 3/12 | 3/14 | 3/16 | 3/5 | 3/7 | 3/9 | 2/21 | 2/23 | 2/26 | 2/28 | 3/2 | 2/12 | 2/14 | 2/16 | 2/5 | 2/7 | 2/9 | 1/8 | 1/10 | 1/12 | 1/17 | 1/19 | 1/22 | 1/24 | 1/26 | 1/29 | 1/31 | 2/2 | 4/30 | 5/2 | Topic           | 1st draft grade | complete draft | writing | enough arch | comments |
+|----------------------------+--------------+------+------+------+------+------+------+-----+------+------+-----+-----+-----+------+------+------+------+------+------+-----+-----+-----+------+------+------+------+-----+------+------+------+-----+-----+-----+-----+------+------+------+------+------+------+------+------+------+-----+------+-----+-----------------+-----------------+----------------+---------+-------------+----------|
+| Abbey, Alana               |              |    0 |      |    0 |    0 |    0 |    0 |   0 |    0 |    0 |   0 |   0 |   0 |    0 |    0 |    0 |    0 |    0 |    0 |   0 |   0 |   0 |    1 |    1 |    1 |    0 |   0 |    1 |    1 |    1 |   1 |   0 |   1 |   1 |    1 |    1 |    0 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | He`eia fishpond |               0 |              0 |       0 |           0 |        0 |
+| Aweau, Jahstyn             | 5/2 t        |    0 |      |    1 |    0 |    1 |    0 |   0 |    1 |    1 |   1 |   0 |   1 |    1 |    1 |    0 |    0 |    1 |    0 |   0 |   1 |   0 |    1 |    1 |    1 |    1 |   1 |    0 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | Pi`ilanihale    |               5 |              0 |       0 |           1 |        9 |
+| Bosque, Doran              | 4/27   t     |    1 |    1 |    1 |    1 |    0 |    0 |   0 |    1 |    0 |   1 |   1 |   1 |    1 |    1 |    0 |    1 |    0 |    1 |   1 |   1 |   1 |    1 |    1 |    1 |    0 |   1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | birds           |              10 |              1 |       1 |           0 |       32 |
+| Burkert, Clarissa (Tana)   |              |    1 |    1 |    0 |    1 |    1 |    0 |   0 |    1 |    0 |   0 |   0 |   0 |    1 |    1 |    0 |    0 |    0 |    0 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |   1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | Wailupe mauka   |               0 |              0 |       0 |           0 |        0 |
+| Chang, Daven               | 4/25   t     |    1 |    1 |    1 |    1 |    1 |    1 |   1 |    1 |    1 |   1 |   1 |   1 |    1 |    1 |    0 |    1 |    1 |    1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |   1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    0 |    1 |    1 |   1 |      |     | Wailupe heiau   |              10 |              1 |       1 |           0 |       90 |
+| Goode, Shelby              |              |    0 |    ` |    0 |    0 |    0 |    0 |   0 |    0 |    0 |   0 |   0 |   0 |    0 |    0 |    0 |    0 |    0 |    0 |   0 |   0 |   0 |    0 |    0 |    0 |    0 |   0 |    1 |    0 |    0 |   1 |   1 |   1 |   1 |    1 |    0 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | burials         |               0 |              0 |       0 |           0 |        0 |
+| Hoshijo, Kai               | 5/2   t      |    1 |      |    1 |    1 |    0 |    0 |   0 |    1 |    0 |   0 |   0 |   1 |    1 |    0 |    0 |    0 |    1 |    0 |   1 |   0 |   0 |    1 |    1 |    0 |    1 |   0 |    1 |    0 |    1 |   1 |   1 |   1 |   1 |    0 |    0 |    1 |    1 |    1 |    0 |    1 |    1 |    0 |   1 |      |     | fishponds       |               5 |              0 |       1 |           0 |        5 |
+| Ling, Kilinahemalie (Kili) | 4/27   t     |    1 |      |    1 |    0 |    1 |    0 |   0 |    1 |    0 |   0 |   1 |   0 |    0 |    0 |    0 |    1 |    1 |    0 |   0 |   1 |   0 |    0 |    1 |    1 |    1 |   0 |    1 |    0 |    0 |   0 |   1 |   1 |   1 |    1 |    1 |    0 |    0 |    1 |    1 |    1 |    1 |    1 |   0 |      |     | Kalaupapa       |               5 |              0 |       1 |           0 |       13 |
+| Mckenzie, Tristan          | 4/30  t      |    1 |      |    1 |    1 |    1 |    1 |   1 |    1 |    1 |   1 |   0 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |   1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | volcanic glass  |              12 |              1 |       1 |           1 |       16 |
+| Navarro, Nadine            | 5/2   t      |    1 |      |    1 |    1 |    1 |    1 |   1 |    0 |    0 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |   0 |   1 |   1 |    1 |    1 |    0 |    1 |   1 |    1 |    0 |    1 |   1 |   1 |   0 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | Na Pali         |               8 |              1 |       0 |           1 |       78 |
+| Probst, Mikel              |              |    0 |      |    0 |    0 |    0 |    0 |   0 |    0 |    0 |   1 |   0 |   0 |    1 |    0 |    1 |    0 |    1 |    0 |   1 |   0 |   0 |    0 |    0 |    1 |    0 |   1 |    1 |    0 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    0 |    0 |    1 |    1 |    1 |    1 |   1 |      |     | Pa`ao           |               0 |              0 |       0 |           0 |        0 |
+| Sikkink, Marta (MJ)        | 4/30  t      |    1 |      |    1 |    1 |    1 |    1 |   1 |    1 |    0 |   1 |   1 |   1 |    1 |    1 |    1 |    0 |    0 |    0 |   1 |   1 |   0 |    1 |    1 |    1 |    1 |   0 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    0 |    0 |    1 |    1 |    1 |    1 |   1 |      |     | Mauna Kea       |              10 |              1 |       1 |           0 |       43 |
+| Sullivan, Kyle             | 4/25   t     |    1 |      |    1 |    1 |    1 |    0 |   1 |    1 |    0 |   1 |   0 |   1 |    1 |    1 |    1 |    1 |    0 |    1 |   1 |   1 |   1 |    1 |    1 |    0 |    1 |   1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   1 |      |     | Haleakala       |              14 |              1 |       1 |           1 |       62 |
+| Teruo, Jenivy              | 5/2   t      |    0 |      |    0 |    0 |    1 |    1 |   0 |    1 |    1 |   1 |   1 |   1 |    0 |    1 |    1 |    1 |    1 |    0 |   0 |   1 |   1 |    1 |    1 |    1 |    1 |   1 |    1 |    1 |    1 |   1 |   1 |   1 |   1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |    1 |   0 |      |     | Poi pounders    |               8 |              1 |       0 |           1 |      146 |
+
+* Notes                                                            :noexport:
+** Fishhook db link
+
+http://data.bishopmuseum.org/ethnology/db/type.php?type=fishhook
+
+** Options for LaTeX slideshows
+,#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:{} arch:headline
+,#+OPTIONS: author:t c:nil creator:nil d:(not "LOGBOOK") date:nil
+,#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil prop:nil
+,#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:nil |:t
+
+
+** DONE Writing intensive focus
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2015-10-01 Thu 11:04]
+:END:
+ [2015-08-24 Mon]
+ [[mu4e:msgid:55DB692A.7050203@hawaii.edu][Focus Request Form]]
+
+* Mid-term Examination Questions                                   :noexport:
+  :PROPERTIES:
+  :EXPORT_FILE_NAME: 464-mid-term
+  :EXPORT_TITLE: Mid-term Examination Questions
+  :EXPORT_LATEX_CLASS: article
+  :EXPORT_AUTHOR: Hawaiian Archaeology ANTH 464
+  :EXPORT_OPTIONS: toc:nil
+  :END:
+
+ - Describe the distribution of faunal remains in archaeological sites
+   on the leeward side of Hawai`i Island.  What does this pattern
+   indicate about traditional Hawaiian behavior?
+
+ - Why study archaeology?
+
+ - Compare and contrast the three different ways archaeologists have
+   tried to estimate the date when Polynesians discovered Hawai`i.
+   What is the best estimate of the discovery date?
+
+* Footnotes                                                        :noexport:
+
+[fn:1] See http://en.wikisource.org/wiki/The_Fixation_of_Belief.
+
+[fn:2] See http://nmita.iowa.uiowa.edu/database/teleost/systemat/albu1.htm.
+
+[fn:3] See http://hilo.hawaii.edu/depts/geoarchaeology/.  This page
+has links to several spreadsheets with the results of EDXRF analyses.
+
+[fn:4] See http://www.tsdye2.com/reports/065/report/kaiholena_preservation_report.html.
+
+
+
+
+
+
+* Setup for slide shows                                            :noexport:
+
+** Source Code                                                     :noexport:
+
+*** User Entities
+The following source code block sets up user entities that are used frequently
+in my work. I use the various =.*macron= commands to typeset Hawaiian
+language words with what is known in Hawaiian as a /kahak\omacron{}/.
+
+#+name: user-entities
+#+begin_src emacs-lisp
+  (add-to-list 'org-entities-user '("amacron" "\\={a}" nil "&#0257;" "a" "a" "ā"))
+  (add-to-list 'org-entities-user '("emacron" "\\={e}" nil "&#0275;" "e" "e" "ē"))
+  (add-to-list 'org-entities-user '("imacron" "\\={\\i}" nil "&#0299;" "i" "i" "ī"))
+  (add-to-list 'org-entities-user '("omacron" "\\={o}" nil "&#0333;" "o" "o" "ō"))
+  (add-to-list 'org-entities-user '("umacron" "\\={u}" nil "&#0363;" "u" "u" "ū"))
+  (add-to-list 'org-entities-user '("Amacron" "\\={A}" nil "&#0256;" "A" "A" "Ā"))
+  (add-to-list 'org-entities-user '("Emacron" "\\={E}" nil "&#0274;" "E" "E" "Ē"))
+  (add-to-list 'org-entities-user '("Imacron" "\\={I}" nil "&#0298;" "I" "I" "Ī"))
+  (add-to-list 'org-entities-user '("Omacron" "\\={O}" nil "&#0332;" "O" "O" "Ō"))
+  (add-to-list 'org-entities-user '("Umacron" "\\={U}" nil "&#0362;" "U" "U" "Ū"))
+#+end_src
+
+*** Nicolas Goaziou's Filter for Non-breaking Spaces
+Make the non-breaking space with alt-shift
+
+You may add _ to "pre" part of `org-emphasis-regexp-components' in
+order to typeset constructs such as /Genus/ cf. /species/.
+
+So far, I've added " ", "–" which are the characters for non-breaking
+space and single space.
+
+#+name: ngz-nbsp
+#+begin_src emacs-lisp
+(defun ngz-latex-filter-nobreaks (text backend info)
+  "Ensure \"_\" are properly handled in Beamer/LaTeX export."
+  (when (memq backend '(beamer latex))
+    (replace-regexp-in-string " " "~" text)))
+(add-to-list 'org-export-filter-plain-text-functions
+             'ngz-latex-filter-nobreaks)
+#+end_src
+
+*** Access keyword values
+
+This is taken from [[http://jkitchin.github.io/blog/2013/05/05/Getting-keyword-options-in-org-files/][John Kitchin's blog]].  It has been modified so
+=org-element-map= returns node properties in addition to keywords.
+
+#+name: jk-keywords
+#+header: :results silent
+#+begin_src emacs-lisp
+(defun jk-org-kwds ()
+  "parse the buffer and return a cons list of (property . value)
+from lines like: #+PROPERTY: value"
+  (org-element-map (org-element-parse-buffer 'element) '(keyword node-property)
+                   (lambda (keyword) (cons (org-element-property :key keyword)
+                                           (org-element-property :value keyword)))))
+
+(defun jk-org-kwd (KEYWORD)
+  "get the value of a KEYWORD in the form of #+KEYWORD: value"
+  (cdr (assoc KEYWORD (jk-org-kwds))))
+#+end_src
+
+
+#+name: code-org-kwd
+#+header: :var kwd="NAME"
+#+begin_src emacs-lisp
+(jk-org-kwd kwd)
+#+end_src
+
+*** Eric Schulte's filter for HTML small caps
+
+#+name: es-small-caps
+#+begin_src emacs-lisp
+;;; "sc" links for the \sc{} latex command
+(defun org-export-html-small-caps (string backend channel)
+  (when (org-export-derived-backend-p backend 'html)
+    (let ((rx "{\\\\sc ")
+          (fmt "<span style=\"font-variant:small-caps;\">%s</span>"))
+      (with-temp-buffer
+        (insert string)
+        (goto-char (point-min))
+        (while (re-search-forward rx nil t)
+          (let* ((start (match-beginning 0))
+                 (end (progn (goto-char start)
+                             (forward-sexp)
+                             (point)))
+                 (content (buffer-substring (+ start 5) (- end 1))))
+            (delete-region start end)
+            (goto-char start)
+            (insert (format fmt content))))
+        (buffer-string)))))
+
+(add-to-list 'org-export-filter-final-output-functions
+             'org-export-html-small-caps)
+
+(defun org-export-latex-sc (tree backend info)
+  "Handle sc: links for latex export."
+  (org-element-map tree 'link
+    (lambda (object)
+      (when (equal (org-element-property :type object) "sc")
+        (org-element-insert-before
+         (cond
+          ((org-export-derived-backend-p backend 'latex)
+           (list 'latex-fragment
+                 (list :value (format "{\\sc %s}"
+                                      (org-element-property :path object))
+                       :post-blank (org-element-property
+                                    :post-blank object))))
+          ((org-export-derived-backend-p backend 'html)
+           (list 'export-snippet
+                 (list :back-end "html"
+                       :value
+                       (format "<span class=\"sc\">%s</span>"
+                               (org-element-property :path object))
+                       :post-blank
+                       (org-element-property :post-blank object))))
+          (:otherwise
+           (error "unsupported backend for `org-export-latex-sc'")))
+         object)
+        (org-element-extract-element object))))
+  tree)
+
+(org-add-link-type "sc")
+
+(add-hook 'org-export-filter-parse-tree-functions
+          'org-export-latex-sc)
+
+#+end_src
+
+#+results: es-small-caps
+| org-export-latex-sc |
+
+*** Cross references Leech-Pepin
+   :PROPERTIES:
+   :ID: Test
+   :END:
+
+This code inserts cross references into an Org mode document.  It
+looks back at the word before point and distinguishes figures, tables,
+listings, chapters, and sections.  Then, using helm's hook into
+completing-read, it displays a list of the relevant candidates.  The
+function depends on the convention of starting figure labels with
+"fig:" and table labels with "tab:".  These prefixes are the default
+with AucTeX, and I'm accustomed to using them.
+
+Jonathan Leech-Pepin helped make the code work properly.
+
+#+name: tsd-xref
+#+begin_src emacs-lisp
+  (defun tsd-get-xref-candidates ()
+    (interactive)
+    (save-excursion
+      (let ((matches))
+        (cond ((looking-back "fig[.ures]+[  ]?")
+               (goto-char (point-min))
+               (while
+                   (re-search-forward "^#\\+name: +\\(fig:[-_[:alnum:]]*\\)"
+                                      (point-max) t)
+                 (add-to-list 'matches (match-string-no-properties 1) t)))
+              ((looking-back "tables?[  ]?")
+               (goto-char (point-min))
+               (while
+                   (re-search-forward "^#\\+name: +\\(tab:[-_[:alnum:]]*\\)"
+                                      (point-max) t)
+                 (add-to-list 'matches (match-string-no-properties 1) t)))
+              ((looking-back "listings?[  ]?")
+               (goto-char (point-min))
+               (while
+                   (re-search-forward
+                    "^#\\+name: +\\([^:]\\{3\\}[^:][-_[:alnum:]]*\\)"
+                                      (point-max) t)
+                 (add-to-list 'matches (match-string-no-properties 1) t)))
+              ((or (looking-back "chapter[  ]?")
+                   (looking-back "section[  ]?"))
+               (goto-char (point-min))
+               (dolist (heading
+                         (org-map-entries
+                          (lambda ()
+                            (org-element-property :raw-value (org-element-at-point)))
+                          (format "-ignoreheading-%s"
+                                  (mapconcat 'identity org-export-exclude-tags "-"))
+                          'file 'archive 'comment))
+                 (add-to-list 'matches heading))
+               (dolist (property
+                         (org-map-entries
+                          (lambda ()
+                            (org-element-property :CUSTOM_ID (org-element-at-point)))
+                          (format "-%s"
+                                  (mapconcat 'identity org-export-exclude-tags "-"))
+                          'file 'archive 'comment))
+                 (when property (add-to-list 'matches
+                                             (format "#%s" property)))))
+              (t (error "No cross-reference candidate here!")))
+        (sort matches 'string<))))
+
+  (defun tsd-org-insert-crossref-link (&optional arg)
+    (interactive
+     (list (completing-read "insert: " (tsd-get-xref-candidates))))
+    (insert (format "[[%s]]" arg)))
+
+  (add-hook 'org-mode-hook
+            (lambda () (local-set-key "\C-cx" 'tsd-org-insert-crossref-link)))
+#+end_src
+
+
+
+*** Koma Article
+The following two source code blocks set up a LaTeX class named
+=koma-article= that is referenced near the top of the file. The
+=koma-article= class is based on the [[http://www.ctan.org/pkg/koma-script][Koma script]] article class
+=scrartcl=, which uses a sans-serif font for headings and a serif font
+for body text.
+
+The =koma-article= class uses fonts from the [[http://www.gust.org.pl/projects/e-foundry/tex-gyre/][TeX Gyre collection of
+fonts]]. As explained in [[http://www.gust.org.pl/projects/e-foundry/tex-gyre/tb87hagen-gyre.pdf][The New Font Project: TeX Gyre]], a goal of the
+project was to produce good quality fonts with diacritical characters
+sufficient to cover all European languages as well as Vietnamese and
+Navajo.
+
+The source code block named [[koma-article-times][koma-article-times]] is based on the Times
+Roman font. The serif Termes font is a replacement for Times Roman,
+the sans-serif Heros font is a replacement for Helvetica, and the
+typewriter Cursor font is a replacement for Courier. The source code
+block named [[koma-article-palatino][koma-article-palatino]] is based on the beautiful Palatino
+font designed by Hermann Zapf. The Pagella font is the TeX Gyre
+replacement for Palatino. Typographers often recommend that
+linespacing be increased slightly with Palatino, and this has been
+achieved with the addition of the =linespacing= command.  The sans
+serif font is the demibold weight of Source Sans Pro, which shares
+many structural characteristics with Palatino.  I think it yields a
+beautiful document.
+
+The Tex Gyre fonts benefit from the [[http://ctan.org/tex-archive/macros/latex/contrib/microtype][microtype package]], which provides
+"subliminal refinements towards typographical perfection," including
+"character protrusion and font expansion, furthermore the adjustment
+of inter-word spacing and additional kerning, as well as hyphenatable
+letter spacing (tracking) and the possibility to disable all or
+selected ligatures."
+
+In addition, the [[http://www.ctan.org/tex-archive/macros/latex/contrib/paralist/][paralist package]] is used for its compact versions of
+the LaTeX list environments.
+
+Finally, the =newcommand= is provided merely as an illustration of one
+way to move LaTeX declarations out of the Org file header. This one is
+useful in my work as an archaeologist and over the years it has crept
+into my BibTeX database. It shouldn't interfere with your work, but
+you might want to remove it or replace it with LaTeX commands that you
+do frequently use.
+
+#+name: koma-article-palatino
+#+header: :results silent
+#+begin_src emacs-lisp
+   (require 'ox-latex)
+   (add-to-list 'org-latex-classes
+                '("koma-article"
+                  "\\documentclass{scrartcl}
+   [NO-DEFAULT-PACKAGES]
+   [PACKAGES]
+   [EXTRA]
+                   \\usepackage{microtype}
+                   \\usepackage{tgpagella}
+                   \\linespread{1.05}
+                   \\usepackage[semibold]{sourcesanspro}
+                   \\usepackage{tgcursor}
+                   \\usepackage{paralist}
+                   \\usepackage[T1]{fontenc}
+                   \\usepackage{graphicx}
+                   \\usepackage{textcomp}
+                   \\usepackage[colorlinks=true,allcolors=red]{hyperref}
+                   \\newcommand{\\rc}{$^{14}$C}"
+                  ("\\section{%s}" . "\\section*{%s}")
+                  ("\\subsection{%s}" . "\\subsection*{%s}")
+                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+end_src
+
+
+** Local variables                                                 :noexport:
+
+# Local Variables:
+# eval: (require 'ox-hugo)
+# eval: (require 'ox-latex)
+# org-fontify-quote-and-verse-blocks: t
+# org-hide-macro-markers: t
+# org-cycle-separator-lines: 0
+# org-hugo-export-with-toc: nil
+# org-latex-packages-alist: nil
+# eval: (org-sbe "user-entities")
+# eval: (org-sbe "es-small-caps")
+# eval: (org-sbe "koma-article-palatino")
+# End:

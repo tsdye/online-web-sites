@@ -1,7 +1,7 @@
 +++
 title = "On Truth"
 author = ["Thomas S. Dye"]
-lastmod = 2018-05-24T17:45:39-10:00
+lastmod = 2018-07-18T06:48:55-10:00
 tags = ["blog"]
 draft = false
 +++
@@ -14,7 +14,7 @@ years of his career "he managed to figure out how to measure partial belief and
 hence lay the groundwork for decision theory and Bayesian statistics." Misak's
 book, [_Cambridge Pragmatism, from Peirce and James to Ramsey and Wittgenstein_](https://global.oup.com/academic/product/cambridge-pragmatism-9780198712077?cc=ca&lang=en&),
 describes how Ramsey took up several pragmatic insights and expanded upon them
-in [_On Truth_](https://www.worldcat.org/title/on-truth-original-manuscript-materials-1927-1929-from-the-ramsey-collection-at-the-university-of-pittsburgh/oclc/965553015&referer=brief_results), a book manuscript that was unfinished when he died.
+in [_On Truth_](https://www.worldcat.org/title/on-truth-original-manuscript-materials-1927-1929-from-the-ramsey-collection-at-the-university-of-pittsburgh/oclc/965553015&referer=brief%5Fresults), a book manuscript that was unfinished when he died.
 
 Chapter 5, _Judgment and Time_, "develops some very general considerations about
 events in time." Ramsey argues that Einstein's theory that time is not absolute,
