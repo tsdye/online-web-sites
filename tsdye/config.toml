@@ -1,0 +1,43 @@
+baseURL = "http://tsdye.online/tsdye/"
+languageCode = "en-us"
+title = "Thomas S. Dye"
+canonifyURLs = true
+enableEmoji = true
+googleAnalytics = ""
+
+theme = "pristine"
+
+[params]
+    portrait = "images/tom.jpg"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "All Articles"
+  url = "/all/"
+  weight = 2
+
+[[menu.projects]]
+  name = "An Archaeologist Reads"
+  url = "http://tsdye.online/an-archaeologist-reads/"
+  weight = 1
+
+[[menu.projects]]
+  name = "hm Software"
+  url = "http://tsdye.online/harris-matrix/homepage"
+  weight = 2
+
+[[params.social]]
+    title = "Email"
+    url = "mailto:tsd@tsdye.online"
+
+[[params.social]]
+    title = "Resumé"
+    url = "/resume/tsd-resume.pdf"
+
+[[params.social]]
+    title = "GitHub"
+    url = "https://github.com/tsdye"

@@ -1,0 +1,385 @@
+#+CATEGORY: Thomas S. Dye
+#+OPTIONS: broken-links:nil todo:nil
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+STARTUP: entitiespretty
+#+STARTUP: noinlineimages
+#+hugo_base_dir: .
+
+* Web Site Root
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION:
+  :END:
+
+
+* Thomas S. Dye
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: ./
+  :EXPORT_FILE_NAME: _index
+  :EXPORT_DATE: "2018-10-14"
+  :END:
+
+I am an archaeologist based in Honolulu.
+
+From 2001 to 2018, I owned and operated an archaeological consultancy, T. S.
+Dye & Colleagues, Archaeologists, where I had the pleasure and privilege of
+working with very many fine colleagues.  With me to the end were my partner,
+Eric Komori, and two amazing /wahine/, Muffet Jourdane and Kim Kalama.
+
+I've been teaching Hawaiian Archaeology at the University of Hawai`i at M\amacron{}noa
+since 2014.
+
+Starting September 2018, I'm working on a research project with Caitlin Buck and
+Keith May funded by Historic England. Caitlin is overseeing a PhD student,
+Bryony Moss, who will write a thesis about automating the process of generating
+chronological models from digital legacy data.
+
+I'm also working with Anne Philippe and Marie-Anne Vibet at Université de
+Nantes, Laboratoire de mathématiques Jean Leray on an [[https://www.r-project.org/][=R=]] software package,
+[[http://www.math.sciences.univ-nantes.fr/~philippe/ArchaeoPhases.html][=ArchaeoPhases=]], which reads the raw MCMC output of Bayesian calibration software
+such as [[https://bcal.shef.ac.uk/][=BCal=]], [[https://c14.arch.ox.ac.uk/oxcal.html][=OxCal=]], and [[https://chronomodel.com/][=ChronoModel=]] and provides a set of functions to analyze
+it.
+
+I've developed and released what might be the first open-source Harris Matrix
+drawing program, [[http://tsdye.online/harris-matrix/homepage][=hm=]].  I'm using the software to investigate the structure and
+history of the leeward Kohala field system on Hawai`i Island.
+
+* Articles
+  :PROPERTIES:
+  :EXPORT_FILE_NAME: _index
+  :EXPORT_HUGO_SECTION: all/
+  :EXPORT_DATE: "2018-10-14"
+  :END:
+
+* Posts
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: posts/
+  :END:
+
+
+** DONE Facing a new public
+   CLOSED: [2018-10-30 Tue 21:14]
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: post-one
+   :END:
+
+After 17 years promoting myself as an historic preservation service provider to
+government agencies and private corporations, I now have the wonderful
+opportunity to pursue my research interests full time. This web site is my way
+of keeping track of what I'm doing now that my days aren't filled completing
+tasks a client requires.
+
+As a firm believer that scientific inquiry and open-source software are
+inseparable, I'm building my new web presence with an open-source tool chain
+centered on the [[https://orgmode.org/][=Org mode=]] of the [[https://www.gnu.org/software/emacs/][=Emacs=]] editor. The [[https://orgmode.org/][=Org mode=]] sources for the
+web page, posts, and projects are exported with Kaushal Modi's [[https://ox-hugo.scripter.co/][=ox-hugo=]]
+software and rendered for the web by [[https://gohugo.io/][=Hugo=]].
+
+I intend to add several projects to the two I have at the moment:
+ - a publications list, with links;
+ - highlights of a career in cultural resources management;
+ - tracking progress in the leeward Kohala field system;
+ - an illustration of the use of [[http://www.math.sciences.univ-nantes.fr/~philippe/ArchaeoPhases.html][=ArchaeoPhases=]] software; and
+ - with some luck, results of a long-dormant project with Jennie Kahn describing
+   the Hawaiian adzes in Bishop Museum.
+
+** TODO Second one
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: post-two
+   :END:
+
+This is the second one.
+
+
+* Setup for slide shows                                            :noexport:
+
+** Source Code                                                     :noexport:
+
+*** User Entities
+The following source code block sets up user entities that are used frequently
+in my work. I use the various =.*macron= commands to typeset Hawaiian
+language words with what is known in Hawaiian as a /kahak\omacron{}/.
+
+#+name: user-entities
+#+begin_src emacs-lisp
+  (add-to-list 'org-entities-user '("amacron" "\\={a}" nil "&#0257;" "a" "a" "ā"))
+  (add-to-list 'org-entities-user '("emacron" "\\={e}" nil "&#0275;" "e" "e" "ē"))
+  (add-to-list 'org-entities-user '("imacron" "\\={\\i}" nil "&#0299;" "i" "i" "ī"))
+  (add-to-list 'org-entities-user '("omacron" "\\={o}" nil "&#0333;" "o" "o" "ō"))
+  (add-to-list 'org-entities-user '("umacron" "\\={u}" nil "&#0363;" "u" "u" "ū"))
+  (add-to-list 'org-entities-user '("Amacron" "\\={A}" nil "&#0256;" "A" "A" "Ā"))
+  (add-to-list 'org-entities-user '("Emacron" "\\={E}" nil "&#0274;" "E" "E" "Ē"))
+  (add-to-list 'org-entities-user '("Imacron" "\\={I}" nil "&#0298;" "I" "I" "Ī"))
+  (add-to-list 'org-entities-user '("Omacron" "\\={O}" nil "&#0332;" "O" "O" "Ō"))
+  (add-to-list 'org-entities-user '("Umacron" "\\={U}" nil "&#0362;" "U" "U" "Ū"))
+#+end_src
+
+*** Nicolas Goaziou's Filter for Non-breaking Spaces
+Make the non-breaking space with alt-shift
+
+You may add _ to "pre" part of `org-emphasis-regexp-components' in
+order to typeset constructs such as /Genus/ cf. /species/.
+
+So far, I've added " ", "–" which are the characters for non-breaking
+space and single space.
+
+#+name: ngz-nbsp
+#+begin_src emacs-lisp
+(defun ngz-latex-filter-nobreaks (text backend info)
+  "Ensure \"_\" are properly handled in Beamer/LaTeX export."
+  (when (memq backend '(beamer latex))
+    (replace-regexp-in-string " " "~" text)))
+(add-to-list 'org-export-filter-plain-text-functions
+             'ngz-latex-filter-nobreaks)
+#+end_src
+
+*** Access keyword values
+
+This is taken from [[http://jkitchin.github.io/blog/2013/05/05/Getting-keyword-options-in-org-files/][John Kitchin's blog]].  It has been modified so
+=org-element-map= returns node properties in addition to keywords.
+
+#+name: jk-keywords
+#+header: :results silent
+#+begin_src emacs-lisp
+(defun jk-org-kwds ()
+  "parse the buffer and return a cons list of (property . value)
+from lines like: #+PROPERTY: value"
+  (org-element-map (org-element-parse-buffer 'element) '(keyword node-property)
+                   (lambda (keyword) (cons (org-element-property :key keyword)
+                                           (org-element-property :value keyword)))))
+
+(defun jk-org-kwd (KEYWORD)
+  "get the value of a KEYWORD in the form of #+KEYWORD: value"
+  (cdr (assoc KEYWORD (jk-org-kwds))))
+#+end_src
+
+
+#+name: code-org-kwd
+#+header: :var kwd="NAME"
+#+begin_src emacs-lisp
+(jk-org-kwd kwd)
+#+end_src
+
+*** Eric Schulte's filter for HTML small caps
+
+#+name: es-small-caps
+#+begin_src emacs-lisp
+;;; "sc" links for the \sc{} latex command
+(defun org-export-html-small-caps (string backend channel)
+  (when (org-export-derived-backend-p backend 'html)
+    (let ((rx "{\\\\sc ")
+          (fmt "<span style=\"font-variant:small-caps;\">%s</span>"))
+      (with-temp-buffer
+        (insert string)
+        (goto-char (point-min))
+        (while (re-search-forward rx nil t)
+          (let* ((start (match-beginning 0))
+                 (end (progn (goto-char start)
+                             (forward-sexp)
+                             (point)))
+                 (content (buffer-substring (+ start 5) (- end 1))))
+            (delete-region start end)
+            (goto-char start)
+            (insert (format fmt content))))
+        (buffer-string)))))
+
+(add-to-list 'org-export-filter-final-output-functions
+             'org-export-html-small-caps)
+
+(defun org-export-latex-sc (tree backend info)
+  "Handle sc: links for latex export."
+  (org-element-map tree 'link
+    (lambda (object)
+      (when (equal (org-element-property :type object) "sc")
+        (org-element-insert-before
+         (cond
+          ((org-export-derived-backend-p backend 'latex)
+           (list 'latex-fragment
+                 (list :value (format "{\\sc %s}"
+                                      (org-element-property :path object))
+                       :post-blank (org-element-property
+                                    :post-blank object))))
+          ((org-export-derived-backend-p backend 'html)
+           (list 'export-snippet
+                 (list :back-end "html"
+                       :value
+                       (format "<span class=\"sc\">%s</span>"
+                               (org-element-property :path object))
+                       :post-blank
+                       (org-element-property :post-blank object))))
+          (:otherwise
+           (error "unsupported backend for `org-export-latex-sc'")))
+         object)
+        (org-element-extract-element object))))
+  tree)
+
+(org-add-link-type "sc")
+
+(add-hook 'org-export-filter-parse-tree-functions
+          'org-export-latex-sc)
+
+#+end_src
+
+#+results: es-small-caps
+| org-export-latex-sc |
+
+*** Cross references Leech-Pepin
+   :PROPERTIES:
+   :ID: Test
+   :END:
+
+This code inserts cross references into an Org mode document.  It
+looks back at the word before point and distinguishes figures, tables,
+listings, chapters, and sections.  Then, using helm's hook into
+completing-read, it displays a list of the relevant candidates.  The
+function depends on the convention of starting figure labels with
+"fig:" and table labels with "tab:".  These prefixes are the default
+with AucTeX, and I'm accustomed to using them.
+
+Jonathan Leech-Pepin helped make the code work properly.
+
+#+name: tsd-xref
+#+begin_src emacs-lisp
+  (defun tsd-get-xref-candidates ()
+    (interactive)
+    (save-excursion
+      (let ((matches))
+        (cond ((looking-back "fig[.ures]+[  ]?")
+               (goto-char (point-min))
+               (while
+                   (re-search-forward "^#\\+name: +\\(fig:[-_[:alnum:]]*\\)"
+                                      (point-max) t)
+                 (add-to-list 'matches (match-string-no-properties 1) t)))
+              ((looking-back "tables?[  ]?")
+               (goto-char (point-min))
+               (while
+                   (re-search-forward "^#\\+name: +\\(tab:[-_[:alnum:]]*\\)"
+                                      (point-max) t)
+                 (add-to-list 'matches (match-string-no-properties 1) t)))
+              ((looking-back "listings?[  ]?")
+               (goto-char (point-min))
+               (while
+                   (re-search-forward
+                    "^#\\+name: +\\([^:]\\{3\\}[^:][-_[:alnum:]]*\\)"
+                                      (point-max) t)
+                 (add-to-list 'matches (match-string-no-properties 1) t)))
+              ((or (looking-back "chapter[  ]?")
+                   (looking-back "section[  ]?"))
+               (goto-char (point-min))
+               (dolist (heading
+                         (org-map-entries
+                          (lambda ()
+                            (org-element-property :raw-value (org-element-at-point)))
+                          (format "-ignoreheading-%s"
+                                  (mapconcat 'identity org-export-exclude-tags "-"))
+                          'file 'archive 'comment))
+                 (add-to-list 'matches heading))
+               (dolist (property
+                         (org-map-entries
+                          (lambda ()
+                            (org-element-property :CUSTOM_ID (org-element-at-point)))
+                          (format "-%s"
+                                  (mapconcat 'identity org-export-exclude-tags "-"))
+                          'file 'archive 'comment))
+                 (when property (add-to-list 'matches
+                                             (format "#%s" property)))))
+              (t (error "No cross-reference candidate here!")))
+        (sort matches 'string<))))
+
+  (defun tsd-org-insert-crossref-link (&optional arg)
+    (interactive
+     (list (completing-read "insert: " (tsd-get-xref-candidates))))
+    (insert (format "[[%s]]" arg)))
+
+  (add-hook 'org-mode-hook
+            (lambda () (local-set-key "\C-cx" 'tsd-org-insert-crossref-link)))
+#+end_src
+
+
+
+*** Koma Article
+The following two source code blocks set up a LaTeX class named
+=koma-article= that is referenced near the top of the file. The
+=koma-article= class is based on the [[http://www.ctan.org/pkg/koma-script][Koma script]] article class
+=scrartcl=, which uses a sans-serif font for headings and a serif font
+for body text.
+
+The =koma-article= class uses fonts from the [[http://www.gust.org.pl/projects/e-foundry/tex-gyre/][TeX Gyre collection of
+fonts]]. As explained in [[http://www.gust.org.pl/projects/e-foundry/tex-gyre/tb87hagen-gyre.pdf][The New Font Project: TeX Gyre]], a goal of the
+project was to produce good quality fonts with diacritical characters
+sufficient to cover all European languages as well as Vietnamese and
+Navajo.
+
+The source code block named [[koma-article-times][koma-article-times]] is based on the Times
+Roman font. The serif Termes font is a replacement for Times Roman,
+the sans-serif Heros font is a replacement for Helvetica, and the
+typewriter Cursor font is a replacement for Courier. The source code
+block named [[koma-article-palatino][koma-article-palatino]] is based on the beautiful Palatino
+font designed by Hermann Zapf. The Pagella font is the TeX Gyre
+replacement for Palatino. Typographers often recommend that
+linespacing be increased slightly with Palatino, and this has been
+achieved with the addition of the =linespacing= command.  The sans
+serif font is the demibold weight of Source Sans Pro, which shares
+many structural characteristics with Palatino.  I think it yields a
+beautiful document.
+
+The Tex Gyre fonts benefit from the [[http://ctan.org/tex-archive/macros/latex/contrib/microtype][microtype package]], which provides
+"subliminal refinements towards typographical perfection," including
+"character protrusion and font expansion, furthermore the adjustment
+of inter-word spacing and additional kerning, as well as hyphenatable
+letter spacing (tracking) and the possibility to disable all or
+selected ligatures."
+
+In addition, the [[http://www.ctan.org/tex-archive/macros/latex/contrib/paralist/][paralist package]] is used for its compact versions of
+the LaTeX list environments.
+
+Finally, the =newcommand= is provided merely as an illustration of one
+way to move LaTeX declarations out of the Org file header. This one is
+useful in my work as an archaeologist and over the years it has crept
+into my BibTeX database. It shouldn't interfere with your work, but
+you might want to remove it or replace it with LaTeX commands that you
+do frequently use.
+
+#+name: koma-article-palatino
+#+header: :results silent
+#+begin_src emacs-lisp
+   (require 'ox-latex)
+   (add-to-list 'org-latex-classes
+                '("koma-article"
+                  "\\documentclass{scrartcl}
+   [NO-DEFAULT-PACKAGES]
+   [PACKAGES]
+   [EXTRA]
+                   \\usepackage{microtype}
+                   \\usepackage{tgpagella}
+                   \\linespread{1.05}
+                   \\usepackage[semibold]{sourcesanspro}
+                   \\usepackage{tgcursor}
+                   \\usepackage{paralist}
+                   \\usepackage[T1]{fontenc}
+                   \\usepackage{graphicx}
+                   \\usepackage{textcomp}
+                   \\usepackage[colorlinks=true,allcolors=red]{hyperref}
+                   \\newcommand{\\rc}{$^{14}$C}"
+                  ("\\section{%s}" . "\\section*{%s}")
+                  ("\\subsection{%s}" . "\\subsection*{%s}")
+                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+end_src
+
+
+** Local variables                                                 :noexport:
+
+# Local Variables:
+# eval: (require 'ox-hugo)
+# eval: (require 'ox-latex)
+# org-fontify-quote-and-verse-blocks: t
+# org-hide-macro-markers: t
+# org-id-track-globally: nil
+# org-cycle-separator-lines: 0
+# org-hugo-export-with-toc: nil
+# eval: (org-sbe "user-entities")
+# eval: (org-sbe "es-small-caps")
+# eval: (org-sbe "koma-article-palatino")
+# End:

@@ -1,0 +1,3 @@
+[submodule "tsdye/themes/crab"]
+	path = tsdye/themes/crab
+	url = https://github.com/thomasheller/crab

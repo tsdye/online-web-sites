@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thomas S. Dye</title>
+    <link>http://tsdye.online/tsdye/</link>
+    <description>Recent content on Thomas S. Dye</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Oct 2018 00:00:00 -1000</lastBuildDate>
+    
+	<atom:link href="http://tsdye.online/tsdye/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Facing a new public</title>
+      <link>http://tsdye.online/tsdye/posts/post-one/</link>
+      <pubDate>Tue, 30 Oct 2018 21:14:00 -1000</pubDate>
+      
+      <guid>http://tsdye.online/tsdye/posts/post-one/</guid>
+      <description>After 17 years promoting myself as an historic preservation service provider to government agencies and private corporations, I now have the wonderful opportunity to pursue my research interests full time. This web site is my way of keeping track of what I&amp;rsquo;m doing now that my days aren&amp;rsquo;t filled completing tasks a client requires.
+As a firm believer that scientific inquiry and open-source software are inseparable, I&amp;rsquo;m building my new web presence with an open-source tool chain centered on the Org mode of the Emacs editor.</description>
+    </item>
+    
+  </channel>
+</rss>
