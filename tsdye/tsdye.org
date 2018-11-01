@@ -5,6 +5,13 @@
 #+STARTUP: entitiespretty
 #+STARTUP: noinlineimages
 #+hugo_base_dir: .
+#+MACRO: R [[https://www.r-project.org/][=R=]]
+#+MACRO: ArchaeoPhases [[http://www.math.sciences.univ-nantes.fr/~philippe/ArchaeoPhases.html][=ArchaeoPhases=]]
+#+MACRO: BCal [[https://bcal.shef.ac.uk/][=BCal=]]
+#+MACRO: OxCal [[https://c14.arch.ox.ac.uk/oxcal.html][=OxCal=]]
+#+MACRO: ChronoModel  [[https://chronomodel.com/][=ChronoModel=]]
+#+MACRO: hm [[http://tsdye.online/harris-matrix/homepage][=hm=]]
+#+MACRO: Shiny [[https://shiny.rstudio.com/][=Shiny=]]
 
 * Web Site Root
   :PROPERTIES:
@@ -31,17 +38,17 @@ since 2014.
 
 Starting September 2018, I'm working on a research project with Caitlin Buck and
 Keith May funded by Historic England. Caitlin is overseeing a PhD student,
-Bryony Moss, who will write a thesis about automating the process of generating
+Bryony Moody, who will write a thesis about automating the process of generating
 chronological models from digital legacy data.
 
-I'm also working with Anne Philippe and Marie-Anne Vibet at Université de
-Nantes, Laboratoire de mathématiques Jean Leray on an [[https://www.r-project.org/][=R=]] software package,
-[[http://www.math.sciences.univ-nantes.fr/~philippe/ArchaeoPhases.html][=ArchaeoPhases=]], which reads the raw MCMC output of Bayesian calibration software
-such as [[https://bcal.shef.ac.uk/][=BCal=]], [[https://c14.arch.ox.ac.uk/oxcal.html][=OxCal=]], and [[https://chronomodel.com/][=ChronoModel=]] and provides a set of functions to analyze
-it.
+I'm also working with Anne Philippe at Université de Nantes, Laboratoire de
+mathématiques Jean Leray on an {{{R}}} software package, {{{ArchaeoPhases}}},
+which reads the raw MCMC output of Bayesian calibration software such as {{{BCal}}},
+{{{OxCal}}}, and {{{ChronoModel}}} and provides a set of functions to
+analyze it.
 
 I've developed and released what might be the first open-source Harris Matrix
-drawing program, [[http://tsdye.online/harris-matrix/homepage][=hm=]].  I'm using the software to investigate the structure and
+drawing program, {{{hm}}}. I'm using the {{{hm}}} software to investigate the structure and
 history of the leeward Kohala field system on Hawai`i Island.
 
 * Articles
@@ -83,13 +90,57 @@ I intend to add several projects to the two I have at the moment:
  - with some luck, results of a long-dormant project with Jennie Kahn describing
    the Hawaiian adzes in Bishop Museum.
 
-** TODO Second one
+** DONE =ArchaeoPhases=
+   CLOSED: [2018-11-01 Thu 08:46]
    :PROPERTIES:
    :EXPORT_FILE_NAME: post-two
    :END:
 
-This is the second one.
+In Spring 2016 I took up the opportunity to participate in a two-day conference
+on Bayesian statistics in archaeology in Nantes, France. Hosted jointly by
+Philippe Lanos of the Universit\eacute{} de Rennes and Anne Philippe at the Universit\eacute{}
+de Nantes, it was a chance to meet and talk with scholars actively working with
+Bayesian statistics, mostly as archaeologists apply those statistics to dating
+problems. I was able to catch up with two long-time friends, Caitlin Buck and Bo
+Meson from Sheffield, and had especially interesting conversations with Andrew
+Millard from Durham and Frances Healy from Cardiff, whose archaeological work
+I'd read with interest and admiration.
 
+Philippe and Anne had recently released a Bayesian calibration application,
+{{{Chronomodel}}}, that implements a slightly different model than the one Caitlin
+implemented in {{{BCal}}} and also used by {{{OxCal}}}. Listening to Anne, Philippe, and
+Caitlin discuss the pros and cons of their design decisions helped me make sense
+of the high-level statistical papers that describe the decisions. The main
+difference is how the models estimate phase boundaries. {{{BCal}}} and {{{OxCal}}} model the
+phase boundaries based on an assumption about the distribution of samples within
+the phases; {{{Chronomodel}}} doesn't make the assumption needed to model the phase
+boundaries, so it uses the earliest and latest estimates from samples assigned
+to the phase. The upshot: don't expect {{{Chronomodel}}} to agree with {{{BCal}}} or {{{OxCal}}}
+on phase boundary estimates---if they do agree, then it is simply a matter of
+chance.  Also, if the chronological model you are building uses phase boundaries
+as target events, then do take the time to understand exactly what the phase
+boundary estimates are giving you.
+
+I learned about {{{ArchaeoPhases}}} during the conference dinner when the discussion
+turned to the open-source statistical software application, {{{R}}}. Anne was excited
+by {{{Shiny}}}, an {{{R}}} package for designing interactive web applications. I agreed with
+her that applications created with it might help archaeologists gain access to
+the statistical power of {{{R}}}.
+
+More exciting for me was learning that {{{ArchaeoPhases}}} included an improved
+version of the Tempo plot, which I had recently developed as an open-source
+software project. My version of the Tempo plot assumed a normal approximation
+throughout, which made it easy to implement in {{{R}}} and didn't tax my limited grasp
+of mathematics. Anne used her considerable mathematics skills to put the Tempo
+plot on a firmer Bayesian footing. The {{{ArchaeoPhases}}} user can now choose between
+the normal approximation and the full Bayesian treatment when calling the
+=TempoPlot= function. Check it out!
+
+#+name: example-tempo-plot
+#+caption: Example of a Tempo plot with the full Bayesian treatment.
+[[file:static/graphs/lkfs-tempo-calendar.jpg]]
+
+** TODO Development of the Tempo Plot
 
 * Setup for slide shows                                            :noexport:
 

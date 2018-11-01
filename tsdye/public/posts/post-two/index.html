@@ -1,0 +1,194 @@
+<!doctype html>
+
+
+
+ <html class="no-js" lang=""> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Thomas S. Dye</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro|Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href=http://tsdye.online/tsdye/css/main.css>
+  <link rel="stylesheet" href=http://tsdye.online/tsdye/css/magnific-popup.css>
+
+  
+
+
+<html>
+  <body lang="en">
+  
+
+
+  <div id="main">
+    
+
+<div id="nav">
+  
+  <a href="http://tsdye.online/tsdye/images/tom.jpg" class="image-link">
+    <img class="logo animated flipInY" src="http://tsdye.online/tsdye/images/tom.jpg"/>
+  </a>
+  
+  
+  <ul>
+    
+      <li><a href="http://tsdye.online/tsdye/">
+          <span>Home</span>
+      </a></li>
+    
+      <li><a href="http://tsdye.online/tsdye/all/">
+          <span>All Articles</span>
+      </a></li>
+    
+  </ul>
+
+</div>
+
+    <h1 class="animated flipInX"><a href="http://tsdye.online/tsdye/posts/post-two/">ArchaeoPhases</a></h1>
+    <p class="post-info animated fadeIn">500 Words | Approximately 3 Minutes Read | Last Modified on November 1, 2018
+    <p>In Spring 2016 I took up the opportunity to participate in a two-day conference
+on Bayesian statistics in archaeology in Nantes, France. Hosted jointly by
+Philippe Lanos of the Universit&eacute; de Rennes and Anne Philippe at the Universit&eacute;
+de Nantes, it was a chance to meet and talk with scholars actively working with
+Bayesian statistics, mostly as archaeologists apply those statistics to dating
+problems. I was able to catch up with two long-time friends, Caitlin Buck and Bo
+Meson from Sheffield, and had especially interesting conversations with Andrew
+Millard from Durham and Frances Healy from Cardiff, whose archaeological work
+I&rsquo;d read with interest and admiration.</p>
+
+<p>Philippe and Anne had recently released a Bayesian calibration application,
+<a href="https://chronomodel.com/"><code>ChronoModel</code></a>, that implements a slightly different model than the one Caitlin
+implemented in <a href="https://bcal.shef.ac.uk/"><code>BCal</code></a> and also used by <a href="https://c14.arch.ox.ac.uk/oxcal.html"><code>OxCal</code></a>. Listening to Anne, Philippe, and
+Caitlin discuss the pros and cons of their design decisions helped me make sense
+of the high-level statistical papers that describe the decisions. The main
+difference is how the models estimate phase boundaries. <a href="https://bcal.shef.ac.uk/"><code>BCal</code></a> and <a href="https://c14.arch.ox.ac.uk/oxcal.html"><code>OxCal</code></a> model the
+phase boundaries based on an assumption about the distribution of samples within
+the phases; <a href="https://chronomodel.com/"><code>ChronoModel</code></a> doesn&rsquo;t make the assumption needed to model the phase
+boundaries, so it uses the earliest and latest estimates from samples assigned
+to the phase. The upshot: don&rsquo;t expect <a href="https://chronomodel.com/"><code>ChronoModel</code></a> to agree with <a href="https://bcal.shef.ac.uk/"><code>BCal</code></a> or <a href="https://c14.arch.ox.ac.uk/oxcal.html"><code>OxCal</code></a>
+on phase boundary estimates&mdash;if they do agree, then it is simply a matter of
+chance.  Also, if the chronological model you are building uses phase boundaries
+as target events, then do take the time to understand exactly what the phase
+boundary estimates are giving you.</p>
+
+<p>I learned about <a href="http://www.math.sciences.univ-nantes.fr/~philippe/ArchaeoPhases.html"><code>ArchaeoPhases</code></a> during the conference dinner when the discussion
+turned to the open-source statistical software application, <a href="https://www.r-project.org/"><code>R</code></a>. Anne was excited
+by <a href="https://shiny.rstudio.com/"><code>Shiny</code></a>, an <a href="https://www.r-project.org/"><code>R</code></a> package for designing interactive web applications. I agreed with
+her that applications created with it might help archaeologists gain access to
+the statistical power of <a href="https://www.r-project.org/"><code>R</code></a>.</p>
+
+<p>More exciting for me was learning that <a href="http://www.math.sciences.univ-nantes.fr/~philippe/ArchaeoPhases.html"><code>ArchaeoPhases</code></a> included an improved
+version of the Tempo plot, which I had recently developed as an open-source
+software project. My version of the Tempo plot assumed a normal approximation
+throughout, which made it easy to implement in <a href="https://www.r-project.org/"><code>R</code></a> and didn&rsquo;t tax my limited grasp
+of mathematics. Anne used her considerable mathematics skills to put the Tempo
+plot on a firmer Bayesian footing. The <a href="http://www.math.sciences.univ-nantes.fr/~philippe/ArchaeoPhases.html"><code>ArchaeoPhases</code></a> user can now choose between
+the normal approximation and the full Bayesian treatment when calling the
+<code>TempoPlot</code> function. Check it out!</p>
+
+<p><a id="org861f48e"></a></p>
+
+
+<figure>
+    
+        <img src="http://tsdye.online/tsdye/graphs/lkfs-tempo-calendar.jpg" alt="Figure 1: Example of a Tempo plot with the full Bayesian treatment." />
+    
+    
+    <figcaption>
+        <p>
+        Figure 1: Example of a Tempo plot with the full Bayesian treatment.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+
+
+    
+        <div class="social">
+  
+    <div>
+        <a href="mailto:tsd@tsdye.online">Email</a>
+    </div>
+  
+    <div>
+        <a href="http://tsdye.online/tsdye/resume/tsd-resume.pdf">Resumé</a>
+    </div>
+  
+    <div>
+        <a href="https://github.com/tsdye">GitHub</a>
+    </div>
+  
+</div>
+
+
+
+    
+  </div>
+
+  
+
+
+
+<div id="sidebar">
+  
+  <a href="http://tsdye.online/tsdye/images/tom.jpg" class="image-link">
+    <img class="logo animated flipInY" src="http://tsdye.online/tsdye/images/tom.jpg"/>
+  </a>
+  
+
+  <h2>URLs</h2>
+  <ul>
+    
+      <li><a href="http://tsdye.online/tsdye/">Home</a></li>
+    
+      <li><a href="http://tsdye.online/tsdye/all/">All Articles</a></li>
+    
+  </ul>
+
+  <h2>Recent posts</h2>
+  <ul>
+    
+      
+        <li><a href="http://tsdye.online/tsdye/posts/post-two/">ArchaeoPhases</a></li>
+      
+    
+      
+        <li><a href="http://tsdye.online/tsdye/posts/post-one/">Facing a new public</a></li>
+      
+    
+  </ul>
+
+  <h2>Projects</h2>
+  <ul>
+    
+      <li><a href="http://tsdye.online/an-archaeologist-reads/" target="_blank">An Archaeologist Reads</li>
+    
+      <li><a href="http://tsdye.online/harris-matrix/homepage" target="_blank">hm Software</li>
+    
+  </ul>
+</div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src=http://tsdye.online/tsdye/js/jquery-1.11.2.min.js></script>
+  <script src=http://tsdye.online/tsdye/js/main.js></script>
+
+  
+  <script src=http://tsdye.online/tsdye/js/jquery.magnific-popup.min.js></script>
+
+  
+  
+
+  
+</body>
+</html>
+
